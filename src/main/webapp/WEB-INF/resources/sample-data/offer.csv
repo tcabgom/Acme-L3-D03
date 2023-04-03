@@ -1,0 +1,7 @@
+key,instantiatiation,header,summary,availabilityPeriodStart,availabilityPeriodEnd,price,moreInfo
+offer-01,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-02,2022/07/20 00:00,header2,summary2,2022/07/22 00:00,2022/07/30 00:00,EUR 20.0,
+offer-03,2022/07/20 00:00,headerwithexactly75charactersssssssssssssssssssssssssssssssssssssssssssssss,summarywithexactly100characterssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2022/07/22 00:00,2022/07/30 00:00,USD 12345.0,https://ev.us.es/ultra
+offer-04,2022/07/20 00:00,headerwithweirdcharacters私の帽子は私の友達です,summarywithweirdlettersЯ хочу играть в Яндере Симулятор,2022/07/22 00:00,2022/07/30 00:00,GBP 8.0,https://ev.us.es/ultra
+offer-05,2022/07/20 00:00,<h1>Lorem ipsum</h1>,<script>alert('This is code')</script>,2022/07/22 00:00,2022/07/30 00:00,USD 9.0,https://ev.us.es/ultra
+offer-06,2022/07/20 00:00,"!(){}=??¿.;,!@#~€%::","á^qéüâüúgt",2022/07/22 00:00,2022/07/30 00:00,GBP 15.0,https://ev.us.es/ultra

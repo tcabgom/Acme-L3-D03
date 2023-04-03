@@ -1,0 +1,11 @@
+key,key:lecturer,code,title,courseAsbtract,retailPrice,furtherInformation,draftMode
+curso-01,lecturer-01,ABC123,"Un buen título","Un buen abstract",USD 0.1,https://www.link1.com,true
+curso-02,lecturer-02,RTS342,"Ένα καλό τίτλο","Ένα καλό απόσπασμα",EUR 100.0,https://www.link2.com,false
+curso-03,lecturer-02,RTF123,"عنوان جيد","مستخلص جيد",GBP 10.01,,true
+curso-04,lecturer-02,DEF456,"<b>A good title</b>","<i>A good abstract</i>",USD 9999.99,https://www.link4.com,false
+curso-05,lecturer-01,XYZ789,"<script> title with &lt;html&gt; tag</script>","<script>An abstract with &lt;html&gt; tag</script>",EUR 0.01,http://www.link5.com,true
+curso-06,lecturer-01,GHI789,"A title with &amp; symbol","An abstract with &amp; symbol",USD 9999999.99,https://www.link6.com,false
+curso-07,lecturer-01,JKL012,"A","A",GBP 999.99,https://www.link7.com,true
+curso-08,lecturer-01,MNO345,"Es","Es",USD 0.0,,false
+curso-09,lecturer-02,PQR678,"Este es un ejemplo de una cadena de 75 caracteres para probar la generacion","Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para c",USD 1000.0,https://www.link9.com,true
+curso-10,lecturer-01,STU901,"Este es un ejemplo de una cadena de 75 caracteres para probar la generacio","Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres parai",EUR 0.99,https://www.link10.com,false

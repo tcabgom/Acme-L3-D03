@@ -1,0 +1,9 @@
+key,title,lecAsbtract,learningTime,body,knowledge,furtherInformation
+lecture-01,Un título, Un Abstract, 5.0,"un body válido",HANDS_ON,https://github.com/tcabgom/Acme-L3-D02
+lecture-02,"Ένα καλό τίτλο", "Ένα καλό τίτλο", 2.0,"Ένα καλό τίτλο",BALANCED,
+lecture-03,U,U, 0.01,U,THEORY,
+lecture-04,Un,Un, 0.02,Un,THEORY,
+lecture-05,"Este es un ejemplo de una cadena de 75 caracteres para probar la generacion","Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para c", 999.99,"Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para c",HANDS_ON,https://github.com/tcabgom/Acme-L3-D02
+lecture-06,"Este es un ejemplo de una cadena de 75 caracteres para probar la generacio","Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para ", 999.98,"Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para ",HANDS_ON,https://github.com/tcabgom/Acme-L3-D02
+lecture-07,"<b>A good title</b>","<b>A good title</b>", 50.0,"<b>A good title</b>",HANDS_ON,https://github.com/tcabgom/Acme-L3-D02
+lecture-08,"<script> title with &lt;html&gt; tag</script>","<script> title with &lt;html&gt; tag</script>", 5.0,"<script> title with &lt;html&gt; tag</script>",HANDS_ON,https://github.com/tcabgom/Acme-L3-D02

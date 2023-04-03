@@ -1,0 +1,9 @@
+key,instantiation,displayPeriodInitial,displayPeriodEnding,linkToPicture,slogan,linWebDocument
+banner-01,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-02,2020/02/01 23:59,2020/03/01 23:59,2020/04/30 09:00,http://link.com,Normal slogan with 75 scharactersssssssssssssssssssssssssssssssssssssssssss,http://link.com
+banner-03,2020/03/01 00:00,2020/04/01 00:00,2020/03/01 09:00,http://link.com,Normal slogan with 74 scharacterssssssssssssssssssssssssssssssssssssssssss,http://link.com
+banner-04,2020/04/01 09:00,2020/05/01 09:00,2020/02/01 09:00,http://link.com,a,http://link.com
+banner-05,2020/05/01 09:00,2020/06/01 09:00,2020/04/01 09:00,http://link.com,ab,http://link.com
+banner-06,2020/06/01 09:00,2020/07/01 09:00,2020/07/01 00:00,http://link.com,<b>normal slogan</b>,http://link.com
+banner-07,2020/07/01 09:00,2020/08/01 09:00,2020/12/31 23:59,http://link.com,<script>alert("hi")</script>,http://link.com
+banner-08,2020/07/01 09:00,2020/08/01 09:00,2020/12/31 23:59,http://link.com,κανονικός τίτλος,http://link.com

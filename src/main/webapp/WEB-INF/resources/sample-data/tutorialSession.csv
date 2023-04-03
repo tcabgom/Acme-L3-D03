@@ -1,0 +1,7 @@
+key,title,sessionAbstract,sessionType,sessionStart,sessionEnd,moreInfo,key:tutorial
+tutorialSession-01,A normal Title, A normal Abstract,HANDS_ON,2022/08/30 00:00,2022/08/30 03:00,https://github.com/tcabgom/Acme-L3-D02,tutorial-01
+tutorialSession-02,A session without link, A normal Abstract,HANDS_ON,2022/08/30 00:00,2022/08/30 03:00,,tutorial-01
+tutorialSession-03,A,BC,BALANCED,2022/08/30 00:00,2022/08/30 03:00,https://github.com/tcabgom/Acme-L3-D02,tutorial-01
+tutorialSession-04,atitlewith74charactersssssssssssssssssssssssssssssssssssssssssssssssssssss,anabstractwith100characterssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,THEORY,2022/08/30 00:00,2022/08/30 03:00,https://github.com/tcabgom/Acme-L3-D02,tutorial-01
+tutorialSession-05,上帝啊，我花了一千年來做這件事,किमर्थं त्वं एतत् अनुवादयसि,BALANCED,2022/08/30 00:00,2022/08/30 03:00,https://github.com/tcabgom/Acme-L3-D02,tutorial-01
+tutorialSession-06,<script>alert('hi!)</script>,<h1>Comando sudo rm -rf --no-preserve-root ejecutado correctamente</h1>,HANDS_ON,2022/08/30 00:00,2022/08/30 03:00,https://github.com/tcabgom/Acme-L3-D02,tutorial-01

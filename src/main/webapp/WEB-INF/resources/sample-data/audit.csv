@@ -1,0 +1,9 @@
+key,key:auditor,key:course,code,conclusion,strongPoints,weakPoints
+audit-01,auditor-01,curso-01,KKK420,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+audit-02,auditor-01,curso-01,KKD420,bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+audit-03,auditor-01,curso-01,KKC420,c,c,c
+audit-04,auditor-01,curso-01,KKL420,Si,Si,Si
+audit-05,auditor-01,curso-01,KKP420,conclusionTest,strongPointsTest,weakPointsTest
+audit-06,auditor-01,curso-01,KKT420,"<script>alert("hi")</script>","<script>alert("hi")</script>","<script>alert("hi")</script>"
+audit-07,auditor-01,curso-01,KKF420,"<h1>Lorem ipsum</h1>","<h1>Lorem ipsum</h1>","<h1>Lorem ipsum</h1>"
+audit-08,auditor-01,curso-01,KTY420,"πατάτα","πατάτα","πατάτα"

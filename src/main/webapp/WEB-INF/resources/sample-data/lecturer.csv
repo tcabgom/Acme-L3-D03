@@ -1,0 +1,9 @@
+key,almaMater,resume,qualifications,link,key:user-account
+lecturer-01,Fisica,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-01
+lecturer-02,"Ένα καλό τίτλο","Ένα καλό τίτλο","1,9,9",https://ev.us.es,user-account-lecturer-02
+lecturer-03,Q,m,"1",,user-account-assistant-01
+lecturer-04,Qu,me,"10,10,9",,user-account-assistant-02
+lecturer-05,"Este es un ejemplo de una cadena de 75 caracteres para probar la generacion","Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para c","10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,10,1",https://ev.us.es,user-account-assistant-03
+lecturer-06,"Este es un ejemplo de una cadena de 75 caracteres para probar la generacio","Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para ","10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,1,1",https://ev.us.es,user-account-assistant-04
+lecturer-07,"<b>A good title</b>","<b>A good title</b>","10,10,9,1",https://ev.us.es,user-account-auditor-01
+lecturer-08,"<script> title with &lt;html&gt; tag</script>","<script> title with &lt;html&gt; tag</script>","10,10,4,3,2,1,1",https://ev.us.es,user-account-auditor-02

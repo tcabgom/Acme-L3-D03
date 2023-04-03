@@ -1,0 +1,8 @@
+key,key:practicum,title,abstractSession,startWeek,finishWeek,link
+practicumSession-01,practicum-01,normal title,normal summary,2023/11/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-02,practicum-01,a,a,2023/10/03 08:01,2023/10/03 10:01,
+practicumSession-03,practicum-02,ab,ab,2023/10/02 09:59,2023/10/02 10:59,
+practicumSession-04,practicum-01,Normal title with 74 characterssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2023/10/12 09:59,2023/11/12 09:59,
+practicumSession-05,practicum-03,Normal title with 75 charactersssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2023/01/03 09:01,2023/10/02 09:01,
+practicumSession-06,practicum-01,<b>normal title</b>,"<script>alert(""hi"")</script>",2023/10/03 09:01,2023/10/03 10:01,http://normalLink.com
+practicumSession-07,practicum-01,κανονικός τίτλος,κανονική περίληψη,2023/11/03 8:01,2023/10/03 10:01,http://normalLink.com
