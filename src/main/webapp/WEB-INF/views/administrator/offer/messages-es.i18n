@@ -1,0 +1,11 @@
+authenticated.offer.listAll.label.header = Cabecera
+authenticated.offer.listAll.label.summary = Resumen
+authenticated.offer.listAll.label.price = Precio
+
+authenticated.offer.form.label.instantiatiation = Fecha de Instanciación
+authenticated.offer.form.label.header = Cabecera
+authenticated.offer.form.label.summary = Resumen
+authenticated.offer.form.label.availabilityPeriodStart = Inicio del Período de Disponibilidad
+authenticated.offer.form.label.availabilityPeriodEnd = Fin del Período de Disponibilidad
+authenticated.offer.form.label.price = Precio
+authenticated.offer.form.label.moreInfo = Más Información
