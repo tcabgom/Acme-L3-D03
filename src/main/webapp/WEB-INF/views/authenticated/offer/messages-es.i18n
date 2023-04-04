@@ -1,0 +1,4 @@
+
+authenticated.offer.listAll.label.header = Cabecera
+authenticated.offer.listAll.label.summary = Resumen
+authenticated.offer.listAll.label.price = Precio
