@@ -1,8 +1,6 @@
 
 package acme.features.authenticated.offer;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,9 +10,10 @@ import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 
 @Service
-public class AuthenticatedOfferListAllService extends AbstractService<Authenticated, Offer> {
+public class AuthenticatedOfferShowService extends AbstractService<Authenticated, Offer> {
 
 	// Internal state ---------------------------------------------------------
+
 	@Autowired
 	protected AuthenticatedOfferRepository repository;
 
@@ -23,7 +22,11 @@ public class AuthenticatedOfferListAllService extends AbstractService<Authentica
 
 	@Override
 	public void check() {
-		super.getResponse().setChecked(true);
+		boolean status;
+
+		status = super.getRequest().hasData("id", int.class);
+
+		super.getResponse().setChecked(status);
 	}
 
 	@Override
@@ -33,11 +36,13 @@ public class AuthenticatedOfferListAllService extends AbstractService<Authentica
 
 	@Override
 	public void load() {
-		Collection<Offer> objects;
+		Offer object;
+		int id;
 
-		objects = this.repository.findActiveOffers();
+		id = super.getRequest().getData("id", int.class);
+		object = this.repository.findOneOfferById(id);
 
-		super.getBuffer().setData(objects);
+		super.getBuffer().setData(object);
 	}
 
 	@Override
@@ -46,7 +51,7 @@ public class AuthenticatedOfferListAllService extends AbstractService<Authentica
 
 		Tuple tuple;
 
-		tuple = super.unbind(object, "header", "summary", "price");
+		tuple = super.unbind(object, "instantiatiation", "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
 
 		super.getResponse().setData(tuple);
 	}

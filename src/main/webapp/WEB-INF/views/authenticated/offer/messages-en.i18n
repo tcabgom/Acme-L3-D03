@@ -1,4 +1,11 @@
+user-account.offer.listAll.label.header = Header
+user-account.offer.listAll.label.summary = Summary
+user-account.offer.listAll.label.price = Price
 
-authenticated.offer.listAll.label.header = Header
-authenticated.offer.listAll.label.summary = Summary
-authenticated.offer.listAll.label.price = Price
+user-account.offer.form.label.instantiatiation = Instantiation Date
+user-account.offer.form.label.header = Header
+user-account.offer.form.label.summary = Summary
+user-account.offer.form.label.availabilityPeriodStart = Availability Period Start
+user-account.offer.form.label.availabilityPeriodEnd = Availability Period End
+user-account.offer.form.label.price = Price
+user-account.offer.form.label.moreInfo = More Info

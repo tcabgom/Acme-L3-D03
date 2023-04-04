@@ -1,4 +1,11 @@
+user-account.offer.listAll.label.header = Cabecera
+user-account.offer.listAll.label.summary = Resumen
+user-account.offer.listAll.label.price = Precio
 
-authenticated.offer.listAll.label.header = Cabecera
-authenticated.offer.listAll.label.summary = Resumen
-authenticated.offer.listAll.label.price = Precio
+user-account.offer.form.label.instantiatiation = Instantiation Date
+user-account.offer.form.label.header = Header
+user-account.offer.form.label.summary = Summary
+user-account.offer.form.label.availabilityPeriodStart = Availability Period Start
+user-account.offer.form.label.availabilityPeriodEnd = Availability Period End
+user-account.offer.form.label.price = Price
+user-account.offer.form.label.moreInfo = More Info

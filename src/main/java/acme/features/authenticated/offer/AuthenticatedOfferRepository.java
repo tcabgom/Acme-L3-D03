@@ -12,7 +12,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedOfferRepository extends AbstractRepository {
 
-	@Query("select o from Offer o")
-	Collection<Offer> findAllOffers();
+	@Query("select o from Offer o WHERE o.availabilityPeriodEnd > CURRENT_DATE")
+	Collection<Offer> findActiveOffers();
+
+	@Query("select o from Offer o where o.id = :id")
+	Offer findOneOfferById(int id);
 
 }
