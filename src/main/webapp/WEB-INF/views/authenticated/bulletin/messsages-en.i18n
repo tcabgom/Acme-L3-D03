@@ -1,8 +1,6 @@
 authenticated.bulletin.list.label.instantiationMoment = Instantiation Moment
 authenticated.bulletin.list.label.title = Title
 authenticated.bulletin.list.label.critical = Critical
-authenticated.bulletin.list.label.message = Message
-authenticated.bulletin.list.label.furtherInformation = Further Information
 
 authenticated.bulletin.form.label.instantiationMoment = Instantiation Moment
 authenticated.bulletin.form.label.title = Title
