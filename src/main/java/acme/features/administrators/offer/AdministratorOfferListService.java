@@ -12,7 +12,7 @@ import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 
 @Service
-public class AdministratorOfferListAllService extends AbstractService<Administrator, Offer> {
+public class AdministratorOfferListService extends AbstractService<Administrator, Offer> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -46,7 +46,7 @@ public class AdministratorOfferListAllService extends AbstractService<Administra
 
 		Tuple tuple;
 
-		tuple = super.unbind(object, "header", "summary", "price");
+		tuple = super.unbind(object, "header", "price");
 
 		super.getResponse().setData(tuple);
 	}

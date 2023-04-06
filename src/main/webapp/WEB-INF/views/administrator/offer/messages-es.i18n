@@ -1,6 +1,6 @@
-authenticated.offer.listAll.label.header = Cabecera
-authenticated.offer.listAll.label.summary = Resumen
-authenticated.offer.listAll.label.price = Precio
+authenticated.offer.list.label.header = Cabecera
+authenticated.offer.list.label.summary = Resumen
+authenticated.offer.list.label.price = Precio
 
 authenticated.offer.form.label.instantiatiation = Fecha de Instanciación
 authenticated.offer.form.label.header = Cabecera

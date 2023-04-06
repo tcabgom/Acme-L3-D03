@@ -10,5 +10,5 @@
 	<acme:input-textbox code="authenticated.offer.form.label.availabilityPeriodStart" path="availabilityPeriodStart" readonly="true"/>
 	<acme:input-textbox code="authenticated.offer.form.label.availabilityPeriodEnd" path="availabilityPeriodEnd" readonly="true"/>
 	<acme:input-textbox code="authenticated.offer.form.label.price" path="price" readonly="true"/>
-	<acme:input-textbox code="authenticated.offer.form.label.moreInfo" path="price" readonly="true"/>
+	<acme:input-textbox code="authenticated.offer.form.label.moreInfo" path="moreInfo" readonly="true"/>
 </acme:form>

@@ -1,6 +1,6 @@
-authenticated.offer.listAll.label.header = Header
-authenticated.offer.listAll.label.summary = Summary
-authenticated.offer.listAll.label.price = Price
+authenticated.offer.list.label.header = Header
+authenticated.offer.list.label.summary = Summary
+authenticated.offer.list.label.price = Price
 
 authenticated.offer.form.label.instantiatiation = Instantiation Date
 authenticated.offer.form.label.header = Header
