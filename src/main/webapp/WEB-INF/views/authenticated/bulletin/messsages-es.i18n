@@ -4,8 +4,8 @@ authenticated.bulletin.list.label.critical = Crítico
 authenticated.bulletin.list.label.message = Mensaje
 authenticated.bulletin.list.label.furtherInformation = Más información
 
-authenticated.bulletin.form.label.instantiationMoment = Instantiation Moment
-authenticated.bulletin.form.label.title = Title
-authenticated.bulletin.form.label.critical = Critical
-authenticated.bulletin.form.label.message = Message
-authenticated.bulletin.form.label.furtherInformation = Further Information
+authenticated.bulletin.form.label.instantiationMoment = Momento de instanciación
+authenticated.bulletin.form.label.title = Título
+authenticated.bulletin.form.label.critical = Crítico
+authenticated.bulletin.form.label.message = Mensaje
+authenticated.bulletin.form.label.furtherInformation = Más información
