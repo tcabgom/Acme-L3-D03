@@ -49,7 +49,7 @@ public class AdministratorOfferUpdateService extends AbstractService<Administrat
 	public void bind(final Offer object) {
 		assert object != null;
 
-		super.bind(object, "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
+		super.bind(object, "instantiatiation", "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
 	}
 
 	@Override
@@ -70,7 +70,7 @@ public class AdministratorOfferUpdateService extends AbstractService<Administrat
 
 		Tuple tuple;
 
-		tuple = super.unbind(object, "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
+		tuple = super.unbind(object, "instantiatiation", "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
 
 		super.getResponse().setData(tuple);
 	}

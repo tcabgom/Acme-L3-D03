@@ -7,12 +7,12 @@
 	<jstl:if test="${readonly}">
 		<acme:input-moment  code="administrator.offer.form.label.instantiatiation"        path="instantiatiation"/>
 	</jstl:if>
-	<acme:input-textbox code="administrator.offer.form.label.header"                  path="header"/>
-	<acme:input-textbox code="administrator.offer.form.label.summary"                 path="summary"/>
-	<acme:input-moment  code="administrator.offer.form.label.availabilityPeriodStart" path="availabilityPeriodStart"/>
-	<acme:input-moment  code="administrator.offer.form.label.availabilityPeriodEnd"   path="availabilityPeriodEnd"/>
-	<acme:input-money   code="administrator.offer.form.label.price"                   path="price"/>
-	<acme:input-url     code="administrator.offer.form.label.moreInfo"                path="moreInfo"/>
+	<acme:input-textbox  code="administrator.offer.form.label.header"                  path="header"/>
+	<acme:input-textarea code="administrator.offer.form.label.summary"                 path="summary"/>
+	<acme:input-moment   code="administrator.offer.form.label.availabilityPeriodStart" path="availabilityPeriodStart"/>
+	<acme:input-moment   code="administrator.offer.form.label.availabilityPeriodEnd"   path="availabilityPeriodEnd"/>
+	<acme:input-money    code="administrator.offer.form.label.price"                   path="price"/>
+	<acme:input-url      code="administrator.offer.form.label.moreInfo"                path="moreInfo"/>
 	
 	<jstl:choose>
 		<jstl:when test="${!readonly}">
