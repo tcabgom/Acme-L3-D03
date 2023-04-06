@@ -1,11 +1,18 @@
-authenticated.offer.list.label.header = Cabecera
-authenticated.offer.list.label.summary = Resumen
-authenticated.offer.list.label.price = Precio
+administrator.offer.list.label.header = Cabecera
+administrator.offer.list.label.summary = Resumen
+administrator.offer.list.label.price = Precio
 
-authenticated.offer.form.label.instantiatiation = Fecha de Instanciación
-authenticated.offer.form.label.header = Cabecera
-authenticated.offer.form.label.summary = Resumen
-authenticated.offer.form.label.availabilityPeriodStart = Inicio del Período de Disponibilidad
-authenticated.offer.form.label.availabilityPeriodEnd = Fin del Período de Disponibilidad
-authenticated.offer.form.label.price = Precio
-authenticated.offer.form.label.moreInfo = Más Información
+administrator.offer.list.button.create = Crear Nueva Oferta
+administrator.offer.list.button.update = Editar Oferta
+administrator.offer.list.button.delete = Eliminar Oferta
+
+administrator.offer.form.label.instantiatiation = Fecha de Instanciación
+administrator.offer.form.label.header = Cabecera
+administrator.offer.form.label.summary = Resumen
+administrator.offer.form.label.availabilityPeriodStart = Inicio del Período de Disponibilidad
+administrator.offer.form.label.availabilityPeriodEnd = Fin del Período de Disponibilidad
+administrator.offer.form.label.price = Precio
+administrator.offer.form.label.moreInfo = Más Información
+administrator.offer.form.label.confirmation = Confirmar Datos de Entrada
+
+administrator.offer.form.button.create = Crear Oferta
