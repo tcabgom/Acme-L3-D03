@@ -1,0 +1,10 @@
+user-account.tutorial.list.label.title = Title
+user-account.tutorial.list.label.course = Course
+user-account.tutorial.list.label.assistant = Assistant
+
+user-account.tutorial.form.label.code = Code
+user-account.tutorial.form.label.title = Title
+user-account.tutorial.form.label.tutorialAbstract = Abstract
+user-account.tutorial.form.label.goals = Goals
+user-account.tutorial.form.label.course = Course
+user-account.tutorial.form.label.assistant = Assistant
