@@ -1,6 +1,6 @@
-user-account.offer.listAll.label.header = Header
-user-account.offer.listAll.label.summary = Summary
-user-account.offer.listAll.label.price = Price
+user-account.offer.list.label.header = Header
+user-account.offer.list.label.summary = Summary
+user-account.offer.list.label.price = Price
 
 user-account.offer.form.label.instantiatiation = Instantiation Date
 user-account.offer.form.label.header = Header

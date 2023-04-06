@@ -16,18 +16,18 @@ public class AuthenticatedOfferController extends AbstractController<Authenticat
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AuthenticatedOfferListAllService	listAllService;
+	protected AuthenticatedOfferListService	listService;
 
 	@Autowired
-	protected AuthenticatedOfferShowService		showService;
+	protected AuthenticatedOfferShowService	showService;
 
 	// Constructors -----------------------------------------------------------
 
 
 	@PostConstruct
 	protected void initialise() {
+		super.addBasicCommand("list", this.listService);
 		super.addBasicCommand("show", this.showService);
-		super.addCustomCommand("list-all", "list", this.listAllService);
 
 	}
 

@@ -12,7 +12,7 @@ import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 
 @Service
-public class AuthenticatedOfferListAllService extends AbstractService<Authenticated, Offer> {
+public class AuthenticatedOfferListService extends AbstractService<Authenticated, Offer> {
 
 	// Internal state ---------------------------------------------------------
 	@Autowired
