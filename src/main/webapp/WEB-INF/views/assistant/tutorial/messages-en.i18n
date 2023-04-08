@@ -1,0 +1,20 @@
+
+assistant.tutorial.list.label.title = Title
+assistant.tutorial.list.label.course = Course
+
+assistant.tutorial.list.button.create = Create New Tutorial
+
+assistant.tutorial.form.label.title = Title
+assistant.tutorial.form.label.course = Course
+assistant.tutorial.form.label.assistant = Assistant
+assistant.tutorial.form.label.code = Code
+assistant.tutorial.form.label.tutorialAbstract = Abstract
+assistant.tutorial.form.label.goals = Goals
+assistant.tutorial.form.label.estimatedTotalTime = Estimated Total Hours
+
+assistant.tutorial.form.button.create = Create Tutorial
+assistant.tutorial.form.button.update = Update Tutorial
+assistant.tutorial.form.button.delete = Delete Tutorial
+
+assistant.tutorial.form.error.emptyTutorial = The tutorial needs to have at least one session before it can be published
+assistant.tutorial.form.error.spam = This label contains innapropiate language
