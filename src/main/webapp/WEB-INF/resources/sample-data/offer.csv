@@ -1,7 +1,42 @@
 key,instantiatiation,header,summary,availabilityPeriodStart,availabilityPeriodEnd,price,moreInfo
 offer-01,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
-offer-02,2022/07/20 00:00,header2,summary2,2022/07/22 00:00,2022/07/30 00:00,EUR 20.0,
-offer-03,2022/07/20 00:00,headerwithexactly75charactersssssssssssssssssssssssssssssssssssssssssssssss,summarywithexactly100characterssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2022/07/22 00:00,2022/07/30 00:00,USD 12345.0,https://ev.us.es/ultra
-offer-04,2022/07/20 00:00,headerwithweirdcharacters私の帽子は私の友達です,summarywithweirdlettersЯ хочу играть в Яндере Симулятор,2022/07/22 00:00,2022/07/30 00:00,GBP 8.0,https://ev.us.es/ultra
-offer-05,2022/07/20 00:00,<h1>Lorem ipsum</h1>,<script>alert('This is code')</script>,2022/07/22 00:00,2025/07/30 00:00,USD 9.0,https://ev.us.es/ultra
-offer-06,2022/07/20 00:00,"!(){}=??¿.;,!@#~€%::",á^qéüâüúgt,2022/07/22 00:00,2025/07/30 00:00,GBP 15.0,https://ev.us.es/ultra
+offer-02,2022/07/20 00:00,A,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-03,2022/07/20 00:00,AB,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-04,2022/07/20 00:00,A text with 74 characters FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-05,2022/07/20 00:00,A text with 74 characters FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-06,2022/07/20 00:00,<script>alert('Invalid data')</script>,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-07,2022/07/20 00:00,<h1>Cute text</h1>,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-08,2022/07/20 00:00,これは日本語です,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-09,2022/07/20 00:00,это русский,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-10,2022/07/20 00:00,t\HïS *I_S w{e}#@ir$%7d t)({e[x]_t,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-11,2022/07/20 00:00,header1,A,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-12,2022/07/20 00:00,header1,AB,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-13,2022/07/20 00:00,header1,A text with 99 characters FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-14,2022/07/20 00:00,header1,A text with 100 characters FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-15,2022/07/20 00:00,header1,<script>alert('Invalid data')</script>,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-16,2022/07/20 00:00,header1,<h1>Cute text</h1>,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-17,2022/07/20 00:00,header1,これは日本語です,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-18,2022/07/20 00:00,header1,это русский,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-19,2022/07/20 00:00,header1,t\HïS *I_S w{e}#@ir$%7d t)({e[x]_t,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-20,2022/07/20 00:00,header1,summary1,2022/07/20 00:00,2022/07/28 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-21,2022/07/20 00:00,header1,summary1,2022/07/25 00:00,2022/08/05 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-22,2022/07/20 00:00,header1,summary1,2022/07/30 00:00,2022/08/10 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-23,2022/07/20 00:00,This offer can be updated!,summary1,2022/08/10 00:00,2022/08/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-24,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 01.0,https://ev.us.es/ultra
+offer-25,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 9999.99,https://ev.us.es/ultra
+offer-26,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,USD 10.0,https://ev.us.es/ultra
+offer-27,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,USD 01.0,https://ev.us.es/ultra
+offer-28,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,USD 9999.99,https://ev.us.es/ultra
+offer-29,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,GBP 10.0,https://ev.us.es/ultra
+offer-30,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,GBP 01.0,https://ev.us.es/ultra
+offer-31,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,GBP 9999.99,https://ev.us.es/ultra
+offer-32,2020/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-33,2022/07/29 23:59,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-34,2022/07/30 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-35,1900/07/30 00:01,header1,summary1,2022/07/22 00:00,2023/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-36,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,
+offer-37,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,http://example.com/a?b
+offer-38,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,http://example.com/a/b/c
+offer-39,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,
+offer-40,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,ftp://user:pass@scme.org
+offer-41,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,

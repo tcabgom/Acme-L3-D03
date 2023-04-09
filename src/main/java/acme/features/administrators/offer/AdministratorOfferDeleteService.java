@@ -1,23 +1,22 @@
 
-package acme.features.authenticated.offer;
-
-import java.util.Date;
+package acme.features.administrators.offer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.offer.Offer;
-import acme.framework.components.accounts.Authenticated;
+import acme.framework.components.accounts.Administrator;
 import acme.framework.components.models.Tuple;
+import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 
 @Service
-public class AuthenticatedOfferShowService extends AbstractService<Authenticated, Offer> {
+public class AdministratorOfferDeleteService extends AbstractService<Administrator, Offer> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AuthenticatedOfferRepository repository;
+	protected AdministratorOfferRepository repository;
 
 	// AbstractService interface ----------------------------------------------
 
@@ -33,13 +32,9 @@ public class AuthenticatedOfferShowService extends AbstractService<Authenticated
 
 	@Override
 	public void authorise() {
-		Offer object;
 		final int id = super.getRequest().getData("id", int.class);
-		final Date now = new Date();
-
-		object = this.repository.findOneOfferById(id);
-
-		super.getResponse().setAuthorised(now.compareTo(object.getAvailabilityPeriodEnd()) < 0);
+		final Offer object = this.repository.findOneOfferById(id);
+		super.getResponse().setAuthorised(MomentHelper.getCurrentMoment().before(object.getAvailabilityPeriodStart()));
 	}
 
 	@Override
@@ -54,12 +49,34 @@ public class AuthenticatedOfferShowService extends AbstractService<Authenticated
 	}
 
 	@Override
+	public void bind(final Offer object) {
+		assert object != null;
+
+		super.bind(object, "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
+	}
+
+	@Override
+	public void validate(final Offer object) {
+		assert object != null;
+	}
+
+	@Override
+	public void perform(final Offer object) {
+		assert object != null;
+
+		this.repository.delete(object);
+	}
+
+	@Override
 	public void unbind(final Offer object) {
 		assert object != null;
 
 		Tuple tuple;
 
 		tuple = super.unbind(object, "instantiatiation", "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
+
+		final boolean readonly = MomentHelper.getCurrentMoment().after(object.getAvailabilityPeriodStart());
+		tuple.put("readonly", readonly);
 
 		super.getResponse().setData(tuple);
 	}
