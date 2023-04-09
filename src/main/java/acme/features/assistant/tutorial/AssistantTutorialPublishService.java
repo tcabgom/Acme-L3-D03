@@ -14,7 +14,7 @@ import acme.framework.services.AbstractService;
 import acme.roles.Assistant;
 
 @Service
-public class AssistantTutorialCreateService extends AbstractService<Assistant, Tutorial> {
+public class AssistantTutorialPublishService extends AbstractService<Assistant, Tutorial> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -26,24 +26,37 @@ public class AssistantTutorialCreateService extends AbstractService<Assistant, T
 
 	@Override
 	public void check() {
-		super.getResponse().setChecked(true);
+		boolean status;
+
+		status = super.getRequest().hasData("id", int.class);
+
+		super.getResponse().setChecked(status);
 	}
 
 	@Override
 	public void authorise() {
-		super.getResponse().setAuthorised(true);
+		final boolean status;
+		final int tutorialId;
+		Tutorial tutorial;
+		Assistant assistant;
+
+		tutorialId = super.getRequest().getData("id", int.class);
+		tutorial = this.repository.findOneTutorialById(tutorialId);
+		assistant = tutorial == null ? null : tutorial.getAssistant();
+		final boolean assistantOwnsTutorial = tutorial.getAssistant().getId() == super.getRequest().getPrincipal().getActiveRoleId();
+
+		status = tutorial != null && tutorial.isDraftMode() && super.getRequest().getPrincipal().hasRole(assistant) && assistantOwnsTutorial;
+
+		super.getResponse().setAuthorised(status);
 	}
 
 	@Override
 	public void load() {
+		Tutorial object;
+		int id;
 
-		final Tutorial object;
-		object = new Tutorial();
-
-		final Assistant assistant = this.repository.findOneAssistantById(super.getRequest().getPrincipal().getActiveRoleId());
-
-		object.setAssistant(assistant);
-		object.setDraftMode(true);
+		id = super.getRequest().getData("id", int.class);
+		object = this.repository.findOneTutorialById(id);
 
 		super.getBuffer().setData(object);
 	}
@@ -52,26 +65,27 @@ public class AssistantTutorialCreateService extends AbstractService<Assistant, T
 	public void bind(final Tutorial object) {
 		assert object != null;
 
-		final int courseId = super.getRequest().getData("course", int.class);
-		final Course course = this.repository.findOneCourseById(courseId);
-		object.setCourse(course);
+		int courseId;
+		Course course;
 
-		super.bind(object, "code", "title", "tutorialAbstract", "goals");
+		courseId = super.getRequest().getData("course", int.class);
+		course = this.repository.findOneCourseById(courseId);
+
+		super.bind(object, "code", "title", "tutorialAbstract", "goals", "draftMode");
+		object.setCourse(course);
 	}
 
 	@Override
 	public void validate(final Tutorial object) {
 		assert object != null;
 
-		if (!super.getBuffer().getErrors().hasErrors("code")) {
-			final Tutorial potentialDuplicate = this.repository.findOneTutorialByCode(object.getCode());
-			super.state(potentialDuplicate == null, "code", "assistant.tutorial.form.error.code");
-		}
 	}
 
 	@Override
 	public void perform(final Tutorial object) {
 		assert object != null;
+
+		object.setDraftMode(false);
 		this.repository.save(object);
 	}
 
@@ -79,14 +93,14 @@ public class AssistantTutorialCreateService extends AbstractService<Assistant, T
 	public void unbind(final Tutorial object) {
 		assert object != null;
 
-		Tuple tuple;
 		Collection<Course> courses;
-		final SelectChoices choices;
+		SelectChoices choices;
+		Tuple tuple;
 
 		courses = this.repository.findAllCourses();
 		choices = SelectChoices.from(courses, "title", object.getCourse());
 
-		tuple = super.unbind(object, "code", "title", "tutorialAbstract", "goals", "course", "assistant");
+		tuple = super.unbind(object, "code", "title", "tutorialAbstract", "goals", "draftMode");
 		tuple.put("course", choices.getSelected().getKey());
 		tuple.put("courses", choices);
 
