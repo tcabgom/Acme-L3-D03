@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import acme.entities.offer.Offer;
 import acme.framework.components.accounts.Authenticated;
 import acme.framework.components.models.Tuple;
+import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 
 @Service
@@ -35,7 +36,7 @@ public class AuthenticatedOfferListService extends AbstractService<Authenticated
 	@Override
 	public void load() {
 		Collection<Offer> objects;
-		final Date now = new Date();
+		final Date now = MomentHelper.getCurrentMoment();
 		objects = this.repository.findActiveOffers(now);
 
 		super.getBuffer().setData(objects);
