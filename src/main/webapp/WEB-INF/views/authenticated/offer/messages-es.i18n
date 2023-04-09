@@ -1,0 +1,10 @@
+user-account.offer.list.label.header = Cabecera
+user-account.offer.list.label.price = Precio
+
+user-account.offer.form.label.instantiatiation = Fecha de instanciación
+user-account.offer.form.label.header = Cabecera
+user-account.offer.form.label.summary = Resumen
+user-account.offer.form.label.availabilityPeriodStart = Inicio del período de disponibilidad
+user-account.offer.form.label.availabilityPeriodEnd = Fin del período de disponibilidad
+user-account.offer.form.label.price = Precio
+user-account.offer.form.label.moreInfo = Más Información
