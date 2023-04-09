@@ -2,6 +2,7 @@
 package acme.features.authenticated.offer;
 
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,8 +35,8 @@ public class AuthenticatedOfferListService extends AbstractService<Authenticated
 	@Override
 	public void load() {
 		Collection<Offer> objects;
-
-		objects = this.repository.findActiveOffers();
+		final Date now = new Date();
+		objects = this.repository.findActiveOffers(now);
 
 		super.getBuffer().setData(objects);
 	}

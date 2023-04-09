@@ -21,7 +21,7 @@ offer-19,2022/07/20 00:00,header1,t\HïS *I_S w{e}#@ir$%7d t)({e[x]_t,2022/07/22
 offer-20,2022/07/20 00:00,header1,summary1,2022/07/20 00:00,2022/07/28 00:00,EUR 10.0,https://ev.us.es/ultra
 offer-21,2022/07/20 00:00,header1,summary1,2022/07/25 00:00,2022/08/05 00:00,EUR 10.0,https://ev.us.es/ultra
 offer-22,2022/07/20 00:00,header1,summary1,2022/07/30 00:00,2022/08/10 00:00,EUR 10.0,https://ev.us.es/ultra
-offer-23,2022/07/20 00:00,This Offer should only be seen by administrators,summary1,2022/08/10 00:00,2022/08/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-23,2022/07/20 00:00,This offer can be updated!,summary1,2022/08/10 00:00,2022/08/30 00:00,EUR 10.0,https://ev.us.es/ultra
 offer-24,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 01.0,https://ev.us.es/ultra
 offer-25,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 9999.99,https://ev.us.es/ultra
 offer-26,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,USD 10.0,https://ev.us.es/ultra
@@ -33,10 +33,10 @@ offer-31,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,GBP
 offer-32,2020/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
 offer-33,2022/07/29 23:59,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
 offer-34,2022/07/30 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
-offer-35,1900/07/30 00:01,header1,summary1,2023/07/22 00:00,2023/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
-offer-37,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,
-offer-38,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,http://example.com/a?b
-offer-39,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,http://example.com/a/b/c
-offer-40,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,
-offer-41,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,ftp://user:pass@scme.org
-offer-42,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,
+offer-35,1900/07/30 00:01,header1,summary1,2022/07/22 00:00,2023/07/30 00:00,EUR 10.0,https://ev.us.es/ultra
+offer-36,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,
+offer-37,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,http://example.com/a?b
+offer-38,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,http://example.com/a/b/c
+offer-39,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,
+offer-40,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,ftp://user:pass@scme.org
+offer-41,2022/07/20 00:00,header1,summary1,2022/07/22 00:00,2022/07/30 00:00,EUR 10.0,
