@@ -1,28 +1,26 @@
 
-package acme.features.authenticated.offer;
+package acme.features.administrators.offer;
 
 import java.util.Collection;
-import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.offer.Offer;
-import acme.framework.components.accounts.Authenticated;
+import acme.framework.components.accounts.Administrator;
 import acme.framework.components.models.Tuple;
-import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 
 @Service
-public class AuthenticatedOfferListService extends AbstractService<Authenticated, Offer> {
+public class AdministratorOfferListService extends AbstractService<Administrator, Offer> {
 
 	// Internal state ---------------------------------------------------------
+
 	@Autowired
-	protected AuthenticatedOfferRepository repository;
+	protected AdministratorOfferRepository repository;
+
 
 	// AbstractService interface ----------------------------------------------
-
-
 	@Override
 	public void check() {
 		super.getResponse().setChecked(true);
@@ -36,8 +34,8 @@ public class AuthenticatedOfferListService extends AbstractService<Authenticated
 	@Override
 	public void load() {
 		Collection<Offer> objects;
-		final Date now = MomentHelper.getCurrentMoment();
-		objects = this.repository.findActiveOffers(now);
+
+		objects = this.repository.findAllOffers();
 
 		super.getBuffer().setData(objects);
 	}

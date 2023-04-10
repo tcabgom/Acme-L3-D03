@@ -1,24 +1,21 @@
 
-package acme.features.authenticated.offer;
-
-import java.util.Date;
+package acme.features.administrators.offer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.offer.Offer;
-import acme.framework.components.accounts.Authenticated;
+import acme.framework.components.accounts.Administrator;
 import acme.framework.components.models.Tuple;
-import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 
 @Service
-public class AuthenticatedOfferShowService extends AbstractService<Authenticated, Offer> {
+public class AdministratorOfferShowService extends AbstractService<Administrator, Offer> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AuthenticatedOfferRepository repository;
+	protected AdministratorOfferRepository repository;
 
 	// AbstractService interface ----------------------------------------------
 
@@ -34,13 +31,7 @@ public class AuthenticatedOfferShowService extends AbstractService<Authenticated
 
 	@Override
 	public void authorise() {
-		Offer object;
-		final int id = super.getRequest().getData("id", int.class);
-		final Date now = MomentHelper.getCurrentMoment();
-
-		object = this.repository.findOneOfferById(id);
-
-		super.getResponse().setAuthorised(now.compareTo(object.getAvailabilityPeriodEnd()) < 0);
+		super.getResponse().setAuthorised(true);
 	}
 
 	@Override
@@ -61,6 +52,7 @@ public class AuthenticatedOfferShowService extends AbstractService<Authenticated
 		Tuple tuple;
 
 		tuple = super.unbind(object, "instantiatiation", "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
+		tuple.put("readonly", true);
 
 		super.getResponse().setData(tuple);
 	}

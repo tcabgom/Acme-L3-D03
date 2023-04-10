@@ -29,6 +29,7 @@ master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
 master.menu.administrator = Administrator
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.offer = Manage Offers 
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shut-down = Shut down
@@ -47,6 +48,7 @@ master.menu.consumer.favourite-link = Favourite link
 
 master.menu.assistant = Assistant
 master.menu.assistant.tutorialSession = My Tutorial Sessions
+master.menu.assistant.tutorial = My Tutorials
 
 # master.menu.user-account ####################################################
 

@@ -1,23 +1,23 @@
 
-package acme.features.assistant.tutorialSession;
+package acme.features.assistant.tutorial;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.tutorialSession.TutorialSession;
+import acme.entities.tutorial.Tutorial;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 import acme.roles.Assistant;
 
 @Service
-public class AssistantTutorialSessionListService extends AbstractService<Assistant, TutorialSession> {
+public class AssistantTutorialListService extends AbstractService<Assistant, Tutorial> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AssistantTutorialSessionRepository repository;
+	protected AssistantTutorialRepository repository;
 
 	// AbstractService interface ----------------------------------------------
 
@@ -34,22 +34,22 @@ public class AssistantTutorialSessionListService extends AbstractService<Assista
 
 	@Override
 	public void load() {
-		Collection<TutorialSession> objects;
+		Collection<Tutorial> objects;
 
 		final int userAccountId = super.getRequest().getPrincipal().getActiveRoleId();
-		objects = this.repository.findManyTutorialSessionsByAssistantId(userAccountId);
+		objects = this.repository.findManyTutorialsByAssistantId(userAccountId);
 
 		super.getBuffer().setData(objects);
 	}
 
 	@Override
-	public void unbind(final TutorialSession object) {
+	public void unbind(final Tutorial object) {
 		assert object != null;
 
 		Tuple tuple;
-
-		tuple = super.unbind(object, "title", "tutorial.title", "sessionType");
-
+		tuple = super.unbind(object, "title", "course.title", "draftMode");
+		final int numberOfSessions = this.repository.findManyTutorialSessionsByTutorialId(object).size();
+		tuple.put("numberOfSessions", numberOfSessions);
 		super.getResponse().setData(tuple);
 	}
 
