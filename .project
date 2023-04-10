@@ -36,9 +36,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>classes</name>
+			<name>acme-framework</name>
 			<type>2</type>
-			<locationURI>WORKSPACE_LOC/Frameworks/Acme-Framework-23.3.0/target/classes</locationURI>
+			<location>C:/Users/Ignacio/Desktop/Universidad/I.informatica/3º/DP2/Workspace/Workspace-23/Frameworks/Acme-Framework-23.3.0/target/classes</location>
 		</link>
 	</linkedResources>
 </projectDescription>
