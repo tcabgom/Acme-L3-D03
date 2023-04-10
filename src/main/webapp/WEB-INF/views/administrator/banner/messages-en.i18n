@@ -1,0 +1,18 @@
+administrator.banner.form.label.instantiation= Instantiation:
+administrator.banner.form.label.slogan= Slogan:
+administrator.banner.form.label.linkToPicture= Link to Picture:
+administrator.banner.form.label.linWebDocument= Link Web Document:
+administrator.banner.form.label.displayPeriodInitial= Beginning:
+administrator.banner.form.label.displayPeriodEnding= Ending:
+administrator.banner.form.button.create= Create
+administrator.banner.form.button.update= Update
+administrator.banner.form.button.delete= Delete
+
+administrator.banner.list.label.linkToPicture = Link to Picture
+administrator.banner.list.label.slogan = Slogan
+administrator.banner.list.label.linWebDocument = Link Web Document
+administrator.banner.list.label.displayPeriodInitial= Beginning
+administrator.banner.list.label.displayPeriodEnding= Ending
+
+administrator.banner.form.error.beginning-close= The beginning period for display must be after the instantiation
+administrator.banner.form.error.ending-not-long-enough= The display period must last for a minimum of 7 days
