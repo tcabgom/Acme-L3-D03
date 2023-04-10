@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.tutorial.Tutorial;
-import acme.framework.components.accounts.Principal;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 import acme.roles.Assistant;
@@ -37,8 +36,7 @@ public class AssistantTutorialListService extends AbstractService<Assistant, Tut
 	public void load() {
 		Collection<Tutorial> objects;
 
-		final Principal principal = super.getRequest().getPrincipal();
-		final int userAccountId = principal.getAccountId();
+		final int userAccountId = super.getRequest().getPrincipal().getActiveRoleId();
 		objects = this.repository.findManyTutorialsByAssistantId(userAccountId);
 
 		super.getBuffer().setData(objects);
@@ -49,9 +47,9 @@ public class AssistantTutorialListService extends AbstractService<Assistant, Tut
 		assert object != null;
 
 		Tuple tuple;
-
-		tuple = super.unbind(object, "title", "course");
-
+		tuple = super.unbind(object, "title", "course.title", "draftMode");
+		final int numberOfSessions = this.repository.findManyTutorialSessionsByTutorialId(object).size();
+		tuple.put("numberOfSessions", numberOfSessions);
 		super.getResponse().setData(tuple);
 	}
 

@@ -43,6 +43,12 @@ master.menu.provider.favourite-link = Favourite link
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
 
+# master.menu.assistant ####################################################
+
+master.menu.assistant = Assistant
+master.menu.assistant.tutorialSession = My Tutorial Sessions
+master.menu.assistant.tutorial = My Tutorials
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account

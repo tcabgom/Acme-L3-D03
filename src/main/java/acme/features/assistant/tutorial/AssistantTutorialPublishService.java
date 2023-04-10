@@ -44,8 +44,9 @@ public class AssistantTutorialPublishService extends AbstractService<Assistant, 
 		tutorial = this.repository.findOneTutorialById(tutorialId);
 		assistant = tutorial == null ? null : tutorial.getAssistant();
 		final boolean assistantOwnsTutorial = tutorial.getAssistant().getId() == super.getRequest().getPrincipal().getActiveRoleId();
+		final int numberOfSessions = this.repository.findManyTutorialSessionsByTutorialId(tutorial).size();
 
-		status = tutorial != null && tutorial.isDraftMode() && super.getRequest().getPrincipal().hasRole(assistant) && assistantOwnsTutorial;
+		status = tutorial != null && numberOfSessions > 0 && tutorial.isDraftMode() && super.getRequest().getPrincipal().hasRole(assistant) && assistantOwnsTutorial;
 
 		super.getResponse().setAuthorised(status);
 	}
@@ -101,6 +102,8 @@ public class AssistantTutorialPublishService extends AbstractService<Assistant, 
 		choices = SelectChoices.from(courses, "title", object.getCourse());
 
 		tuple = super.unbind(object, "code", "title", "tutorialAbstract", "goals", "draftMode");
+		final int numberOfSessions = this.repository.findManyTutorialSessionsByTutorialId(object).size();
+		tuple.put("numberOfSessions", numberOfSessions);
 		tuple.put("course", choices.getSelected().getKey());
 		tuple.put("courses", choices);
 

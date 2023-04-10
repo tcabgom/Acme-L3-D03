@@ -1,6 +1,8 @@
 
 assistant.tutorial.list.label.title = Título
 assistant.tutorial.list.label.course = Curso
+assistant.tutorial.list.label.numberOfSessions = Sesiones
+assistant.tutorial.list.label.draftMode = Draft
 
 assistant.tutorial.list.button.create = Crear Nuevo Tutorial
 
@@ -11,7 +13,15 @@ assistant.tutorial.form.label.code = Código
 assistant.tutorial.form.label.tutorialAbstract = Resumen
 assistant.tutorial.form.label.goals = Objetivos
 assistant.tutorial.form.label.estimatedTotalTime = Horas Totales Estimadas
+assistant.tutorial.form.label.draftMode = Modo Borrador
+assistant.tutorial.form.label.numberOfSessions = Número de Sesiones
 
 assistant.tutorial.form.button.create = Crear Tutorial
 assistant.tutorial.form.button.update = Modificar Tutorial
 assistant.tutorial.form.button.delete = Borrar Tutorial
+assistant.tutorial.form.button.publish = Publicar Tutorial
+assistant.tutorial.form.button.sessionCreate = Añadir una Sesión
+
+assistant.tutorial.form.error.code = Este código ya está en uso
+assistant.tutorial.form.error.emptyTutorial = El tutorial debe tener al menos una sesión antes de poder publicarse
+assistant.tutorial.form.error.spam = Este campo contiene lenguaje inapropiado
