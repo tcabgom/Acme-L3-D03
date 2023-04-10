@@ -23,16 +23,20 @@ master.menu.anonymous.favourite-link-2 = 77938783V: Tomás Vela, Elena
 master.menu.anonymous.favourite-link-3 = 49338447H: Cabrera Gómez, Tadeo
 master.menu.anonymous.favourite-link-4 = 44245412J: González González, Ignacio
 master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
+
 master.menu.anonymous.peep.list = See Peeps
+master.menu.anonymous.banner = Active Banners 
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.offer = Manage Offers 
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shut-down = Shut down
+master.menu.administrator.banner= Manage Banners
 
 # master.menu.provider ########################################################
 
@@ -44,6 +48,12 @@ master.menu.provider.favourite-link = Favourite link
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
 
+# master.menu.assistant ####################################################
+
+master.menu.assistant = Assistant
+master.menu.assistant.tutorialSession = My Tutorial Sessions
+master.menu.assistant.tutorial = My Tutorials
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
@@ -53,3 +63,8 @@ master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
 
+<<<<<<< HEAD
+=======
+master.menu.user-account.offer = See Active Offers
+master.menu.user-account.bulletin = See Bulletins
+>>>>>>> a723a64c15eca74caab86706b8b6bf5f9d4d00f6

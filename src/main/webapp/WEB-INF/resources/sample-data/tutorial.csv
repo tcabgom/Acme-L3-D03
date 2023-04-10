@@ -1,9 +1,33 @@
-key,code,title,tutorialAbstract,goals,key:course,key:assistant
-tutorial-01,ABC000,Normal Tutorial,Normal Descrition,"A, B, C, D, E",curso-01,assistant-01
-tutorial-02,ABC001,a,b,c,curso-01,assistant-01
-tutorial-03,ABC002,ab,cd,ef,curso-01,assistant-01
-tutorial-04,ABC003,titlewith74characterssssssssssssssssssssssssssssssssssssssssssssssssssssss,abstractwith99charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,agoallistof99characterssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,curso-01,assistant-01
-tutorial-05,ABC004,titlewith75charactersssssssssssssssssssssssssssssssssssssssssssssssssssssss,abstractwith100charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,agoallistof100characterssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,curso-01,assistant-01
-tutorial-06,ABC005,<script>alert('ErrorInTitle')</script>,<script>alert('ErrorInAbstract')</script>,A /n B /n C /n D /n E /n F,curso-01,assistant-01
-tutorial-07,ABC006,لا أحب إجراء الاختبارات,И я нет,私には、はい...,curso-01,assistant-01
-tutorial-08,ABC007,<h1>A title</h1>,<h1>An abstract</h1>,<h1>Some goals</h1>,curso-01,assistant-01
+key,code,title,tutorialAbstract,goals,draftMode,key:course,key:assistant
+tutorial-01,ABC100,A Tutorial In Draft Mode with Sessions,This Tutorial Has Sessions,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",true,curso-01,assistant-01
+tutorial-00,ABC000,A Normal Tutorial,This Tutorial Has Sessions,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-01
+tutorial-02,DE001,A Normal Tutorial,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-01
+tutorial-03,F002,A Normal Tutorial,This Tutorial Has Sessions,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-02
+tutorial-04,ABC003,A,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-02
+tutorial-05,ABC004,AB,This Tutorial Has Sessions,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-01
+tutorial-06,ABC005,A title that is not normal because it has 74 characters FFFFFFFFFFFFFFFFFF,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-01
+tutorial-07,ABC006,A title that is not normal because it has 75 characters FFFFFFFFFFFFFFFFFFF,This Tutorial Has Sessions,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-02
+tutorial-08,ABC007,変な言葉で書かれた普通のタイトル,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-02
+tutorial-09,ABC008,Мне становится скучно,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-01
+tutorial-10,ABC009,<script>alert('This value is invalid')</script>,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-01
+tutorial-11,ABC010,<h1>Este atributo es muy bonito</h1>,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-02
+tutorial-12,ABC011,? ??rm#| ~|?T0{r}I@l,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-02
+tutorial-13,ABC012,A Normal Tutorial,A,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-01
+tutorial-14,ABC013,A Normal Tutorial,AB,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-01
+tutorial-15,ABC014,A Normal Tutorial,A description that is not normal because it has 99 characters FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-02
+tutorial-16,ABC015,A Normal Tutorial,A description that is not normal because it has 100 characters FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-02
+tutorial-17,ABC016,A Normal Tutorial,変な言葉で書かれた普通のタイトル,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-01
+tutorial-18,ABC018,A Normal Tutorial,Мне становится скучно,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-01
+tutorial-19,ABC019,A Normal Tutorial,<script>alert('This value is invalid')</script>,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-01,assistant-02
+tutorial-20,ABC020,A Normal Tutorial,<h1>Este atributo es muy bonito</h1>,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-02
+tutorial-21,ABC021,A Normal Tutorial,? ??rm#| #~?6DescRIptOOON,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",false,curso-02,assistant-01
+tutorial-22,ABC022,A Normal Tutorial,A Normal Description,A,false,curso-02,assistant-01
+tutorial-23,ABC023,A Normal Tutorial,A Normal Description,AB,false,curso-02,assistant-02
+tutorial-24,ABC024,A Normal Tutorial,A Normal Description,Some goals that are not normal because they have 99 characters FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,false,curso-01,assistant-02
+tutorial-25,ABC025,A Normal Tutorial,A Normal Description,Some goals that are not normal because they have 100 characters FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,false,curso-01,assistant-01
+tutorial-26,ABC026,A Normal Tutorial,A Normal Description,変な言葉で書かれた普通のタイトル,false,curso-01,assistant-01
+tutorial-27,ABC027,A Normal Tutorial,A Normal Description,Мне становится скучно,false,curso-01,assistant-02
+tutorial-28,ABC028,A Normal Tutorial,A Normal Description,<script>alert('This value is invalid')</script>,false,curso-02,assistant-02
+tutorial-29,ABC029,A Normal Tutorial,A Normal Description,<h1>Este atributo es muy bonito</h1>,false,curso-02,assistant-01
+tutorial-30,ABC030,A Normal Tutorial,A Normal Description,? ??rm#| )=:LiStOfGoAlS,false,curso-02,assistant-02
+tutorial-31,ABC031,A Normal Tutorial That is Not in Draft Mode,A Normal Description,"Goal1,Goal2,Goal3,Goal4,Goal5,Goal6,Goal7,Goal8",true,curso-01,assistant-01

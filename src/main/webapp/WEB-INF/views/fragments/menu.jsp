@@ -26,10 +26,15 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-5" action="https://impomu.com/"/>
 			<acme:menu-separator/>
             <acme:menu-suboption code="master.menu.anonymous.peep.list" action="/any/peep/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.banner" action="/any/banner/list"/>
+
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.banner" action="/administrator/banner/list"/>
+			<acme:menu-suboption code="master.menu.administrator.offer" action="/administrator/offer/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.populate-initial" action="/administrator/populate-initial"/>
 			<acme:menu-suboption code="master.menu.administrator.populate-sample" action="/administrator/populate-sample"/>			
@@ -44,6 +49,13 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
+		
+		
+		<acme:menu-option code="master.menu.assistant" access="hasRole('Assistant')">
+			<acme:menu-suboption code="master.menu.assistant.tutorial" action="/assistant/tutorial/list"/>
+			<acme:menu-suboption code="master.menu.assistant.tutorialSession" action="/assistant/tutorial-session/list"/>
+		</acme:menu-option>
+		
 	</acme:menu-left>
 
 	<acme:menu-right>
@@ -56,6 +68,9 @@
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.user-account.bulletin" action="/authenticated/bulletin/list"/>
+			<acme:menu-suboption code="master.menu.user-account.offer" action="/authenticated/offer/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
