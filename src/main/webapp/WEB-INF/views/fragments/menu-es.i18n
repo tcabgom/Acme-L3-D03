@@ -23,6 +23,7 @@ master.menu.anonymous.favourite-link-2 = 77938783V: Tomás Vela, Elena
 master.menu.anonymous.favourite-link-3 = 49338447H: Cabrera Gómez, Tadeo
 master.menu.anonymous.favourite-link-4 = 44245412J: González González, Ignacio
 master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
+master.menu.anonymous.banner = Pancartas Activas
 
 # master.menu.administrator ###################################################
 
@@ -33,6 +34,7 @@ master.menu.administrator.offer = Gestionar Ofertas
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-down = Parar el sistema
+master.menu.administrator.banner= Gestionar Pancartas
 
 # master.menu.provider ########################################################
 

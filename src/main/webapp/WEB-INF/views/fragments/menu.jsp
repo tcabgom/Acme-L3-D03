@@ -24,11 +24,14 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-3" action="http://skavenger.byethost8.com/homerswebpage/?i=1"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-4" action="https://www.theworldsworstwebsiteever.com/"/>		
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-5" action="https://impomu.com/"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.banner" action="/any/banner/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.banner" action="/administrator/banner/list"/>
 			<acme:menu-suboption code="master.menu.administrator.offer" action="/administrator/offer/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.populate-initial" action="/administrator/populate-initial"/>
