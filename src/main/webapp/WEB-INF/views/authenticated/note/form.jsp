@@ -10,6 +10,9 @@
     <acme:input-url code="authenticated.note.form.label.email" path="email"/>
     <acme:input-url code="authenticated.note.form.label.link" path="link"/>
 </acme:form>
-<jstl:when test=${"_commend == 'create'"}>
-	<acme:summit code = "authenticated.note.form.button.create" action = "/authenticated/note/create"/>
-</jstl:when>
+<jstl:choose>
+	<jstl:when test=${"_command == 'create'"}>
+		<acme:input-checkbox code = "authenticated.note.form.label.confirmation" action = "confirmation"/>
+		<acme:summit code = "authenticated.note.form.button.create" action = "/authenticated/note/create"/>
+	</jstl:when>
+</jstl:choose>

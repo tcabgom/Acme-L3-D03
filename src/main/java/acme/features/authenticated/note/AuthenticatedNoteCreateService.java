@@ -1,14 +1,17 @@
 
 package acme.features.authenticated.note;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.note.Note;
 import acme.framework.components.accounts.Authenticated;
+import acme.framework.components.accounts.Principal;
+import acme.framework.components.accounts.UserAccount;
 import acme.framework.components.models.Tuple;
-import acme.framework.controllers.HttpMethod;
-import acme.framework.helpers.PrincipalHelper;
+import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 
 @Service
@@ -34,11 +37,15 @@ public class AuthenticatedNoteCreateService extends AbstractService<Authenticate
 
 	@Override
 	public void load() {
-		Note object;
-		int id;
+		final Note object = new Note();
+		final Principal principal = super.getRequest().getPrincipal();
+		final int userAccountId = principal.getAccountId();
+		final UserAccount userAccount = this.repository.findOneUserAccountById(userAccountId);
+		final Date moment = MomentHelper.getCurrentMoment();
 
-		id = super.getRequest().getData("id", int.class);
-		object = this.repository.findNoteById(id);
+		object.setInstantiationMoment(moment);
+		object.setAuthor(userAccount.getUsername() + "-" + userAccount.getIdentity().getSurname() + ", " + userAccount.getIdentity().getName());
+
 		super.getBuffer().setData(object);
 	}
 
@@ -46,7 +53,7 @@ public class AuthenticatedNoteCreateService extends AbstractService<Authenticate
 	public void bind(final Note object) {
 		assert object != null;
 
-		super.bind(object, "company", "sector");
+		super.bind(object, "instantiationMoment", "title", "author", "message", "email", "link");
 	}
 
 	@Override
@@ -68,11 +75,5 @@ public class AuthenticatedNoteCreateService extends AbstractService<Authenticate
 		tuple = super.unbind(object, "instantiationMoment", "title", "author", "message", "email", "link");
 
 		super.getResponse().setData(tuple);
-	}
-
-	@Override
-	public void onSuccess() {
-		if (super.getRequest().getMethod().equals(HttpMethod.POST))
-			PrincipalHelper.handleUpdate();
 	}
 }
