@@ -1,0 +1,8 @@
+authenticated.note.list.label.instantiationMoment = Instantiation moment
+authenticated.note.list.label.title = Title
+authenticated.note.list.label.author = Author
+authenticated.note.form.label.message = Message
+authenticated.note.form.label.email = Email
+authenticated.note.form.label.link = Link
+
+authenticated.note.list.button.create = Create
