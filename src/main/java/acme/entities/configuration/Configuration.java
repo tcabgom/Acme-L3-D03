@@ -5,7 +5,8 @@ import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
-import acme.framework.data.AbstractEntity;
+import org.dom4j.tree.AbstractEntity;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,6 +29,15 @@ public class Configuration extends AbstractEntity {
 	protected String			aceptedCurrencies;
 
 	// Derived attributes -----------------------------------------------------
+
+
+	public boolean isAcceptedCurrency(final String currency) {
+		final String currencyUpperCase = currency.toUpperCase();
+		for (final String aceptedCurrencies : this.aceptedCurrencies.toUpperCase().split(","))
+			if (currencyUpperCase.equals(aceptedCurrencies))
+				return true;
+		return false;
+	}
 
 	// Relationships ----------------------------------------------------------
 
