@@ -4,7 +4,10 @@ package acme.features.assistant.tutorialSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.enumerates.ActivityType;
+import acme.entities.tutorial.Tutorial;
 import acme.entities.tutorialSession.TutorialSession;
+import acme.framework.components.jsp.SelectChoices;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 import acme.roles.Assistant;
@@ -31,20 +34,15 @@ public class AssistantTutorialSessionShowService extends AbstractService<Assista
 
 	@Override
 	public void authorise() {
+		boolean status;
+		int sessionId;
+		final Tutorial tutorial;
 
-		TutorialSession object;
-		int id;
+		sessionId = super.getRequest().getData("id", int.class);
+		tutorial = this.repository.findOneTutorialBySessionId(sessionId);
+		status = tutorial != null && (!tutorial.isDraftMode() || super.getRequest().getPrincipal().hasRole(tutorial.getAssistant()));
 
-		id = super.getRequest().getData("id", int.class);
-		object = this.repository.findOneTutorialSessionById(id);
-
-		final int tutorialOwnerId = object.getTutorial().getAssistant().getId();
-		final int userAccountId = super.getRequest().getPrincipal().getActiveRoleId();
-
-		final boolean tutorialExists = object != null;
-		final boolean assistantOwnsTutorial = tutorialOwnerId == userAccountId;
-
-		super.getResponse().setAuthorised(tutorialExists && assistantOwnsTutorial);
+		super.getResponse().setAuthorised(status);
 	}
 
 	@Override
@@ -63,8 +61,14 @@ public class AssistantTutorialSessionShowService extends AbstractService<Assista
 		assert object != null;
 
 		Tuple tuple;
+		final SelectChoices sessionTypeChoices = SelectChoices.from(ActivityType.class, object.getSessionType());
 
-		tuple = super.unbind(object, "title", "sessionAbstract", "sessionType", "sessionStart", "sessionEnd", "moreInfo", "tutorial");
+		tuple = super.unbind(object, "title", "sessionAbstract", "sessionStart", "sessionEnd", "moreInfo", "tutorial");
+		tuple.put("sessionType", sessionTypeChoices.getSelected().getKey());
+		tuple.put("sessionTypes", sessionTypeChoices);
+		tuple.put("readonly", true);
+		tuple.put("masterId", object.getTutorial().getId());
+		tuple.put("draftMode", object.getTutorial().isDraftMode());
 
 		super.getResponse().setData(tuple);
 	}
