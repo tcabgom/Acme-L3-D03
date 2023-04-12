@@ -27,6 +27,7 @@
 			<acme:menu-separator/>
             <acme:menu-suboption code="master.menu.anonymous.peep.list" action="/any/peep/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.banner" action="/any/banner/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.course" action="/any/course/list"/>
 
 		</acme:menu-option>
 
