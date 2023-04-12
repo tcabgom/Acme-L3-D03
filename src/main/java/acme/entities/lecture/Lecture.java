@@ -35,7 +35,7 @@ public class Lecture extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			lecAsbtract;
+	protected String			lecAbstract;
 
 	@NotNull
 	@Positive
