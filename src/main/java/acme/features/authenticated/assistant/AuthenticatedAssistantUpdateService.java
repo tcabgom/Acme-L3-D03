@@ -14,7 +14,7 @@ import acme.framework.services.AbstractService;
 import acme.roles.Assistant;
 
 @Service
-public class AuthenticatedAssistantCreateService extends AbstractService<Authenticated, Assistant> {
+public class AuthenticatedAssistantUpdateService extends AbstractService<Authenticated, Assistant> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -32,7 +32,7 @@ public class AuthenticatedAssistantCreateService extends AbstractService<Authent
 	@Override
 	public void authorise() {
 		boolean status;
-		status = !super.getRequest().getPrincipal().hasRole(Assistant.class);
+		status = super.getRequest().getPrincipal().hasRole(Assistant.class);
 		super.getResponse().setAuthorised(status);
 	}
 
@@ -42,16 +42,13 @@ public class AuthenticatedAssistantCreateService extends AbstractService<Authent
 		Assistant object;
 		Principal principal;
 		int userAccountId;
-		UserAccount userAccount;
+		final UserAccount userAccount;
 
 		principal = super.getRequest().getPrincipal();
 		userAccountId = principal.getAccountId();
-		userAccount = this.repository.findOneUserAccountById(userAccountId);
 
-		object = new Assistant();
-		object.setUserAccount(userAccount);
+		object = this.repository.findOneAssistantByUserAccountId(userAccountId);
 		super.getBuffer().setData(object);
-
 	}
 
 	@Override
