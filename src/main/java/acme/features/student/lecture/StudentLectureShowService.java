@@ -1,6 +1,7 @@
 package acme.features.student.lecture;
 
 import acme.entities.lecture.Lecture;
+import acme.framework.components.accounts.DefaultUserIdentity;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 import acme.roles.Student;
@@ -32,8 +33,12 @@ public class StudentLectureShowService extends AbstractService<Student, Lecture>
 
     @Override
     public void unbind(final Lecture object) {
-        Tuple tuple = super.unbind(object, "title", "lecAbstract", "learningTime", "body", "knowledge", "furtherInformation");
+        DefaultUserIdentity identity = object.getLecturer().getUserAccount().getIdentity();
+        String lecturerName = identity.getName() + " " + identity.getSurname();
 
-            super.getResponse().setData(tuple);
+        Tuple tuple = super.unbind(object, "title", "lecAbstract", "learningTime", "body", "knowledge", "furtherInformation");
+        tuple.put("lecturer", lecturerName);
+
+        super.getResponse().setData(tuple);
     }
 }
