@@ -1,5 +1,5 @@
 
-package acme.features.assistant.assistantDashboard;
+package acme.features.assistant.dashboard;
 
 import javax.annotation.PostConstruct;
 
@@ -11,12 +11,12 @@ import acme.framework.controllers.AbstractController;
 import acme.roles.Assistant;
 
 @Controller
-public class AssistantAssistantDashboardController extends AbstractController<Assistant, AssistantDashboard> {
+public class AssistantDashboardController extends AbstractController<Assistant, AssistantDashboard> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AssistantAssistantDashboardShowService showService;
+	protected AssistantDashboardShowService showService;
 
 	// Constructors -----------------------------------------------------------
 
