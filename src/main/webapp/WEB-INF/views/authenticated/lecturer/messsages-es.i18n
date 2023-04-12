@@ -1,4 +1,4 @@
-# messages-en.i18n
+# messages-es.i18n
 #
 # Copyright (C) 2012-2023 Rafael Corchuelo.
 #
@@ -9,9 +9,9 @@
 # they accept any liabilities with respect to them.
 
 authenticated.lecturer.form.label.almaMater = Alma Mater
-authenticated.lecturer.form.label.resume = Resume
-authenticated.lecturer.form.label.qualifications = Qualifications
-authenticated.lecturer.form.label.link = Further information
+authenticated.lecturer.form.label.resume = Resumen
+authenticated.lecturer.form.label.qualifications = Calificaciones
+authenticated.lecturer.form.label.link = Más información
 
-authenticated.lecturer.form.button.create = Register
-authenticated.lecturer.form.button.update = Update
+authenticated.lecturer.form.button.create = Registrar
+authenticated.lecturer.form.button.update = Actualizar

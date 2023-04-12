@@ -8,10 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.lecturer.form.label.almaMater = Alma Mater
-authenticated.lecturer.form.label.resume = Resume
-authenticated.lecturer.form.label.qualifications = Qualifications
-authenticated.lecturer.form.label.link = Further information
+authenticated.consumer.form.label.company = Company
+authenticated.consumer.form.label.sector = Sector
 
-authenticated.lecturer.form.button.create = Register
-authenticated.lecturer.form.button.update = Update
+authenticated.consumer.form.button.create = Register
+authenticated.consumer.form.button.update = Update

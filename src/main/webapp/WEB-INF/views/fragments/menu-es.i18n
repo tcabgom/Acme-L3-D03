@@ -64,3 +64,7 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 master.menu.user-account.offer = Ver Ofertas Activas
 master.menu.user-account.bulletin = Ver Boletines
+
+# master.menu.authenticated.lecturer ##################################
+master.menu.authenticated.lecturer.create = Hazte profesor
+master.menu.authenticated.lecturer.update = Actualizar mi perfil de profesor
