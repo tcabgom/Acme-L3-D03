@@ -1,5 +1,5 @@
 
-package acme.features.any;
+package acme.features.any.banner;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

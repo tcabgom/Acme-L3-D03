@@ -1,9 +1,27 @@
 key,almaMater,resume,qualifications,link,key:user-account
 lecturer-01,Fisica,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-01
-lecturer-02,"Ένα καλό τίτλο","Ένα καλό τίτλο","1,9,9",https://ev.us.es,user-account-lecturer-02
-lecturer-03,Q,m,"1",,user-account-assistant-01
-lecturer-04,Qu,me,"10,10,9",,user-account-assistant-02
-lecturer-05,"Este es un ejemplo de una cadena de 75 caracteres para probar la generacion","Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para c","10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,10,1",https://ev.us.es,user-account-assistant-03
-lecturer-06,"Este es un ejemplo de una cadena de 75 caracteres para probar la generacio","Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para ","10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,1,1",https://ev.us.es,user-account-assistant-04
-lecturer-07,"<b>A good title</b>","<b>A good title</b>","10,10,9,1",https://ev.us.es,user-account-auditor-01
-lecturer-08,"<script> title with &lt;html&gt; tag</script>","<script> title with &lt;html&gt; tag</script>","10,10,4,3,2,1,1",https://ev.us.es,user-account-auditor-02
+lecturer-02,Ένα καλό τίτλο,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-02
+lecturer-03,Q,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-03
+lecturer-04,Qu,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-04
+lecturer-05,Este es un ejemplo de una cadena de 75 caracteres para probar la generacion,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-05
+lecturer-06,Este es un ejemplo de una cadena de 75 caracteres para probar la generacio,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-06
+lecturer-07,<b>A good title</b>,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-07
+lecturer-08,<script> title with &lt;html&gt; tag</script>,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-08
+lecturer-09,A sample with &amp; symbol,experto quimico,"10,6,9",https://ev.us.es,user-account-lecturer-09
+lecturer-10,Fisica,Ένα καλό τίτλο,"10,6,9",https://ev.us.es,user-account-lecturer-10
+lecturer-11,Fisica,m,"10,6,9",https://ev.us.es,user-account-lecturer-11
+lecturer-12,Fisica,me,"10,6,9",https://ev.us.es,user-account-lecturer-12
+lecturer-13,Fisica,"Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para c","10,6,9",https://ev.us.es,user-account-lecturer-13
+lecturer-14,Fisica,"Esta es otra cadena de prueba un poco más larga, pero aún dentro del límite de 100 caracteres para","10,6,9",https://ev.us.es,user-account-lecturer-14
+lecturer-15,Fisica,<b>A good title</b>,"10,6,9",https://ev.us.es,user-account-lecturer-15
+lecturer-16,Fisica,<script> title with &lt;html&gt; tag</script>,"10,6,9",https://ev.us.es,user-account-lecturer-16
+lecturer-17,Fisica,A sample with &amp; symbol,"10,6,9",https://ev.us.es,user-account-lecturer-17
+lecturer-18,Fisica,experto quimico,1,https://ev.us.es,user-account-lecturer-18
+lecturer-19,Fisica,experto quimico,10,https://ev.us.es,user-account-lecturer-19
+lecturer-20,Fisica,experto quimico,"10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,10,1",https://ev.us.es,user-account-lecturer-20
+lecturer-21,Fisica,experto quimico,"10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1,1,2,3,4,5,6,7,8,9,10,10,9,8,7,1,1",https://ev.us.es,user-account-lecturer-21
+lecturer-22,Fisica,experto quimico,"10,6,9",,user-account-lecturer-22
+lecturer-23,Fisica,experto quimico,"10,6,9",null,user-account-lecturer-23
+lecturer-24,Fisica,experto quimico,"10,6,9",http://www.acme.com/a?b,user-account-lecturer-24
+lecturer-25,Fisica,experto quimico,"10,6,9",http://www.acme.com/a/b,user-account-lecturer-25
+lecturer-26,Fisica,experto quimico,"10,6,9",ftp://user:pass@acme.org,user-account-lecturer-26

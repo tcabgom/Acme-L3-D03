@@ -1,5 +1,5 @@
 
-package acme.features.any;
+package acme.features.any.banner;
 
 import javax.annotation.PostConstruct;
 

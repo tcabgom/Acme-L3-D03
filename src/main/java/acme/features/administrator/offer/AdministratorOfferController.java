@@ -1,5 +1,5 @@
 
-package acme.features.administrators.offer;
+package acme.features.administrator.offer;
 
 import javax.annotation.PostConstruct;
 
