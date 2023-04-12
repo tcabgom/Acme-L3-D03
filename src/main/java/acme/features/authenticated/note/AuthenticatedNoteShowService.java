@@ -1,16 +1,12 @@
 
 package acme.features.authenticated.note;
 
-import java.time.temporal.ChronoUnit;
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.note.Note;
 import acme.framework.components.accounts.Authenticated;
 import acme.framework.components.models.Tuple;
-import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 
 @Service
@@ -35,13 +31,7 @@ public class AuthenticatedNoteShowService extends AbstractService<Authenticated,
 
 	@Override
 	public void authorise() {
-		Note object;
-		final int id = super.getRequest().getData("id", int.class);
-		final Date date = MomentHelper.deltaFromCurrentMoment(-30, ChronoUnit.DAYS);
-
-		object = this.repository.findNoteById(id);
-
-		super.getResponse().setAuthorised(MomentHelper.isAfter(object.getInstantiationMoment(), date));
+		super.getResponse().setAuthorised(true);
 	}
 
 	@Override

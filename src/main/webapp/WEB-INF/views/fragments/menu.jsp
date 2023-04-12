@@ -75,6 +75,8 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.user-account.bulletin" action="/authenticated/bulletin/list"/>
 			<acme:menu-suboption code="master.menu.user-account.offer" action="/authenticated/offer/list"/>
+			<acme:menu-suboption code="master.menu.user-account.note" action="/authenticated/note/list"/>
+			
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>

@@ -15,22 +15,22 @@ public class AuthenticatedNoteController extends AbstractController<Authenticate
 
 	// Internal state ---------------------------------------------------------
 
-	//@Autowired
-	//protected AuthenticatedNoteCreateService	createService;
+	@Autowired
+	protected AuthenticatedNoteCreateService	createService;
 
 	@Autowired
-	protected AuthenticatedNoteListService listService;
+	protected AuthenticatedNoteListService		listService;
 
-	//@Autowired
-	//protected AuthenticatedNoteShowService		showService;
+	@Autowired
+	protected AuthenticatedNoteShowService		showService;
 
 	// Constructors -----------------------------------------------------------
 
 
 	@PostConstruct
 	protected void initialise() {
-		//super.addBasicCommand("create", this.createService);
+		super.addBasicCommand("create", this.createService);
 		super.addBasicCommand("list", this.listService);
-		//super.addBasicCommand("show", this.showService);
+		super.addBasicCommand("show", this.showService);
 	}
 }

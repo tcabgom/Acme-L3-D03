@@ -66,6 +66,7 @@ master.menu.user-account.assistant = Assistant data
 master.menu.user-account.become-assistant = Become an assistant
 master.menu.user-account.offer = See Active Offers
 master.menu.user-account.bulletin = See Bulletins
+master.menu.user-account.note = See Notes
 
 # master.menu.authenticated.lecturer ##################################
 master.menu.authenticated.lecturer.create = Become a lecturer
