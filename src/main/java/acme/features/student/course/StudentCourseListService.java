@@ -33,7 +33,7 @@ public class StudentCourseListService extends AbstractService<Student, Course> {
     @Override
     public void unbind(Course object) {
         assert object != null;
-        Tuple tuple = super.unbind(object, "code", "title", "courseAsbtract", "retailPrice", "furtherInformation", "draftMode", "lecturer");
+        Tuple tuple = super.unbind(object, "code", "title", "courseAbstract", "retailPrice", "furtherInformation", "draftMode", "lecturer");
         super.getResponse().setData(tuple);
     }
 

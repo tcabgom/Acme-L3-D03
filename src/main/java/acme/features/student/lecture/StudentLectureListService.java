@@ -40,7 +40,7 @@ public class StudentLectureListService extends AbstractService<Student, Lecture>
     public void unbind(Lecture object) {
         assert object != null;
 
-        Tuple tuple = super.unbind(object, "title", "lecAsbtract", "learningTime", "body", "knowledge", "furtherInformation");
+        Tuple tuple = super.unbind(object, "title", "lecAbstract", "learningTime", "body", "knowledge", "furtherInformation");
 
         super.getResponse().setData(tuple);
     }

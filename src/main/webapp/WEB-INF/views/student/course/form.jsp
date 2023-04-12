@@ -6,7 +6,7 @@
 <acme:form>
 	
 	<acme:input-textbox   code="student.course.form.label.title" path="title" readonly="true"/>
-	<acme:input-textarea  code="student.course.form.label.courseAbstract" path="courseAsbtract"/>
+	<acme:input-textarea  code="student.course.form.label.courseAbstract" path="courseAbstract"/>
 	<acme:input-textbox   code="student.course.form.label.code" path="code"/>
 	<acme:input-money     code="student.course.form.label.retailPrice" path="retailPrice"/>
 	<acme:input-textbox   code="student.course.form.label.lecturer" path="lecturer"/>

@@ -32,7 +32,7 @@ public class StudentLectureShowService extends AbstractService<Student, Lecture>
 
     @Override
     public void unbind(final Lecture object) {
-        Tuple tuple = super.unbind(object, "title", "lecAsbtract", "learningTime", "body", "knowledge", "furtherInformation");
+        Tuple tuple = super.unbind(object, "title", "lecAbstract", "learningTime", "body", "knowledge", "furtherInformation");
 
             super.getResponse().setData(tuple);
     }

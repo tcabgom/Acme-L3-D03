@@ -45,7 +45,7 @@ public class StudentCourseShowService extends AbstractService<Student, Course> {
         DefaultUserIdentity identity = object.getLecturer().getUserAccount().getIdentity();
         String lecturerName = identity.getName() + " " + identity.getSurname();
 
-        Tuple tuple = super.unbind(object, "code", "title", "courseAsbtract", "retailPrice", "furtherInformation", "draftMode");
+        Tuple tuple = super.unbind(object, "code", "title", "courseAbstract", "retailPrice", "furtherInformation", "draftMode");
         tuple.put("readonly", true);
         tuple.put("courseId", object.getId());
         tuple.put("lecturer", lecturerName);
