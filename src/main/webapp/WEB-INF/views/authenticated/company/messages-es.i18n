@@ -1,0 +1,6 @@
+authenticated.company.form.label.name = Nombre
+authenticated.company.form.label.VATNumber = Número VAT
+authenticated.company.form.label.summary = Resumen
+authenticated.company.form.label.link = Enlace
+authenticated.company.form.button.create = Nuevo
+
