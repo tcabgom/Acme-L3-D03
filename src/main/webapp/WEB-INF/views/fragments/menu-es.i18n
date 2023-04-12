@@ -72,3 +72,4 @@ master.menu.user-account.bulletin = Ver Boletines
 master.menu.authenticated.lecturer.create = Hazte profesor
 master.menu.authenticated.lecturer.update = Actualizar mi perfil de profesor
 master.menu.authenticated.company.create = Hazte empresa
+master.menu.authenticated.company.update = Actualizar mi perfil de empresa

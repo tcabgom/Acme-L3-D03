@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 import acme.framework.components.accounts.Authenticated;
 import acme.framework.components.accounts.Principal;
-import acme.framework.components.accounts.UserAccount;
 import acme.framework.components.models.Tuple;
 import acme.framework.controllers.HttpMethod;
 import acme.framework.helpers.PrincipalHelper;
@@ -14,7 +13,7 @@ import acme.framework.services.AbstractService;
 import acme.roles.Company;
 
 @Service
-public class AuthenticatedCompanyCreateService extends AbstractService<Authenticated, Company> {
+public class AuthenticatedCompanyUpdateService extends AbstractService<Authenticated, Company> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -32,7 +31,7 @@ public class AuthenticatedCompanyCreateService extends AbstractService<Authentic
 	@Override
 	public void authorise() {
 		boolean status;
-		status = !super.getRequest().getPrincipal().hasRole(Company.class);
+		status = super.getRequest().getPrincipal().hasRole(Company.class);
 		super.getResponse().setAuthorised(status);
 	}
 
@@ -41,10 +40,8 @@ public class AuthenticatedCompanyCreateService extends AbstractService<Authentic
 		Company object;
 		final Principal principal = super.getRequest().getPrincipal();
 		final int userAccountId = principal.getAccountId();
-		final UserAccount userAccount = this.repository.findUserAccountById(userAccountId);
 
-		object = new Company();
-		object.setUserAccount(userAccount);
+		object = this.repository.findCompanyByUserAccountId(userAccountId);
 		super.getBuffer().setData(object);
 	}
 
@@ -57,6 +54,7 @@ public class AuthenticatedCompanyCreateService extends AbstractService<Authentic
 	@Override
 	public void validate(final Company object) {
 		assert object != null;
+
 		if (!super.getBuffer().getErrors().hasErrors("VATNumber")) {
 			final Company potencialDuplicate = this.repository.findOneCompanyByVATNumber(object.getVATNumber());
 			super.state(potencialDuplicate == null, "VATNumber", "authenticated.company.form.error.code");

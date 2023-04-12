@@ -16,7 +16,10 @@ public class AuthenticatedCompanyController extends AbstractController<Authentic
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AuthenticatedCompanyCreateService createService;
+	protected AuthenticatedCompanyCreateService	createService;
+
+	@Autowired
+	protected AuthenticatedCompanyUpdateService	updateService;
 
 	// Constructors -----------------------------------------------------------
 
@@ -24,5 +27,6 @@ public class AuthenticatedCompanyController extends AbstractController<Authentic
 	@PostConstruct
 	protected void initialise() {
 		super.addBasicCommand("create", this.createService);
+		super.addBasicCommand("update", this.updateService);
 	}
 }
