@@ -1,5 +1,5 @@
 
-package acme.features.administrators.offer;
+package acme.features.administrator.offer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -7,11 +7,10 @@ import org.springframework.stereotype.Service;
 import acme.entities.offer.Offer;
 import acme.framework.components.accounts.Administrator;
 import acme.framework.components.models.Tuple;
-import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 
 @Service
-public class AdministratorOfferDeleteService extends AbstractService<Administrator, Offer> {
+public class AdministratorOfferShowService extends AbstractService<Administrator, Offer> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -32,9 +31,7 @@ public class AdministratorOfferDeleteService extends AbstractService<Administrat
 
 	@Override
 	public void authorise() {
-		final int id = super.getRequest().getData("id", int.class);
-		final Offer object = this.repository.findOneOfferById(id);
-		super.getResponse().setAuthorised(MomentHelper.getCurrentMoment().before(object.getAvailabilityPeriodStart()));
+		super.getResponse().setAuthorised(true);
 	}
 
 	@Override
@@ -49,34 +46,13 @@ public class AdministratorOfferDeleteService extends AbstractService<Administrat
 	}
 
 	@Override
-	public void bind(final Offer object) {
-		assert object != null;
-
-		super.bind(object, "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
-	}
-
-	@Override
-	public void validate(final Offer object) {
-		assert object != null;
-	}
-
-	@Override
-	public void perform(final Offer object) {
-		assert object != null;
-
-		this.repository.delete(object);
-	}
-
-	@Override
 	public void unbind(final Offer object) {
 		assert object != null;
 
 		Tuple tuple;
 
 		tuple = super.unbind(object, "instantiatiation", "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
-
-		final boolean readonly = MomentHelper.getCurrentMoment().after(object.getAvailabilityPeriodStart());
-		tuple.put("readonly", readonly);
+		tuple.put("readonly", true);
 
 		super.getResponse().setData(tuple);
 	}
