@@ -1,0 +1,10 @@
+student.lecture.list.label.title = Title
+student.lecture.list.label.learningTime = Learning time
+student.lecture.list.label.knowledge = Activity type
+
+student.lecture.form.label.title = Title
+student.lecture.form.label.lecAbstract = Abstract
+student.lecture.form.label.learningTime = Learning time
+student.lecture.form.label.body = Body
+student.lecture.form.label.knowledge = Activity type
+student.lecture.form.label.furtherInformation = Further information

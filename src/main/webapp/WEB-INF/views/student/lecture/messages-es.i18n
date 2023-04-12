@@ -1,0 +1,10 @@
+student.lecture.list.label.title = Título
+student.lecture.list.label.learningTime = Tiempo de aprendizaje
+student.lecture.list.label.knowledge = Tipo de actividad
+
+student.lecture.form.label.title = Título
+student.lecture.form.label.lecAbstract = Resumen
+student.lecture.form.label.learningTime = Tiempo de aprendizaje
+student.lecture.form.label.body = Contenido
+student.lecture.form.label.knowledge = Tipo de actividad
+student.lecture.form.label.furtherInformation = Más información
