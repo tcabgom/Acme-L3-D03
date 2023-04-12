@@ -1,5 +1,5 @@
 
-package acme.features.administrators.offer;
+package acme.features.administrator.offer;
 
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
@@ -14,7 +14,7 @@ import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 
 @Service
-public class AdministratorOfferCreateService extends AbstractService<Administrator, Offer> {
+public class AdministratorOfferUpdateService extends AbstractService<Administrator, Offer> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -26,22 +26,27 @@ public class AdministratorOfferCreateService extends AbstractService<Administrat
 
 	@Override
 	public void check() {
-		super.getResponse().setChecked(true);
+		boolean status;
+
+		status = super.getRequest().hasData("id", int.class);
+
+		super.getResponse().setChecked(status);
 	}
 
 	@Override
 	public void authorise() {
-		super.getResponse().setAuthorised(true);
+		final int id = super.getRequest().getData("id", int.class);
+		final Offer object = this.repository.findOneOfferById(id);
+		super.getResponse().setAuthorised(MomentHelper.getCurrentMoment().before(object.getAvailabilityPeriodStart()));
 	}
 
 	@Override
 	public void load() {
-		final Offer object;
-		object = new Offer();
+		Offer object;
+		int id;
 
-		final Date moment;
-		moment = MomentHelper.getCurrentMoment();
-		object.setInstantiatiation(moment);
+		id = super.getRequest().getData("id", int.class);
+		object = this.repository.findOneOfferById(id);
 
 		super.getBuffer().setData(object);
 	}
@@ -66,12 +71,12 @@ public class AdministratorOfferCreateService extends AbstractService<Administrat
 			final Date minimunValidEndDate = MomentHelper.deltaFromMoment(object.getAvailabilityPeriodStart(), 7, ChronoUnit.DAYS);
 			super.state(MomentHelper.isAfter(object.getAvailabilityPeriodEnd(), minimunValidEndDate), "availabilityPeriodStart", "administrator.offer.form.error.availabilityPeriodEnd");
 		}
-
 	}
 
 	@Override
 	public void perform(final Offer object) {
 		assert object != null;
+
 		this.repository.save(object);
 	}
 
@@ -82,6 +87,9 @@ public class AdministratorOfferCreateService extends AbstractService<Administrat
 		Tuple tuple;
 
 		tuple = super.unbind(object, "instantiatiation", "header", "summary", "availabilityPeriodStart", "availabilityPeriodEnd", "price", "moreInfo");
+
+		final boolean readonly = MomentHelper.getCurrentMoment().after(object.getAvailabilityPeriodStart());
+		tuple.put("readonly", readonly);
 
 		super.getResponse().setData(tuple);
 	}

@@ -1,34 +1,34 @@
 
-package acme.features.administrators.offer;
+package acme.features.assistant.tutorialSession;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import acme.entities.offer.Offer;
-import acme.framework.components.accounts.Administrator;
+import acme.entities.tutorialSession.TutorialSession;
 import acme.framework.controllers.AbstractController;
+import acme.roles.Assistant;
 
 @Controller
-public class AdministratorOfferController extends AbstractController<Administrator, Offer> {
+public class AssistantTutorialSessionController extends AbstractController<Assistant, TutorialSession> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AdministratorOfferListService		listService;
+	protected AssistantTutorialSessionListService	listService;
 
 	@Autowired
-	protected AdministratorOfferShowService		showService;
+	protected AssistantTutorialSessionShowService	showService;
 
 	@Autowired
-	protected AdministratorOfferCreateService	createService;
+	protected AssistantTutorialSessionCreateService	createService;
 
 	@Autowired
-	protected AdministratorOfferUpdateService	updateService;
+	protected AssistantTutorialSessionUpdateService	updateService;
 
 	@Autowired
-	protected AdministratorOfferDeleteService	deleteService;
+	protected AssistantTutorialSessionDeleteService	deleteService;
 
 	// Constructors -----------------------------------------------------------
 
