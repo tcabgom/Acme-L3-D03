@@ -7,4 +7,5 @@ student.lecture.form.label.lecAbstract = Resumen
 student.lecture.form.label.learningTime = Tiempo de aprendizaje
 student.lecture.form.label.body = Contenido
 student.lecture.form.label.knowledge = Tipo de actividad
+student.lecture.form.label.lecturer = Profesor
 student.lecture.form.label.furtherInformation = Más información

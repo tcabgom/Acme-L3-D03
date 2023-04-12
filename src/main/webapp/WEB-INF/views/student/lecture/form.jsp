@@ -10,6 +10,7 @@
     <acme:input-textbox code="student.lecture.form.label.learningTime" path="learningTime"/>
     <acme:input-textbox code="student.lecture.form.label.body" path="body"/>
     <acme:input-textbox code="student.lecture.form.label.knowledge" path="knowledge"/>
+    <acme:input-textbox code="student.lecture.form.label.lecturer" path="lecturer"/>
     <acme:input-textbox code="student.lecture.form.label.furtherInformation" path="furtherInformation"/>
 
 </acme:form>

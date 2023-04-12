@@ -7,4 +7,5 @@ student.lecture.form.label.lecAbstract = Abstract
 student.lecture.form.label.learningTime = Learning time
 student.lecture.form.label.body = Body
 student.lecture.form.label.knowledge = Activity type
+student.lecture.form.label.lecturer = Lecturer
 student.lecture.form.label.furtherInformation = Further information
