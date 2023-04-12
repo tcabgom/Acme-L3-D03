@@ -1,4 +1,4 @@
-key,title,lecAsbtract,learningTime,body,knowledge,furtherInformation,draftMode,key:lecturer
+key,title,lecAbstract,learningTime,body,knowledge,furtherInformation,draftMode,key:lecturer
 lecture-01,Un título,Un Abstract,5.0,un body válido,HANDS_ON,https://github.com/tcabgom/Acme-L3-D02,false,lecturer-01
 lecture-02,Ένα καλό τίτλο,Un Abstract,5.0,un body válido,HANDS_ON,https://github.com/tcabgom/Acme-L3-D02,false,lecturer-01
 lecture-03,U,Un Abstract,5.0,un body válido,HANDS_ON,https://github.com/tcabgom/Acme-L3-D02,false,lecturer-01
