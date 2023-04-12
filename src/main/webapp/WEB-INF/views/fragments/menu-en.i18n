@@ -24,6 +24,9 @@ master.menu.anonymous.favourite-link-3 = 49338447H: Cabrera Gómez, Tadeo
 master.menu.anonymous.favourite-link-4 = 44245412J: González González, Ignacio
 master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
 
+master.menu.anonymous.peep.list = See Peeps
+master.menu.anonymous.banner = Active Banners
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
@@ -33,6 +36,7 @@ master.menu.administrator.offer = Manage Offers
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shut-down = Shut down
+master.menu.administrator.banner= Manage Banners
 
 # master.menu.provider ########################################################
 
@@ -49,6 +53,12 @@ master.menu.consumer.favourite-link = Favourite link
 master.menu.student = Student
 master.menu.student.list-course = See courses
 
+# master.menu.assistant ####################################################
+
+master.menu.assistant = Assistant
+master.menu.assistant.tutorialSession = My Tutorial Sessions
+master.menu.assistant.tutorial = My Tutorials
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
@@ -57,6 +67,12 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
-
+master.menu.user-account.assistant = Assistant data
+master.menu.user-account.become-assistant = Become an assistant
 master.menu.user-account.offer = See Active Offers
 master.menu.user-account.bulletin = See Bulletins
+
+# master.menu.authenticated.lecturer ##################################
+master.menu.authenticated.lecturer.create = Become a lecturer
+master.menu.authenticated.lecturer.update = Update my lecturer profile
+
