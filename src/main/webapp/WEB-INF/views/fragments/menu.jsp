@@ -27,6 +27,7 @@
 			<acme:menu-separator/>
             <acme:menu-suboption code="master.menu.anonymous.peep.list" action="/any/peep/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.banner" action="/any/banner/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.course" action="/any/course/list"/>
 
 		</acme:menu-option>
 
@@ -50,10 +51,10 @@
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
 		
-		
+
 		<acme:menu-option code="master.menu.assistant" access="hasRole('Assistant')">
 			<acme:menu-suboption code="master.menu.assistant.tutorial" action="/assistant/tutorial/list"/>
-			<acme:menu-suboption code="master.menu.assistant.tutorialSession" action="/assistant/tutorial-session/list"/>
+			<acme:menu-suboption code="master.menu.assistant.dashboard" action="/assistant/dashboard/show"/>
 		</acme:menu-option>
 		
 	</acme:menu-left>

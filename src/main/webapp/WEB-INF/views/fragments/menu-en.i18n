@@ -25,7 +25,8 @@ master.menu.anonymous.favourite-link-4 = 44245412J: González González, Ignacio
 master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
 
 master.menu.anonymous.peep.list = See Peeps
-master.menu.anonymous.banner = Active Banners 
+master.menu.anonymous.banner = Active Banners
+master.menu.anonymous.course = Courses List
 
 # master.menu.administrator ###################################################
 
@@ -51,8 +52,8 @@ master.menu.consumer.favourite-link = Favourite link
 # master.menu.assistant ####################################################
 
 master.menu.assistant = Assistant
-master.menu.assistant.tutorialSession = My Tutorial Sessions
 master.menu.assistant.tutorial = My Tutorials
+master.menu.assistant.dashboard = Dashboard
 
 # master.menu.user-account ####################################################
 
