@@ -36,6 +36,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.offer = Manage Offers 
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
+master.menu.administrator.create-bulletin = Post bulletin
 master.menu.administrator.shut-down = Shut down
 master.menu.administrator.banner= Manage Banners
 
