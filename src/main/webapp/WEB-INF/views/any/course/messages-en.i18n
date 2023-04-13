@@ -1,0 +1,12 @@
+any.course.form.label.code = Code	
+any.course.form.label.title = Title	
+any.course.form.label.courseAbstract = Course abstract
+any.course.form.label.retailPrice = Retail price	
+any.course.form.label.furtherInformation = Further information
+any.course.form.label.activityType = Course type
+authenticated.course.list.label.code = Code
+authenticated.course.list.label.title = Title
+authenticated.course.list.label.retailPrice = Retail price
+authenticated.course.list.label.furtherInformation = Further information
+
+any.course.form.button.tutorial = Course Tutorials
