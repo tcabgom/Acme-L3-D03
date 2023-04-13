@@ -1,9 +1,29 @@
 key,instantiation,displayPeriodInitial,displayPeriodEnding,linkToPicture,slogan,linWebDocument
 banner-01,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://link.com
-banner-02,2020/02/01 23:59,2020/03/01 23:59,2020/04/30 09:00,http://link.com,Normal slogan with 75 scharactersssssssssssssssssssssssssssssssssssssssssss,http://link.com
-banner-03,2020/03/01 00:00,2020/04/01 00:00,2020/03/01 09:00,http://link.com,Normal slogan with 74 scharacterssssssssssssssssssssssssssssssssssssssssss,http://link.com
-banner-04,2020/04/01 09:00,2020/05/01 09:00,2020/02/01 09:00,http://link.com,a,http://link.com
-banner-05,2020/05/01 09:00,2020/06/01 09:00,2020/04/01 09:00,http://link.com,ab,http://link.com
-banner-06,2020/06/01 09:00,2020/07/01 09:00,2020/07/01 00:00,http://link.com,<b>normal slogan</b>,http://link.com
-banner-07,2020/07/01 09:00,2020/08/01 09:00,2020/12/31 23:59,http://link.com,<script>alert("hi")</script>,http://link.com
-banner-08,2020/07/01 09:00,2020/08/01 09:00,2020/12/31 23:59,http://link.com,κανονικός τίτλος,http://link.com
+banner-02,2020/01/13 12:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-03,2020/01/01 00:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-04,2019/12/31 23:59,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-05,2020/01/01 12:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-06,2020/12/31 00:00,2021/01/13 12:00,2021/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-07,2020/01/31 09:00,2021/01/01 00:00,2021/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-08,2020/01/31 09:00,2010/12/31 23:59,2021/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-09,2020/01/31 09:00,2021/01/01 12:00,2021/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-10,2020/01/31 09:00,2021/12/31 00:00,2022/02/01 09:00,http://link.com,normal slogan,http://link.com
+banner-11,2020/01/31 09:00,2020/02/01 09:00,2020/01/13 12:00,http://link.com,normal slogan,http://link.com
+banner-12,2020/01/31 09:00,2020/02/01 09:00,2020/01/01 00:00,http://link.com,normal slogan,http://link.com
+banner-13,2020/01/31 09:00,2020/02/01 09:00,2019/12/31 23:59,http://link.com,normal slogan,http://link.com
+banner-14,2020/01/31 09:00,2020/02/01 09:00,2020/01/01 12:00,http://link.com,normal slogan,http://link.com
+banner-15,2020/01/31 09:00,2020/02/01 09:00,2020/12/31 00:00,http://link.com,normal slogan,http://link.com
+banner-16,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://www.acme.com/a?b,normal slogan,http://link.com
+banner-17,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://www.acme.com/a/b,normal slogan,http://link.com
+banner-18,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,ftp://user:pass@acme.org,normal slogan,http://link.com
+banner-19,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,a,http://link.com
+banner-20,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,ab,http://link.com
+banner-21,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,Normal slogan with 74 scharacterssssssssssssssssssssssssssssssssssssssssss,http://link.com
+banner-22,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,Normal slogan with 75 scharactersssssssssssssssssssssssssssssssssssssssssss,http://link.com
+banner-23,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,<b>normal slogan</b>,http://link.com
+banner-24,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,"<script>alert(""hi"")</script>",http://link.com
+banner-25,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,κανονικός τίτλος,http://link.com
+banner-27,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://www.acme.com/a?b
+banner-28,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://www.acme.com/a/b
+banner-29,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,ftp://user:pass@acme.org
