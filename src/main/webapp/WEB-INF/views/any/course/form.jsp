@@ -22,5 +22,6 @@
 	<acme:input-textbox code="any.course.form.label.retailPrice" path="retailPrice"/>	
 	<acme:input-textbox code="any.course.form.label.furtherInformation" path="furtherInformation"/>	
 	<acme:input-textbox code="any.course.form.label.activityType" path="activityType"/>
-	
+
+	<acme:submit code="any.course.form.button.tutorial" action="/authenticated/tutorial/list?masterId=${id}"/>
 </acme:form>

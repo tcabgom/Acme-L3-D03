@@ -76,7 +76,7 @@ public class AssistantTutorialShowService extends AbstractService<Assistant, Tut
 		choices = SelectChoices.from(courses, "title", object.getCourse());
 
 		tuple = super.unbind(object, "code", "title", "tutorialAbstract", "goals", "draftMode");
-		final int numberOfSessions = this.repository.findManyTutorialSessionsByTutorialId(object).size();
+		final int numberOfSessions = sessions.size();
 		tuple.put("numberOfSessions", numberOfSessions);
 		tuple.put("course", choices.getSelected().getKey());
 		tuple.put("courses", choices);

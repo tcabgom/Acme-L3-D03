@@ -8,3 +8,5 @@ user-account.tutorial.form.label.tutorialAbstract = Abstract
 user-account.tutorial.form.label.goals = Goals
 user-account.tutorial.form.label.course = Course
 user-account.tutorial.form.label.assistant = Assistant
+user-account.tutorial.form.label.estimatedTotalTime = Estimated Total Hours
+user-account.tutorial.form.label.numberOfSessions = Number Of Sessions
