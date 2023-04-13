@@ -1,0 +1,21 @@
+administrator.offer.list.label.header = Cabecera
+administrator.offer.list.label.summary = Resumen
+administrator.offer.list.label.price = Precio
+
+administrator.offer.list.button.create = Crear Nueva Oferta
+administrator.offer.form.button.update = Editar Oferta
+administrator.offer.form.button.delete = Eliminar Oferta
+
+administrator.offer.form.label.instantiatiation = Fecha de Instanciación
+administrator.offer.form.label.header = Cabecera
+administrator.offer.form.label.summary = Resumen
+administrator.offer.form.label.availabilityPeriodStart = Inicio del Período de Disponibilidad
+administrator.offer.form.label.availabilityPeriodEnd = Fin del Período de Disponibilidad
+administrator.offer.form.label.price = Precio
+administrator.offer.form.label.moreInfo = Más Información
+administrator.offer.form.label.confirmation = Confirmar Datos de Entrada
+
+administrator.offer.form.button.create = Crear Oferta
+
+administrator.offer.form.error.availabilityPeriodStart = El período de disponibilidad debe comenzar de al menos 24 horas después de su creación
+administrator.offer.form.error.availabilityPeriodEnd = El período de disponibilidad debe durar al menos una semana

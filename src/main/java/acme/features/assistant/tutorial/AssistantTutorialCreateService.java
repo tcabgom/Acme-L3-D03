@@ -21,7 +21,7 @@ public class AssistantTutorialCreateService extends AbstractService<Assistant, T
 	@Autowired
 	protected AssistantTutorialRepository repository;
 
-	// AbstractService interface ----------------------------------------------
+	// Abstract Service interface ----------------------------------------------
 
 
 	@Override

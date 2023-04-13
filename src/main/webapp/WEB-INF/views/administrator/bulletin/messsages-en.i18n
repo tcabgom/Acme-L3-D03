@@ -1,0 +1,6 @@
+administrator.bulletin.form.label.title = Title
+administrator.bulletin.form.label.critical = Critical
+administrator.bulletin.form.label.message = Message
+administrator.bulletin.form.label.furtherInformation = Further Information
+administrator.bulletin.form.label.confirmation = Verify the information is correct, as you won't be be able to edit it later
+administrator.bulletin.form.button.create = Post bulletin

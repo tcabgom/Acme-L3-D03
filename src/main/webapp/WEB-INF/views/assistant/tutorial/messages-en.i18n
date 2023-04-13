@@ -20,7 +20,7 @@ assistant.tutorial.form.button.create = Create Tutorial
 assistant.tutorial.form.button.update = Update Tutorial
 assistant.tutorial.form.button.delete = Delete Tutorial
 assistant.tutorial.form.button.publish = Publish Tutorial
-assistant.tutorial.form.button.sessionCreate = Add a Session
+assistant.tutorial.form.button.sessions = Manage Sessions
 
 assistant.tutorial.form.error.code = This code is already being used
 assistant.tutorial.form.error.emptyTutorial = The tutorial needs to have at least one session before it can be published
