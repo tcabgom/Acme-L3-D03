@@ -25,7 +25,7 @@ public class AuthenticatedTutorialListService extends AbstractService<Authentica
 	@Override
 	public void check() {
 		boolean status;
-		status = super.getRequest().hasData("masterId", int.class);
+		status = super.getRequest().hasData("tutorialId", int.class);
 		super.getResponse().setChecked(status);
 	}
 
@@ -37,7 +37,7 @@ public class AuthenticatedTutorialListService extends AbstractService<Authentica
 	@Override
 	public void load() {
 		Collection<Tutorial> objects;
-		final int masterId = super.getRequest().getData("masterId", int.class);
+		final int masterId = super.getRequest().getData("tutorialId", int.class);
 		objects = this.repository.findManyTutorialsByCourseId(masterId);
 		super.getBuffer().setData(objects);
 	}

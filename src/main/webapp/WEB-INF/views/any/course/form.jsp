@@ -23,5 +23,5 @@
 	<acme:input-textbox code="any.course.form.label.furtherInformation" path="furtherInformation"/>	
 	<acme:input-textbox code="any.course.form.label.activityType" path="activityType"/>
 
-	<acme:submit code="any.course.form.button.tutorial" action="/authenticated/tutorial/list?masterId=${id}"/>
+	<acme:button code="any.course.form.button.tutorial" action="/authenticated/tutorial/list?tutorialId=${id}"/>
 </acme:form>
