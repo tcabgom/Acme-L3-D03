@@ -2,7 +2,7 @@
 assistant.tutorial.list.label.title = Título
 assistant.tutorial.list.label.course = Curso
 assistant.tutorial.list.label.numberOfSessions = Sesiones
-assistant.tutorial.list.label.draftMode = Draft
+assistant.tutorial.list.label.draftMode = Borrador
 
 assistant.tutorial.list.button.create = Crear Nuevo Tutorial
 
