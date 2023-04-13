@@ -1,0 +1,24 @@
+administrator.offer.list.label.header = Header
+administrator.offer.list.label.summary = Summary
+administrator.offer.list.label.price = Price
+
+administrator.offer.list.button.create = Create New Offer
+administrator.offer.form.button.update = Edit Offer
+administrator.offer.form.button.delete = Delete Offer
+
+administrator.offer.form.label.instantiatiation = Instantiation Date
+administrator.offer.form.label.header = Header
+administrator.offer.form.label.summary = Summary
+administrator.offer.form.label.availabilityPeriodStart = Availability Period Start
+administrator.offer.form.label.availabilityPeriodEnd = Availability Period End
+administrator.offer.form.label.price = Price
+administrator.offer.form.label.moreInfo = More Info
+administrator.offer.form.label.confirmation = Confirm Data Input
+
+administrator.offer.form.button.create = Create Offer
+
+administrator.offer.form.error.availabilityPeriodStart = The availability period must start at least 24 hours after its creation
+administrator.offer.form.error.availabilityPeriodEnd = The availability period must last for at least a week
+
+
+

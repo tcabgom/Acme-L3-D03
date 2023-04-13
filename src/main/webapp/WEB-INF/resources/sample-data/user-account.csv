@@ -1,6 +1,31 @@
 key,enabled,identity,password,username
 user-account-lecturer-01,true,"UserIdentity{name: 'Profe', surname: 'Sor', email: 'profe.sor@acme.com'}",lecturer1,lecturer1
-user-account-lecturer-02,true,"UserIdentity{name: 'Prof', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer2,lecturer2
+user-account-lecturer-02,true,"UserIdentity{name: 'Prof2', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer2,lecturer2
+user-account-lecturer-03,true,"UserIdentity{name: 'Prof3', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer3,lecturer3
+user-account-lecturer-04,true,"UserIdentity{name: 'Prof4', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer4,lecturer4
+user-account-lecturer-05,true,"UserIdentity{name: 'Prof5', surname: 'Esora2', email: 'prof.esora@acme.com'}",lecturer5,lecturer5
+user-account-lecturer-06,true,"UserIdentity{name: 'Prof6', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer6,lecturer6
+user-account-lecturer-07,true,"UserIdentity{name: 'Prof7', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer7,lecturer7
+user-account-lecturer-08,true,"UserIdentity{name: 'Prof8', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer8,lecturer8
+user-account-lecturer-09,true,"UserIdentity{name: 'Prof9', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer9,lecturer9
+user-account-lecturer-10,false,"UserIdentity{name: 'Prof10', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer10,lecturer10
+user-account-lecturer-11,false,"UserIdentity{name: 'Prof11', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer11,lecturer11
+user-account-lecturer-12,false,"UserIdentity{name: 'Prof12', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer12,lecturer12
+user-account-lecturer-13,false,"UserIdentity{name: 'Prof13', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer13,lecturer13
+user-account-lecturer-14,false,"UserIdentity{name: 'Prof14', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer14,lecturer14
+user-account-lecturer-15,false,"UserIdentity{name: 'Prof15', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer15,lecturer15
+user-account-lecturer-16,false,"UserIdentity{name: 'Prof16', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer16,lecturer16
+user-account-lecturer-17,false,"UserIdentity{name: 'Prof17', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer17,lecturer17
+user-account-lecturer-18,false,"UserIdentity{name: 'Prof18', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer18,lecturer18
+user-account-lecturer-19,false,"UserIdentity{name: 'Prof19', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer19,lecturer19
+user-account-lecturer-20,false,"UserIdentity{name: 'Prof20', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer20,lecturer20
+user-account-lecturer-21,false,"UserIdentity{name: 'Prof21', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer21,lecturer21
+user-account-lecturer-22,false,"UserIdentity{name: 'Prof22', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer22,lecturer22
+user-account-lecturer-23,false,"UserIdentity{name: 'Prof23', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer23,lecturer23
+user-account-lecturer-24,false,"UserIdentity{name: 'Prof24', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer24,lecturer24
+user-account-lecturer-25,false,"UserIdentity{name: 'Prof25', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer25,lecturer25
+user-account-lecturer-26,false,"UserIdentity{name: 'Prof26', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer26,lecturer26
+user-account-lecturer-27,false,"UserIdentity{name: 'Prof27', surname: 'Esora', email: 'prof.esora@acme.com'}",lecturer27,lecturer27
 user-account-assistant-01,true,"UserIdentity{name: 'Tadeo', surname: 'Cabrera', email: 'tcabgom222@acme.com'}",assistant1,assistant1
 user-account-assistant-02,true,"UserIdentity{name: 'Francisco Javier', surname: 'Larrondobuno', email: 'javilarrondo@acme.com'}",assistant2,assistant2
 user-account-assistant-03,true,"UserIdentity{name: 'Francisco Javier2', surname: 'Larrondobuno2', email: 'javilarrondo2@acme.com'}",assistant3,assistant3
