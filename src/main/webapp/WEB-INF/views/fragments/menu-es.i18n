@@ -55,6 +55,11 @@ master.menu.assistant.tutorial = Mis Tutoriales
 master.menu.assistant.dashboard = Panel
 
 
+# master.menu.student ##########################################################
+
+master.menu.student = Estudiante
+master.menu.student.list-course = Ver cursos
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta

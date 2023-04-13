@@ -27,6 +27,7 @@ master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
 master.menu.anonymous.peep.list = See Peeps
 master.menu.anonymous.banner = Active Banners
 master.menu.anonymous.course = Courses List
+master.menu.anonymous.banner = Active Banners
 
 # master.menu.administrator ###################################################
 
@@ -48,6 +49,11 @@ master.menu.provider.favourite-link = Favourite link
 
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
+
+# master.menu.student ###########################################################
+
+master.menu.student = Student
+master.menu.student.list-course = See courses
 
 # master.menu.assistant ####################################################
 
