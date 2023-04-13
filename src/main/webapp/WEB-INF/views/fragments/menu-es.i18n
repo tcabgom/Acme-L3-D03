@@ -23,6 +23,9 @@ master.menu.anonymous.favourite-link-2 = 77938783V: Tomás Vela, Elena
 master.menu.anonymous.favourite-link-3 = 49338447H: Cabrera Gómez, Tadeo
 master.menu.anonymous.favourite-link-4 = 44245412J: González González, Ignacio
 master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
+master.menu.anonymous.peep.list = Ver Mensajes
+master.menu.anonymous.banner = Pancartas Activas
+master.menu.anonymous.course = Lista de cursos
 
 # master.menu.administrator ###################################################
 
@@ -45,6 +48,18 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
+# master.menu.assistant ####################################################
+
+master.menu.assistant = Asistente
+master.menu.assistant.tutorial = Mis Tutoriales
+master.menu.assistant.dashboard = Panel
+
+
+# master.menu.student ##########################################################
+
+master.menu.student = Estudiante
+master.menu.student.list-course = Ver cursos
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -53,6 +68,13 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
-
+master.menu.user-account.assistant = Datos de asistente
+master.menu.user-account.become-assistant = Hazte asistente
 master.menu.user-account.offer = Ver Ofertas Activas
 master.menu.user-account.bulletin = Ver Boletines
+master.menu.user-account.tutorial = Ver Tutoriales
+
+# master.menu.authenticated.lecturer ##################################
+
+master.menu.authenticated.lecturer.create = Hazte profesor
+master.menu.authenticated.lecturer.update = Actualizar mi perfil de profesor
