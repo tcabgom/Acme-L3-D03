@@ -35,6 +35,7 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.offer = Gestionar Ofertas
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
+master.menu.administrator.create-bulletin = Publicar boletín
 master.menu.administrator.shut-down = Parar el sistema
 master.menu.administrator.banner= Gestionar Pancartas
 
@@ -73,6 +74,7 @@ master.menu.user-account.assistant = Datos de asistente
 master.menu.user-account.become-assistant = Hazte asistente
 master.menu.user-account.offer = Ver Ofertas Activas
 master.menu.user-account.bulletin = Ver Boletines
+master.menu.user-account.tutorial = Ver Tutoriales
 
 # master.menu.authenticated.lecturer ##################################
 

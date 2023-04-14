@@ -23,4 +23,12 @@
 	<acme:input-url code="any.course.form.label.furtherInformation" path="furtherInformation" readonly="true"/>	
 	<acme:input-textbox code="any.course.form.label.activityType" path="activityType" readonly="true"/>
 	
+	<acme:input-textbox code="any.course.form.label.code" path="code"/>	
+	<acme:input-textbox code="any.course.form.label.title" path="title"/>	
+	<acme:input-textbox code="any.course.form.label.courseAbstract" path="courseAbstract"/>	
+	<acme:input-textbox code="any.course.form.label.retailPrice" path="retailPrice"/>	
+	<acme:input-textbox code="any.course.form.label.furtherInformation" path="furtherInformation"/>	
+	<acme:input-textbox code="any.course.form.label.activityType" path="activityType"/>
+
+	<acme:button code="any.course.form.button.tutorial" action="/authenticated/tutorial/list?tutorialId=${id}"/>
 </acme:form>
