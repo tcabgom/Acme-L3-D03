@@ -16,6 +16,7 @@
 <%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
 
 <acme:form>
+<<<<<<< HEAD
 	<acme:input-textbox code="any.course.form.label.code" path="code"/>	
 	<acme:input-textbox code="any.course.form.label.title" path="title"/>	
 	<acme:input-textbox code="any.course.form.label.courseAbstract" path="courseAbstract"/>	
@@ -24,4 +25,13 @@
 	<acme:input-textbox code="any.course.form.label.activityType" path="activityType"/>
 
 	<acme:button code="any.course.form.button.tutorial" action="/authenticated/tutorial/list?tutorialId=${id}"/>
+=======
+	<acme:input-textbox code="any.course.form.label.code" path="code" readonly="true"/>	
+	<acme:input-textbox code="any.course.form.label.title" path="title" readonly="true"/>	
+	<acme:input-textbox code="any.course.form.label.courseAbstract" path="courseAbstract" readonly="true"/>	
+	<acme:input-money code="any.course.form.label.retailPrice" path="retailPrice" readonly="true"/>	
+	<acme:input-url code="any.course.form.label.furtherInformation" path="furtherInformation" readonly="true"/>	
+	<acme:input-textbox code="any.course.form.label.activityType" path="activityType" readonly="true"/>
+	
+>>>>>>> Student1-R14-OperationsByLecturersOnCourses
 </acme:form>
