@@ -42,7 +42,7 @@ public class AssistantTutorialSessionUpdateService extends AbstractService<Assis
 		int masterId;
 		Tutorial tutorial;
 
-		masterId = super.getRequest().getData("masterId", int.class);
+		masterId = super.getRequest().getData("tutorialId", int.class);
 		tutorial = this.repository.findOneTutorialById(masterId);
 		status = tutorial != null && (!tutorial.isDraftMode() || super.getRequest().getPrincipal().hasRole(tutorial.getAssistant()));
 
@@ -63,7 +63,7 @@ public class AssistantTutorialSessionUpdateService extends AbstractService<Assis
 	@Override
 	public void bind(final TutorialSession object) {
 		assert object != null;
-		super.bind(object, "title", "sessionAbstract", "sessionType", "sessionStart", "sessionEnd", "moreInfo", "tutorial");
+		super.bind(object, "title", "sessionAbstract", "sessionType", "sessionStart", "sessionEnd", "moreInfo");
 	}
 
 	@Override
@@ -85,6 +85,11 @@ public class AssistantTutorialSessionUpdateService extends AbstractService<Assis
 	@Override
 	public void perform(final TutorialSession object) {
 		assert object != null;
+
+		final int masterId = super.getRequest().getData("tutorialId", int.class);
+		final Tutorial tutorial = this.repository.findOneTutorialById(masterId);
+		object.setTutorial(tutorial);
+
 		this.repository.save(object);
 	}
 
@@ -94,11 +99,11 @@ public class AssistantTutorialSessionUpdateService extends AbstractService<Assis
 
 		Tuple tuple;
 		final SelectChoices sessionTypeChoices = SelectChoices.from(ActivityType.class, object.getSessionType());
-		tuple = super.unbind(object, "title", "sessionAbstract", "sessionStart", "sessionEnd", "moreInfo", "tutorial");
+
+		tuple = super.unbind(object, "title", "sessionAbstract", "sessionStart", "sessionEnd", "moreInfo");
 		tuple.put("sessionType", sessionTypeChoices.getSelected().getKey());
 		tuple.put("sessionTypes", sessionTypeChoices);
-		tuple.put("masterId", object.getTutorial().getId());
-		tuple.put("draftMode", object.getTutorial().isDraftMode());
+		tuple.put("tutorialId", super.getRequest().getData("tutorialId", int.class));
 
 		super.getResponse().setData(tuple);
 	}

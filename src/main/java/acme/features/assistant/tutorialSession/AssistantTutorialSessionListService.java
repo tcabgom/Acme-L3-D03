@@ -28,7 +28,7 @@ public class AssistantTutorialSessionListService extends AbstractService<Assista
 
 		boolean status;
 
-		status = super.getRequest().hasData("masterId", int.class);
+		status = super.getRequest().hasData("tutorialId", int.class);
 
 		super.getResponse().setChecked(status);
 	}
@@ -39,7 +39,7 @@ public class AssistantTutorialSessionListService extends AbstractService<Assista
 		int masterId;
 		Tutorial tutorial;
 
-		masterId = super.getRequest().getData("masterId", int.class);
+		masterId = super.getRequest().getData("tutorialId", int.class);
 		tutorial = this.repository.findOneTutorialById(masterId);
 		status = tutorial != null && (!tutorial.isDraftMode() || super.getRequest().getPrincipal().hasRole(tutorial.getAssistant()));
 
@@ -51,7 +51,7 @@ public class AssistantTutorialSessionListService extends AbstractService<Assista
 		Collection<TutorialSession> objects;
 		final int masterId;
 
-		masterId = super.getRequest().getData("masterId", int.class);
+		masterId = super.getRequest().getData("tutorialId", int.class);
 		objects = this.repository.findManyTutorialSessionsByMasterId(masterId);
 
 		super.getBuffer().setData(objects);
@@ -76,11 +76,11 @@ public class AssistantTutorialSessionListService extends AbstractService<Assista
 		Tutorial tutorial;
 		final boolean showCreate;
 
-		masterId = super.getRequest().getData("masterId", int.class);
+		masterId = super.getRequest().getData("tutorialId", int.class);
 		tutorial = this.repository.findOneTutorialById(masterId);
 		showCreate = tutorial.isDraftMode() && super.getRequest().getPrincipal().hasRole(tutorial.getAssistant());
 
-		super.getResponse().setGlobal("masterId", masterId);
+		super.getResponse().setGlobal("tutorialId", masterId);
 		super.getResponse().setGlobal("showCreate", showCreate);
 	}
 
