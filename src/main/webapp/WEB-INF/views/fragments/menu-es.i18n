@@ -55,6 +55,10 @@ master.menu.assistant = Asistente
 master.menu.assistant.tutorial = Mis Tutoriales
 master.menu.assistant.dashboard = Panel
 
+# master.menu.auditor ####################################################
+
+master.menu.auditor= Auditor
+master.menu.auditor.audit= Gestionar tus Auditorías
 
 # master.menu.user-account ####################################################
 
