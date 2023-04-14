@@ -1,32 +1,31 @@
 
-package acme.features.authenticated.tutorial;
+package acme.features.lecturer.course;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.tutorial.Tutorial;
-import acme.framework.components.accounts.Authenticated;
+import acme.entities.lecture.Course;
+import acme.framework.components.accounts.Principal;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
+import acme.roles.Lecturer;
 
 @Service
-public class AuthenticatedTutorialListService extends AbstractService<Authenticated, Tutorial> {
+public class LecturerCourseListService extends AbstractService<Lecturer, Course> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AuthenticatedTutorialRepository repository;
+	protected LecturerCourseRepository repository;
 
 	// AbstractService interface ----------------------------------------------
 
 
 	@Override
 	public void check() {
-		boolean status;
-		status = super.getRequest().hasData("tutorialId", int.class);
-		super.getResponse().setChecked(status);
+		super.getResponse().setChecked(true);
 	}
 
 	@Override
@@ -36,19 +35,21 @@ public class AuthenticatedTutorialListService extends AbstractService<Authentica
 
 	@Override
 	public void load() {
-		Collection<Tutorial> objects;
-		final int masterId = super.getRequest().getData("tutorialId", int.class);
-		objects = this.repository.findManyTutorialsByCourseId(masterId);
+		Collection<Course> objects;
+		final Principal principal = super.getRequest().getPrincipal();
+		final int userAccountId = principal.getAccountId();
+		objects = this.repository.findCoursesByLecturerId(userAccountId);
 		super.getBuffer().setData(objects);
 	}
 
 	@Override
-	public void unbind(final Tutorial object) {
+	public void unbind(final Course object) {
 		assert object != null;
+
 		Tuple tuple;
 
-		tuple = super.unbind(object, "title", "course.title", "code");
+		tuple = super.unbind(object, "code", "title", "retailPrice");
+
 		super.getResponse().setData(tuple);
 	}
-
 }

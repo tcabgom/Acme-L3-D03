@@ -61,6 +61,14 @@ master.menu.assistant.dashboard = Dashboard
 master.menu.auditor= Auditor
 master.menu.auditor.audit= Manage your Audits
 
+# master.menu.lecturer ####################################################
+
+master.menu.lecturer = Lecturer
+master.menu.lecturer.course = My Courses
+master.menu.lecturer.lecture = My Lectures
+master.menu.lecturer.dashboard = Dashboard
+
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
