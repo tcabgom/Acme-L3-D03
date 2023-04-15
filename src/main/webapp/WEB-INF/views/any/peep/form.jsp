@@ -3,7 +3,6 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
 
-
 <acme:form>
   <acme:input-textbox code="any.peep.form.label.moment" path="moment" readonly="true"/>
   <acme:input-textbox code="any.peep.form.label.title" path="title" />

@@ -1,0 +1,18 @@
+assistant.tutorialSession.list.label.title = Título de la Sesión
+assistant.tutorialSession.list.label.tutorial = Tutorial
+assistant.tutorialSession.list.label.sessionType = Tipo de Sesión
+
+assistant.tutorialSession.list.button.create = Crear Nueva Sesión de Tutorial
+
+assistant.tutorialSession.form.label.title = Título
+assistant.tutorialSession.form.label.tutorial = Tutorial
+assistant.tutorialSession.form.label.sessionAbstract = Resumen
+assistant.tutorialSession.form.label.sessionType = Tipo de Sesión
+assistant.tutorialSession.form.label.sessionStart = Comienzo de Sesión
+assistant.tutorialSession.form.label.sessionEnd = Fin de Sesión
+assistant.tutorialSession.form.label.moreInfo = Más Información
+
+assistant.tutorialSession.form.label.confirmation = Confirmar Datos de Entrada
+assistant.tutorialSession.form.button.create = Create Sesión
+assistant.tutorialSession.form.button.update = Modificar Sesión
+assistant.tutorialSession.form.button.delete = Borrar Sesión

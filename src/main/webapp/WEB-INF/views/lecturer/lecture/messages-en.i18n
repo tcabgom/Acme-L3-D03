@@ -1,0 +1,33 @@
+####################List Labels###############
+
+lecturer.lecture.list.label.title= Title
+lecturer.lecture.list.label.lecAbstract = Abstract
+lecturer.lecture.list.label.learningTime = Learning time
+
+
+
+################### Form Labels ################
+lecturer.lecture.form.label.title = Title
+lecturer.lecture.form.label.lecAbstract = Abstract
+lecturer.lecture.form.label.learningTime = Estimated learning Time
+lecturer.lecture.form.label.body = Body
+lecturer.lecture.form.label.knowledge = Type of knowledge
+lecturer.lecture.form.label.furtherInformation = Further information
+lecturer.lecture.form.label.draftMode = Draft mode
+
+
+################### Buttons ####################
+lecturer.lecture.list.button.create = Create lecture
+lecturer.lecture.list.button.add = Add to a course
+lecturer.lecture.list.button.deleteFromCourse = Delete from course
+lecturer.lecture.form.button.update = Update
+lecturer.lecture.form.button.delete = Delete
+lecturer.lecture.form.button.publish = Publish
+lecturer.lecture.form.button.create = Create
+
+
+################### Errors #####################
+lecturer.lecture.form.error.learningTime = Learning Time must not be lower than 0.01 
+
+
+
