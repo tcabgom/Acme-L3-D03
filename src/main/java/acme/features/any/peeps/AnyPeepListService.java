@@ -46,7 +46,7 @@ public class AnyPeepListService extends AbstractService<Any, Peep> {
 
 		Tuple tuple;
 
-		tuple = super.unbind(object, "title", "moment");
+		tuple = super.unbind(object, "title", "moment", "nick");
 
 		super.getResponse().setData(tuple);
 	}
