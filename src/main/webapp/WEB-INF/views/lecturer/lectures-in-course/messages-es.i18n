@@ -1,0 +1,11 @@
+lecturer.courseLecture.form.label.course = Curso
+lecturer.courseLecture.form.lecture.title = Título de la lección
+lecturer.courseLecture.form.lecture.summary = Resumen de la lección
+lecturer.courseLecture.form.error.lecture = La lección ya está en el curso seleccionado
+lecturer.courseLecture.form.error.course = El curso seleccionado no se puede editar
+lecturer.courseLecture.form.lecture.info = Añadir la lección con la siguiente información a un curso que se encuentre en modo borrador
+lecturer.courseLecture.form.lecture.delete.info = Eliminar la siguiente lección de un curso:
+
+lecturer.courseLecture.form.label.lecture = Lección
+lecturer.courseLecture.form.button.delete = Borrar
+lecturer.courseLecture.form.button.create = Crear
