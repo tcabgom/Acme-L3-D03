@@ -19,3 +19,4 @@ administrator.offer.form.button.create = Crear Oferta
 
 administrator.offer.form.error.availabilityPeriodStart = El período de disponibilidad debe comenzar de al menos 24 horas después de su creación
 administrator.offer.form.error.availabilityPeriodEnd = El período de disponibilidad debe durar al menos una semana
+administrator.offer.form.error.price = El precio debe ser un valor entre 0 y 10.000.000.000

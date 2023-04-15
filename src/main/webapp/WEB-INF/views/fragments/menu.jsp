@@ -18,7 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
-		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		<acme:menu-option code="master.menu.anonymous">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-1" action="https://ev.us.es/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="https://www.jetbrains.com/idea/download/?fromIDE=#section=windows"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-3" action="http://skavenger.byethost8.com/homerswebpage/?i=1"/>
@@ -27,6 +27,7 @@
 			<acme:menu-separator/>
             <acme:menu-suboption code="master.menu.anonymous.peep.list" action="/any/peep/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.banner" action="/any/banner/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.course" action="/any/course/list"/>
 
 		</acme:menu-option>
 
@@ -39,6 +40,8 @@
 			<acme:menu-suboption code="master.menu.administrator.populate-initial" action="/administrator/populate-initial"/>
 			<acme:menu-suboption code="master.menu.administrator.populate-sample" action="/administrator/populate-sample"/>			
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.create-bulletin" action="/administrator/bulletin/create"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
 		</acme:menu-option>
 
@@ -50,10 +53,16 @@
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
 		
-		
+
 		<acme:menu-option code="master.menu.assistant" access="hasRole('Assistant')">
 			<acme:menu-suboption code="master.menu.assistant.tutorial" action="/assistant/tutorial/list"/>
-			<acme:menu-suboption code="master.menu.assistant.tutorialSession" action="/assistant/tutorial-session/list"/>
+			<acme:menu-suboption code="master.menu.assistant.dashboard" action="/assistant/dashboard/show"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.lecturer" access="hasRole('Lecturer')">
+			<acme:menu-suboption code="master.menu.lecturer.course" action="/lecturer/course/list"/>
+			<acme:menu-suboption code="master.menu.lecturer.lecture" action="/lecturer/lecture/list"/>
+			<acme:menu-suboption code="master.menu.lecturer.dashboard" action="/lecturer/dashboard/show"/>
 		</acme:menu-option>
 		
 	</acme:menu-left>
@@ -69,8 +78,14 @@
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.user-account.become-assistant" action="/authenticated/assistant/create" access="!hasRole('Assistant')"/>
+			<acme:menu-suboption code="master.menu.user-account.assistant" action="/authenticated/assistant/update" access="hasRole('Assistant')"/>
+			<acme:menu-suboption code="master.menu.authenticated.lecturer.create" action="/authenticated/lecturer/create" access="!hasRole('Lecturer')"/>
+			<acme:menu-suboption code="master.menu.authenticated.lecturer.update" action="/authenticated/lecturer/update" access="hasRole('Lecturer')"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.user-account.bulletin" action="/authenticated/bulletin/list"/>
 			<acme:menu-suboption code="master.menu.user-account.offer" action="/authenticated/offer/list"/>
+			<acme:menu-suboption code="master.menu.user-account.tutorial" action="/authenticated/tutorial/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>

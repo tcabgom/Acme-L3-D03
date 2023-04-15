@@ -2,7 +2,7 @@
 assistant.tutorial.list.label.title = Title
 assistant.tutorial.list.label.course = Course
 assistant.tutorial.list.label.numberOfSessions = Sessions
-assistant.tutorial.list.label.draftMode = Borrador
+assistant.tutorial.list.label.draftMode = Draft
 
 assistant.tutorial.list.button.create = Create New Tutorial
 
@@ -20,7 +20,7 @@ assistant.tutorial.form.button.create = Create Tutorial
 assistant.tutorial.form.button.update = Update Tutorial
 assistant.tutorial.form.button.delete = Delete Tutorial
 assistant.tutorial.form.button.publish = Publish Tutorial
-assistant.tutorial.form.button.sessionCreate = Add a Session
+assistant.tutorial.form.button.sessions = Manage Sessions
 
 assistant.tutorial.form.error.code = This code is already being used
 assistant.tutorial.form.error.emptyTutorial = The tutorial needs to have at least one session before it can be published
