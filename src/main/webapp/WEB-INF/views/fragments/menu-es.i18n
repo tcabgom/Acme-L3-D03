@@ -59,6 +59,7 @@ master.menu.assistant.dashboard = Panel
 
 master.menu.lecturer = Profesor
 master.menu.lecturer.course = Mis Cursos
+master.menu.lecturer.lecture = Mis Lecciones
 master.menu.lecturer.dashboard = Panel
 
 

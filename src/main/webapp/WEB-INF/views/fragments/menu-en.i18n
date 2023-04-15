@@ -61,6 +61,7 @@ master.menu.assistant.dashboard = Dashboard
 
 master.menu.lecturer = Lecturer
 master.menu.lecturer.course = My Courses
+master.menu.lecturer.lecture = My Lectures
 master.menu.lecturer.dashboard = Dashboard
 
 
