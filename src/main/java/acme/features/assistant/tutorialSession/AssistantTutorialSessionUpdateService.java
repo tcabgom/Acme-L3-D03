@@ -86,10 +86,6 @@ public class AssistantTutorialSessionUpdateService extends AbstractService<Assis
 	public void perform(final TutorialSession object) {
 		assert object != null;
 
-		final int masterId = super.getRequest().getData("tutorialId", int.class);
-		final Tutorial tutorial = this.repository.findOneTutorialById(masterId);
-		object.setTutorial(tutorial);
-
 		this.repository.save(object);
 	}
 
@@ -104,6 +100,7 @@ public class AssistantTutorialSessionUpdateService extends AbstractService<Assis
 		tuple.put("sessionType", sessionTypeChoices.getSelected().getKey());
 		tuple.put("sessionTypes", sessionTypeChoices);
 		tuple.put("tutorialId", super.getRequest().getData("tutorialId", int.class));
+		tuple.put("draftMode", object.getTutorial().isDraftMode());
 
 		super.getResponse().setData(tuple);
 	}
