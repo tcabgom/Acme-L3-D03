@@ -55,13 +55,17 @@ master.menu.assistant = Asistente
 master.menu.assistant.tutorial = Mis Tutoriales
 master.menu.assistant.dashboard = Panel
 
+# master.menu.auditor ####################################################
+
+master.menu.auditor= Auditor
+master.menu.auditor.audit= Gestionar tus Auditorías
+
 # master.menu.lecturer ####################################################
 
 master.menu.lecturer = Profesor
 master.menu.lecturer.course = Mis Cursos
 master.menu.lecturer.lecture = Mis Lecciones
 master.menu.lecturer.dashboard = Panel
-
 
 # master.menu.student ##########################################################
 
