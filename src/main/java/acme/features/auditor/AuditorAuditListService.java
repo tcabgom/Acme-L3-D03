@@ -51,16 +51,11 @@ public class AuditorAuditListService extends AbstractService<Auditor, Audit> {
 		final Collection<AuditingRecords> records = this.repository.findAllAuditingRecordsFromAudit(object.getId());
 		final List<String> mark = new ArrayList<>();
 		records.stream().map(AuditingRecords::getMark).forEach(m -> mark.add(m.toString()));
-		//		final SelectChoices choices;
-		//		final Collection<Course> courses = this.repository.findAllCourses();
 
 		tuple = super.unbind(object, "code", "conclusion", "strongPoints", "weakPoints", "draftMode");
 		tuple.put("auditorID", object.getAuditor().getProffesionalID());
 		tuple.put("auditor", object.getAuditor().getIdentity().getFullName());
 		tuple.put("mark", mark);
-		//		choices = SelectChoices.from(courses, "id", object.getCourse());
-		//		
-		//		tuple.put("course", choices);
 
 		super.getResponse().setData(tuple);
 	}

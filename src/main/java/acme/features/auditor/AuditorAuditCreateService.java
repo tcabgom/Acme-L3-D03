@@ -1,10 +1,16 @@
 
 package acme.features.auditor;
 
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.audit.Audit;
+import acme.entities.lecture.Course;
+import acme.framework.components.jsp.SelectChoices;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 import acme.roles.Auditor;
@@ -33,16 +39,15 @@ public class AuditorAuditCreateService extends AbstractService<Auditor, Audit> {
 	public void validate(final Audit object) {
 		assert object != null;
 
+		if (!super.getBuffer().getErrors().hasErrors("code")) {
+			final List<String> codes = this.repository.findAllAudits(super.getRequest().getPrincipal().getActiveRoleId()).stream().map(Audit::getCode).collect(Collectors.toList());
+			super.state(!codes.contains(object.getCode()), "code", "administrator.audit.form.error.code");
+		}
 	}
 
 	@Override
 	public void perform(final Audit object) {
 		assert object != null;
-		final int auditorID = super.getRequest().getPrincipal().getAccountId();
-		final Auditor auditor = this.repository.findAuditorById(auditorID);
-
-		object.setAuditor(auditor);
-		object.setDraftMode(true);
 
 		this.repository.save(object);
 
@@ -50,6 +55,14 @@ public class AuditorAuditCreateService extends AbstractService<Auditor, Audit> {
 	@Override
 	public void bind(final Audit object) {
 		assert object != null;
+		final int auditorID = super.getRequest().getPrincipal().getActiveRoleId();
+		final Auditor auditor = this.repository.findAuditorById(auditorID);
+		final int courseId = super.getRequest().getData("course", int.class);
+		final Course course = this.repository.findCourseById(courseId);
+
+		object.setCourse(course);
+		object.setAuditor(auditor);
+		object.setDraftMode(true);
 
 		super.bind(object, "code", "conclusion", "strongPoints", "weakPoints");
 	}
@@ -58,7 +71,12 @@ public class AuditorAuditCreateService extends AbstractService<Auditor, Audit> {
 	public void load() {
 		Audit object;
 
+		final int auditorID = super.getRequest().getPrincipal().getActiveRoleId();
+		final Auditor auditor = this.repository.findAuditorById(auditorID);
+
 		object = new Audit();
+		object.setAuditor(auditor);
+		object.setDraftMode(true);
 
 		super.getBuffer().setData(object);
 	}
@@ -68,9 +86,14 @@ public class AuditorAuditCreateService extends AbstractService<Auditor, Audit> {
 		assert object != null;
 
 		Tuple tuple;
+		final SelectChoices choices;
+		final Collection<Course> courses = this.repository.findAllCourses();
+		choices = SelectChoices.from(courses, "title", object.getCourse());
 
-		tuple = super.unbind(object, "instantiation", "displayPeriodInitial", "displayPeriodEnding", "linkToPicture", "slogan", "linWebDocument");
+		tuple = super.unbind(object, "code", "conclusion", "strongPoints", "weakPoints", "draftMode");
 		tuple.put("readonly", false);
+		tuple.put("course", choices.getSelected().getKey());
+		tuple.put("courses", choices);
 
 		super.getResponse().setData(tuple);
 	}

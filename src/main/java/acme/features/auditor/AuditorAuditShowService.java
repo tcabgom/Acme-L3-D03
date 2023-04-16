@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.audit.Audit;
 import acme.entities.audit.AuditingRecords;
+import acme.entities.lecture.Course;
+import acme.framework.components.jsp.SelectChoices;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
 import acme.roles.Auditor;
@@ -57,12 +59,16 @@ public class AuditorAuditShowService extends AbstractService<Auditor, Audit> {
 		final Collection<AuditingRecords> records = this.repository.findAllAuditingRecordsFromAudit(object.getId());
 		final List<String> mark = new ArrayList<>();
 		records.stream().map(AuditingRecords::getMark).forEach(m -> mark.add(m.toString()));
+		final SelectChoices choices;
+		final Collection<Course> courses = this.repository.findAllCourses();
+		choices = SelectChoices.from(courses, "title", object.getCourse());
 
 		tuple = super.unbind(object, "code", "conclusion", "strongPoints", "weakPoints", "draftMode");
 		tuple.put("readonly", false);
 		tuple.put("auditor", object.getAuditor().getIdentity().getFullName());
 		tuple.put("mark", mark);
-		tuple.put("course", object.getCourse().getTitle());
+		tuple.put("course", choices.getSelected().getKey());
+		tuple.put("courses", choices);
 
 		super.getResponse().setData(tuple);
 	}

@@ -5,13 +5,13 @@
 
 <acme:form>
 	<acme:input-textbox code="auditor.audit.form.label.code" path="code"/>
-	<acme:input-textbox code="auditor.audit.form.label.auditor" path="auditor"/>
+	<acme:hidden-data path="auditor"/>
 	<acme:input-textbox code="auditor.audit.form.label.conclusion" path="conclusion"/>
 	<acme:input-textbox code="auditor.audit.form.label.strongPoints" path="strongPoints"/>
 	<acme:input-textbox code="auditor.audit.form.label.weakPoints" path="weakPoints"/>
-	<acme:input-textbox code="auditor.audit.form.label.course" path="course"/>
-	<acme:input-textbox code="auditor.audit.form.label.mark" path="mark"/>
-	
+	<acme:input-textbox code="auditor.audit.form.label.mark" path="mark" readonly="true"/>
+	<acme:input-select code="auditor.audit.form.label.course" path="course" choices="${courses}"/>
+	<acme:input-textbox code="auditor.audit.form.label.draftMode" path="draftMode" readonly="true"/>
 	<jstl:choose>
         <jstl:when test="${_command == 'create'}">
             <acme:submit code="auditor.audit.form.button.create" action="/auditor/audit/create"/>

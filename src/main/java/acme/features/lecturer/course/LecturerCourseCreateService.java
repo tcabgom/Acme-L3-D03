@@ -50,7 +50,7 @@ public class LecturerCourseCreateService extends AbstractService<Lecturer, Cours
 
 		if (!super.getBuffer().getErrors().hasErrors("code")) {
 			final Course potentialDuplicate = this.repository.findCourseById(object.getId());
-			super.state(potentialDuplicate == object, "code", "lecturer.course.form.error.code");
+			super.state(potentialDuplicate != object, "code", "lecturer.course.form.error.code");
 		}
 
 	}
