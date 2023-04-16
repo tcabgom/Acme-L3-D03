@@ -61,10 +61,16 @@ public class Course extends AbstractEntity {
 			int theory = 0;
 			int handsOn = 0;
 			for (final Lecture l : lectures)
-				if (l.getKnowledge().equals(ActivityType.THEORY))
+				switch (l.getKnowledge()) {
+				case THEORY:
 					theory++;
-				else if (l.getKnowledge().equals(ActivityType.HANDS_ON))
+					break;
+				case HANDS_ON:
 					handsOn++;
+					break;
+				default:
+					break;
+				}
 			if (theory > handsOn)
 				knowledge = ActivityType.THEORY;
 			else if (handsOn > theory)

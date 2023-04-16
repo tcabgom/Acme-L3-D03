@@ -37,6 +37,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.offer = Manage Offers 
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
+master.menu.administrator.create-bulletin = Post bulletin
 master.menu.administrator.shut-down = Shut down
 master.menu.administrator.banner= Manage Banners
 
@@ -60,6 +61,15 @@ master.menu.student.list-course = See courses
 master.menu.assistant = Assistant
 master.menu.assistant.tutorial = My Tutorials
 master.menu.assistant.dashboard = Dashboard
+
+
+# master.menu.lecturer ####################################################
+
+master.menu.lecturer = Lecturer
+master.menu.lecturer.course = My Courses
+master.menu.lecturer.lecture = My Lectures
+master.menu.lecturer.dashboard = Dashboard
+
 
 # master.menu.user-account ####################################################
 

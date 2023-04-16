@@ -54,10 +54,13 @@ public class AnyCourseShowService extends AbstractService<Any, Course> {
 	@Override
 	public void unbind(final Course object) {
 		assert object != null;
+
 		final Tuple tuple = super.unbind(object, "code", "title", "courseAbstract", "retailPrice", "furtherInformation");
-		final List<Lecture> lectures = this.repository.findLecturesByCourse(object.getId()).stream().collect(Collectors.toList());
+		final List<Lecture> lectures = this.repository.findLecturesInCourse(object.getId()).stream().collect(Collectors.toList());
+
 		tuple.put("activityType", object.courseActivityType(lectures));
 
 		super.getResponse().setData(tuple);
 	}
+
 }
