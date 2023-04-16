@@ -92,6 +92,8 @@ public class LecturerLecturesInCourseDeleteService extends AbstractService<Lectu
 		Collection<Course> courses;
 		courses = this.repository.findCourseByLecture(object.getLecture());
 		final Lecture lecture = this.repository.findOneLectureById(lectureId);
+		tuple.put("lecAbstract", lecture.getLecAbstract());
+		tuple.put("title", lecture.getTitle());
 		tuple.put("draftMode", lecture.isDraftMode());
 		final SelectChoices choices;
 		choices = SelectChoices.from(courses, "code", object.getCourse());

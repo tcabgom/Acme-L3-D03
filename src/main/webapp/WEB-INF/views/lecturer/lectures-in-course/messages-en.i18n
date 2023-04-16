@@ -1,14 +1,9 @@
-lecturer.courseLecture.form.label.course = Course
-lecturer.courseLecture.form.lecture.title = Title of the lecture
-lecturer.courseLecture.form.lecture.summary = Summary of the lecture
-lecturer.courseLecture.form.error.lecture = The lesson is already in the selected course
-lecturer.courseLecture.form.error.course = The selected course is not editable
-lecturer.courseLecture.form.lecture.info = Add the lecture with the following info to a course in draft mode
-lecturer.courseLecture.form.lecture.delete.info = Delete lecture with the following info from a course
+lecturer.lecturesInCourse.form.label.course = Course
+lecturer.lecturesInCourse.form.lecture.title = Title
+lecturer.lecturesInCourse.form.lecture.lecAbstract = Resume
 
-lecturer.courseLecture.form.label.lecture = Lecture
-lecturer.courseLecture.form.button.delete = Delete
-lecturer.courseLecture.form.button.create = Create
+lecturer.lecturesInCourse.form.label.lecture = Lecture
+lecturer.lecturesInCourse.form.button.delete = Remove from course
+lecturer.lecturesInCourse.form.button.create = Add to the course
 
-
-
+lecturer.courseLecture.form.error.lecture = Already in the course
