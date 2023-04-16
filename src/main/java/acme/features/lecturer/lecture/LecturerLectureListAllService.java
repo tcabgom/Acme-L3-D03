@@ -1,22 +1,23 @@
 
-package acme.features.any.peeps;
+package acme.features.lecturer.lecture;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.peep.Peep;
-import acme.framework.components.accounts.Any;
+import acme.entities.lecture.Lecture;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
+import acme.roles.Lecturer;
 
 @Service
-public class AnyPeepListService extends AbstractService<Any, Peep> {
+public class LecturerLectureListAllService extends AbstractService<Lecturer, Lecture> {
 
 	// Internal state ---------------------------------------------------------
+
 	@Autowired
-	protected AnyPeepRepository repository;
+	protected LecturerLectureRepository repository;
 
 	// AbstractService interface ----------------------------------------------
 
@@ -33,21 +34,21 @@ public class AnyPeepListService extends AbstractService<Any, Peep> {
 
 	@Override
 	public void load() {
-		Collection<Peep> objects;
-
-		objects = this.repository.findAllPeeps();
-
+		Collection<Lecture> objects;
+		final Lecturer lecturer = this.repository.findOneLecturerById(super.getRequest().getPrincipal().getActiveRoleId());
+		objects = this.repository.findLecturesByLecturer(lecturer);
 		super.getBuffer().setData(objects);
 	}
 
 	@Override
-	public void unbind(final Peep object) {
+	public void unbind(final Lecture object) {
 		assert object != null;
 
 		Tuple tuple;
+		tuple = super.unbind(object, "title", "lecAbstract", "learningTime", "knowledge");
 
-		tuple = super.unbind(object, "title", "moment", "nick");
-
+		super.getResponse().setGlobal("showCreate", false);
 		super.getResponse().setData(tuple);
 	}
+
 }

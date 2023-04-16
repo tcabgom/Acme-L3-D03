@@ -39,7 +39,9 @@ public class Statistics {
 	}
 
 	private void obtainDeviation(final Collection<Double> values) {
-
+		final double mean = values.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
+		final double deviation = Math.sqrt(values.stream().mapToDouble(value -> Math.pow(value - mean, 2)).average().orElse(0.0));
+		this.setStdDeviation(deviation);
 	}
 
 	public void obtainValues(final Collection<Double> values) {

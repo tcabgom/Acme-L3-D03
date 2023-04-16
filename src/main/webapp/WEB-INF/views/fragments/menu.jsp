@@ -56,9 +56,8 @@
 
 		<acme:menu-option code="master.menu.assistant" access="hasRole('Assistant')">
 			<acme:menu-suboption code="master.menu.assistant.tutorial" action="/assistant/tutorial/list"/>
-			<acme:menu-suboption code="master.menu.assistant.dashboard" action="/assistant/dashboard/show"/>
+			<acme:menu-suboption code="master.menu.assistant.dashboard" action="/assistant/assistant-dashboard/show"/>
 		</acme:menu-option>
-		
 
 		<acme:menu-option code="master.menu.auditor" access="hasRole('Auditor')">
 			<acme:menu-suboption code="master.menu.auditor.audit" action="/auditor/audit/list"/>
@@ -66,11 +65,17 @@
 		
 		<acme:menu-option code="master.menu.lecturer" access="hasRole('Lecturer')">
 			<acme:menu-suboption code="master.menu.lecturer.course" action="/lecturer/course/list"/>
-			<acme:menu-suboption code="master.menu.lecturer.lecture" action="/lecturer/lecture/list"/>
+			<acme:menu-suboption code="master.menu.lecturer.lecture" action="/lecturer/lecture/list-all"/>
 			<acme:menu-suboption code="master.menu.lecturer.dashboard" action="/lecturer/dashboard/show"/>
 
 		</acme:menu-option>
-		
+
+
+
+		<acme:menu-option code="master.menu.student" access="hasRole('Student')">
+			<acme:menu-suboption code="master.menu.student.list-course" action="/student/course/list"/>
+		</acme:menu-option>
+
 	</acme:menu-left>
 
 	<acme:menu-right>

@@ -9,7 +9,7 @@
 	<acme:input-textbox code="lecturer.lecture.form.label.lecAbstract" 				path="lecAbstract"/>	
 	<acme:input-double 	code="lecturer.lecture.form.label.learningTime" 			path="learningTime"/>	
 	<acme:input-textbox code="lecturer.lecture.form.label.body" 					path="body"/>	
-	<acme:input-select 	code="lecturer.lecture.form.label.knowledge" 				path="knowledge" choices="${knowledge}"/>	
+	<acme:input-select 	code="lecturer.lecture.form.label.knowledge" 				path="knowledge" choices="${choices}"/>	
 	<acme:input-textbox code="lecturer.lecture.form.label.furtherInformationLink" 	path="furtherInformation"/>
 	<acme:input-textbox code="lecturer.lecture.form.label.draftMode" 				path="draftMode" readonly="true"/>
 	

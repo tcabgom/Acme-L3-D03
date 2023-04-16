@@ -1,5 +1,5 @@
 
-package acme.features.assistant.dashboard;
+package acme.features.assistant.assistantDashboard;
 
 import javax.annotation.PostConstruct;
 
