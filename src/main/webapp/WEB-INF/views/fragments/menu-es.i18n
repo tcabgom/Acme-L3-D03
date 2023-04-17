@@ -90,3 +90,7 @@ master.menu.user-account.tutorial = Ver Tutoriales
 
 master.menu.authenticated.lecturer.create = Hazte profesor
 master.menu.authenticated.lecturer.update = Actualizar mi perfil de profesor
+
+master.menu.authenticated.auditor #####################################
+master.menu.authenticated.auditor.create= Hazte auditor
+master.menu.authenticated.auditor.update= Tu perfil de auditor
