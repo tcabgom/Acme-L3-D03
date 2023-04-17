@@ -1,6 +1,8 @@
 
 package acme.features.authenticated.company;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -56,8 +58,8 @@ public class AuthenticatedCompanyUpdateService extends AbstractService<Authentic
 		assert object != null;
 
 		if (!super.getBuffer().getErrors().hasErrors("VATNumber")) {
-			final Company potencialDuplicate = this.repository.findOneCompanyByVATNumber(object.getVATNumber());
-			super.state(potencialDuplicate == null, "VATNumber", "authenticated.company.form.error.code");
+			final Collection<Company> potencialDuplicate = this.repository.findOneCompanyByVATNumberAndId(object.getVATNumber(), object.getId());
+			super.state(potencialDuplicate.size() == 1, "VATNumber", "authenticated.company.form.error.code");
 		}
 	}
 

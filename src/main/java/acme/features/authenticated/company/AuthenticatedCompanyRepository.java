@@ -1,6 +1,8 @@
 
 package acme.features.authenticated.company;
 
+import java.util.Collection;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -19,5 +21,8 @@ public interface AuthenticatedCompanyRepository extends AbstractRepository {
 
 	@Query("select c from Company c where c.userAccount.id = :userAccountId")
 	Company findCompanyByUserAccountId(int userAccountId);
+
+	@Query("select c from Company c where c.VATNumber = :vatNumber AND c.id = :id")
+	Collection<Company> findOneCompanyByVATNumberAndId(String vatNumber, int id);
 
 }

@@ -25,6 +25,7 @@ master.menu.anonymous.favourite-link-4 = 44245412J: González González, Ignacio
 master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
 master.menu.anonymous.peep.list = Ver Mensajes
 master.menu.anonymous.banner = Pancartas Activas
+master.menu.anonymous.course = Lista de cursos
 
 # master.menu.administrator ###################################################
 
@@ -34,6 +35,7 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.offer = Gestionar Ofertas
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
+master.menu.administrator.create-bulletin = Publicar boletín
 master.menu.administrator.shut-down = Parar el sistema
 master.menu.administrator.banner= Gestionar Pancartas
 
@@ -53,6 +55,22 @@ master.menu.assistant = Asistente
 master.menu.assistant.tutorial = Mis Tutoriales
 master.menu.assistant.dashboard = Panel
 
+# master.menu.auditor ####################################################
+
+master.menu.auditor= Auditor
+master.menu.auditor.audit= Gestionar tus Auditorías
+
+# master.menu.lecturer ####################################################
+
+master.menu.lecturer = Profesor
+master.menu.lecturer.course = Mis Cursos
+master.menu.lecturer.lecture = Mis Lecciones
+master.menu.lecturer.dashboard = Panel
+
+# master.menu.student ##########################################################
+
+master.menu.student = Estudiante
+master.menu.student.list-course = Ver cursos
 
 # master.menu.user-account ####################################################
 
@@ -66,10 +84,22 @@ master.menu.user-account.assistant = Datos de asistente
 master.menu.user-account.become-assistant = Hazte asistente
 master.menu.user-account.offer = Ver Ofertas Activas
 master.menu.user-account.bulletin = Ver Boletines
+master.menu.user-account.tutorial = Ver Tutoriales
 
 # master.menu.authenticated.lecturer ##################################
 
 master.menu.authenticated.lecturer.create = Hazte profesor
 master.menu.authenticated.lecturer.update = Actualizar mi perfil de profesor
+
+
+# master.menu.authenticated.auditor #####################################
+
+master.menu.authenticated.auditor.create= Hazte auditor
+master.menu.authenticated.auditor.update= Tu perfil de auditor
+
+
+# master.menu.authenticated.company ##################################
+
 master.menu.authenticated.company.create = Hazte empresa
 master.menu.authenticated.company.update = Actualizar mi perfil de empresa
+

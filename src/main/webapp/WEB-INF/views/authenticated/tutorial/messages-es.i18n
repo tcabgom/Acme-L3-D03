@@ -1,0 +1,12 @@
+user-account.tutorial.list.label.title = Título
+user-account.tutorial.list.label.course = Curso
+user-account.tutorial.list.label.code = Código
+
+user-account.tutorial.form.label.code = Código
+user-account.tutorial.form.label.title = Título
+user-account.tutorial.form.label.tutorialAbstract = Resumen
+user-account.tutorial.form.label.goals = Objetivos
+user-account.tutorial.form.label.course = Curso
+user-account.tutorial.form.label.assistant = Asistente
+user-account.tutorial.form.label.estimatedTotalTime = Horas Totales Estimadas
+user-account.tutorial.form.label.numberOfSessions = Número de Sesiones
