@@ -94,3 +94,7 @@ master.menu.user-account.tutorial = See Tutorial
 master.menu.authenticated.lecturer.create = Become a lecturer
 master.menu.authenticated.lecturer.update = Update my lecturer profile
 
+master.menu.authenticated.auditor #####################################
+master.menu.authenticated.auditor.create= Become an auditor
+master.menu.authenticated.auditor.update= Your auditor profile
+
