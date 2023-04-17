@@ -1,0 +1,9 @@
+lecturer.lecturesInCourse.form.label.course = Curse
+lecturer.lecturesInCourse.form.lecture.title = Titulo
+lecturer.lecturesInCourse.form.lecture.lecAbstract = Resumen
+
+lecturer.lecturesInCourse.form.label.lecture = Lección
+lecturer.lecturesInCourse.form.button.delete = Quitar del curso
+lecturer.lecturesInCourse.form.button.create = Añadir al curso
+
+lecturer.courseLecture.form.error.lecture = Ya pertenece al curso

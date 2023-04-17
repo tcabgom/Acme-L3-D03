@@ -24,6 +24,5 @@ public class AuthenticatedLecturerController extends AbstractController<Authenti
 	protected void initialise() {
 		super.addBasicCommand("create", this.createService);
 		super.addBasicCommand("update", this.updateService);
-
 	}
 }

@@ -10,4 +10,6 @@ authenticated.note.form.label.email = Correo electrónico
 authenticated.note.form.label.link = Enlace
 
 authenticated.note.form.label.confirmation = Confirmación
-authenticated.note.form.button.create = Nuevo
+authenticated.note.form.button.create = Nueva
+
+authenticated.note.form.error.code = Debes confirmar para poder continuar

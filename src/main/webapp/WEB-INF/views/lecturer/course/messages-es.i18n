@@ -1,0 +1,18 @@
+lecturer.course.form.label.code = Código	
+lecturer.course.form.label.title = Título	
+lecturer.course.form.label.courseAbstract = Resumen del curso
+lecturer.course.form.label.retailPrice = Precio de venta	
+lecturer.course.form.label.furtherInformation = Más información
+lecturer.course.form.label.activityType = Tipo de curso
+
+lecturer.course.list.label.code = Código
+lecturer.course.list.label.title = Título
+lecturer.course.list.label.retailPrice = Precio de venta
+lecturer.course.list.label.furtherInformation = Más información
+
+lecturer.course.lectures = Lecciones
+lecturer.course.form.button.update = Actualizar
+lecturer.course.form.button.delete = Borrar
+lecturer.course.form.button.publish = Publicar
+lecturer.course.form.button.create = Crear
+lecturer.course.list.button.create = Crear

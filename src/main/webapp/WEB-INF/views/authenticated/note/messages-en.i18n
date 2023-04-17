@@ -11,3 +11,5 @@ authenticated.note.form.label.link = Link
 
 authenticated.note.form.label.confirmation = Confirmation
 authenticated.note.form.button.create = Create
+
+authenticated.note.form.error.code = You must confirm to continue

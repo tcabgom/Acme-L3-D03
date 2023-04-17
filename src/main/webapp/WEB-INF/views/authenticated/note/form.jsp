@@ -11,9 +11,8 @@
     <acme:input-email code="authenticated.note.form.label.email" path="email"/>
     <acme:input-url code="authenticated.note.form.label.link" path="link"/>
 </acme:form>
-<jstl:choose>
-	<jstl:when test="${_command == 'create'}">
-		<acme:input-checkbox code="authenticated.note.form.label.confirmation" path="confirmation"/>
-		<acme:submit code = "authenticated.note.form.button.create" action = "/authenticated/note/create"/>
-	</jstl:when>
-</jstl:choose>
+
+<jstl:if test="${_command == 'create'}">
+	<acme:input-checkbox code="authenticated.note.form.label.confirmation" path="confirmation"/>
+	<acme:submit code = "authenticated.note.form.button.create" action = "/authenticated/note/create"/>
+</jstl:if>

@@ -25,7 +25,9 @@ master.menu.anonymous.favourite-link-4 = 44245412J: González González, Ignacio
 master.menu.anonymous.favourite-link-5 = 77860610K: Arroyo Mantero, Ignacio
 
 master.menu.anonymous.peep.list = See Peeps
-master.menu.anonymous.banner = Active Banners 
+master.menu.anonymous.banner = Active Banners
+master.menu.anonymous.course = Courses List
+master.menu.anonymous.banner = Active Banners
 
 # master.menu.administrator ###################################################
 
@@ -35,6 +37,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.offer = Manage Offers 
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
+master.menu.administrator.create-bulletin = Post bulletin
 master.menu.administrator.shut-down = Shut down
 master.menu.administrator.banner= Manage Banners
 
@@ -48,11 +51,29 @@ master.menu.provider.favourite-link = Favourite link
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
 
+# master.menu.student ###########################################################
+
+master.menu.student = Student
+master.menu.student.list-course = See courses
+
 # master.menu.assistant ####################################################
 
 master.menu.assistant = Assistant
-master.menu.assistant.tutorialSession = My Tutorial Sessions
 master.menu.assistant.tutorial = My Tutorials
+master.menu.assistant.dashboard = Dashboard
+
+# master.menu.auditor ####################################################
+
+master.menu.auditor= Auditor
+master.menu.auditor.audit= Manage your Audits
+
+# master.menu.lecturer ####################################################
+
+master.menu.lecturer = Lecturer
+master.menu.lecturer.course = My Courses
+master.menu.lecturer.lecture = My Lectures
+master.menu.lecturer.dashboard = Dashboard
+
 
 # master.menu.user-account ####################################################
 
@@ -67,8 +88,15 @@ master.menu.user-account.become-assistant = Become an assistant
 master.menu.user-account.offer = See Active Offers
 master.menu.user-account.bulletin = See Bulletins
 master.menu.user-account.note = See Notes
+master.menu.user-account.tutorial = See Tutorial
+
 
 # master.menu.authenticated.lecturer ##################################
+
 master.menu.authenticated.lecturer.create = Become a lecturer
 master.menu.authenticated.lecturer.update = Update my lecturer profile
+
+master.menu.authenticated.auditor #####################################
+master.menu.authenticated.auditor.create= Become an auditor
+master.menu.authenticated.auditor.update= Your auditor profile
 

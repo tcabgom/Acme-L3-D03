@@ -59,12 +59,17 @@ public class AdministratorOfferCreateService extends AbstractService<Administrat
 
 		if (!super.getBuffer().getErrors().hasErrors("availabilityPeriodStart")) {
 			final Date minimunValidStartDate = MomentHelper.deltaFromMoment(object.getInstantiatiation(), 1, ChronoUnit.DAYS);
-			super.state(MomentHelper.isAfter(object.getAvailabilityPeriodStart(), minimunValidStartDate), "availabilityPeriodStart", "administrator.offer.form.error.availabilityPeriodStart");
+			super.state(MomentHelper.isAfterOrEqual(object.getAvailabilityPeriodStart(), minimunValidStartDate), "availabilityPeriodStart", "administrator.offer.form.error.availabilityPeriodStart");
 		}
 
 		if (!super.getBuffer().getErrors().hasErrors("availabilityPeriodEnd")) {
 			final Date minimunValidEndDate = MomentHelper.deltaFromMoment(object.getAvailabilityPeriodStart(), 7, ChronoUnit.DAYS);
-			super.state(MomentHelper.isAfter(object.getAvailabilityPeriodEnd(), minimunValidEndDate), "availabilityPeriodStart", "administrator.offer.form.error.availabilityPeriodEnd");
+			super.state(MomentHelper.isAfterOrEqual(object.getAvailabilityPeriodEnd(), minimunValidEndDate), "availabilityPeriodEnd", "administrator.offer.form.error.availabilityPeriodEnd");
+		}
+
+		if (!super.getBuffer().getErrors().hasErrors("price")) {
+			final Double amount = object.getPrice().getAmount();
+			super.state(amount < 1000000000 && amount >= 0, "price", "administrator.offer.form.error.price");
 		}
 
 	}

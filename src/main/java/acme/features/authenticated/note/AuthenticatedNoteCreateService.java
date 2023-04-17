@@ -47,7 +47,7 @@ public class AuthenticatedNoteCreateService extends AbstractService<Authenticate
 		final Date moment = MomentHelper.getCurrentMoment();
 
 		object.setInstantiationMoment(moment);
-		object.setAuthor(userAccount.getUsername() + "-" + userAccount.getIdentity().getSurname() + ", " + userAccount.getIdentity().getName());
+		object.setAuthor(userAccount.getUsername() + " - " + userAccount.getIdentity().getSurname() + ", " + userAccount.getIdentity().getName());
 
 		super.getBuffer().setData(object);
 	}
@@ -64,7 +64,7 @@ public class AuthenticatedNoteCreateService extends AbstractService<Authenticate
 		assert object != null;
 
 		final boolean confirmation = super.getRequest().getData("confirmation", boolean.class);
-		super.state(confirmation, "confirmation", "javax.validation.constraints.AssertTrue.message");
+		super.state(confirmation, "confirmation", "authenticated.note.form.error.code");
 
 		final Date date = MomentHelper.deltaFromCurrentMoment(-30, ChronoUnit.DAYS);
 		super.getResponse().setAuthorised(MomentHelper.isAfter(object.getInstantiationMoment(), date));
