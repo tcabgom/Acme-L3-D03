@@ -19,3 +19,4 @@ auditor.audit.form.button.delete= Delete
 
 administrator.audit.form.error.code=This code already exists
 administrator.audit.form.error.draftMode= The audit is not published yet
+auditor.records.form.button.list= Auditing Records
