@@ -17,8 +17,8 @@
 			<acme:submit code="assistant.tutorialSession.form.button.create" action="/assistant/tutorial-session/create?tutorialId=${tutorialId}"/>
 		</jstl:when>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete') && !readonly}">
-			<acme:submit code="assistant.tutorialSession.form.button.update" action="/assistant/tutorial-session/update"/>
-			<acme:submit code="assistant.tutorialSession.form.button.delete" action="/assistant/tutorial-session/delete"/>
+			<acme:submit code="assistant.tutorialSession.form.button.update" action="/assistant/tutorial-session/update?tutorialId=${tutorialId}"/>
+			<acme:submit code="assistant.tutorialSession.form.button.delete" action="/assistant/tutorial-session/delete?tutorialId=${tutorialId}"/>
 		</jstl:when>
 	</jstl:choose>
 	

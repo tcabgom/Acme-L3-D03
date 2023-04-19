@@ -68,20 +68,4 @@ public class AssistantTutorialSessionListService extends AbstractService<Assista
 		super.getResponse().setData(tuple);
 	}
 
-	@Override
-	public void unbind(final Collection<TutorialSession> objects) {
-		assert objects != null;
-
-		int masterId;
-		Tutorial tutorial;
-		final boolean showCreate;
-
-		masterId = super.getRequest().getData("tutorialId", int.class);
-		tutorial = this.repository.findOneTutorialById(masterId);
-		showCreate = tutorial.isDraftMode() && super.getRequest().getPrincipal().hasRole(tutorial.getAssistant());
-
-		super.getResponse().setGlobal("tutorialId", masterId);
-		super.getResponse().setGlobal("showCreate", showCreate);
-	}
-
 }
