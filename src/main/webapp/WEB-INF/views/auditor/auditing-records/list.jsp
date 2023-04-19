@@ -8,5 +8,5 @@
 	<acme:list-column code="auditor.records.list.label.mark" path="mark" width="20%"/>
 	<acme:list-column code="auditor.records.list.label.draftMode" path="draftMode" width="20%"/>
 </acme:list>
-<acme:button code="auditor.records.form.button.create" action="/auditor/auditing-records/create"/>
+<acme:button code="auditor.records.form.button.create" action="/auditor/auditing-records/create?auditId=${auditId}"/>
 

@@ -34,11 +34,12 @@ public class AuditorAuditingRecordsListService extends AbstractService<Auditor, 
 	@Override
 	public void load() {
 		Collection<AuditingRecords> object;
-		final int auditId = super.getRequest().getData("masterId", int.class);
+		final int auditId = super.getRequest().getData("auditId", int.class);
 
 		object = this.repository.findAllAuditingRecordsFromAudit(auditId);
 
 		super.getBuffer().setData(object);
+		super.getResponse().setGlobal("auditId", auditId);
 	}
 
 	@Override

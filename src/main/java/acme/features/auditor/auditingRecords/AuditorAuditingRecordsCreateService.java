@@ -2,15 +2,12 @@
 package acme.features.auditor.auditingRecords;
 
 import java.time.temporal.ChronoUnit;
-import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.audit.Audit;
 import acme.entities.audit.AuditingRecords;
-import acme.entities.lecture.Course;
-import acme.framework.components.jsp.SelectChoices;
 import acme.framework.components.models.Tuple;
 import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
@@ -54,27 +51,20 @@ public class AuditorAuditingRecordsCreateService extends AbstractService<Auditor
 	@Override
 	public void bind(final AuditingRecords object) {
 		assert object != null;
-		final int auditorID = super.getRequest().getPrincipal().getActiveRoleId();
-		final Auditor auditor = this.repository.findAuditorById(auditorID);
-		final int courseId = super.getRequest().getData("course", int.class);
-		final Course course = this.repository.findCourseById(courseId);
+		final int auditId = super.getRequest().getData("auditId", int.class);
+		final Audit audit = this.repository.findAuditById(auditId);
 
-		object.setCourse(course);
-		object.setAuditor(auditor);
 		object.setDraftMode(true);
+		object.setAudit(audit);
 
-		super.bind(object, "code", "conclusion", "strongPoints", "weakPoints");
+		super.bind(object, "subject", "assesment", "auditingPeriodInitial", "auditingPeriodEnd", "furtherInformation", "mark");
 	}
 
 	@Override
 	public void load() {
-		Audit object;
+		AuditingRecords object;
 
-		final int auditorID = super.getRequest().getPrincipal().getActiveRoleId();
-		final Auditor auditor = this.repository.findAuditorById(auditorID);
-
-		object = new Audit();
-		object.setAuditor(auditor);
+		object = new AuditingRecords();
 		object.setDraftMode(true);
 
 		super.getBuffer().setData(object);
@@ -83,16 +73,14 @@ public class AuditorAuditingRecordsCreateService extends AbstractService<Auditor
 	@Override
 	public void unbind(final AuditingRecords object) {
 		assert object != null;
+		final int auditId = super.getRequest().getData("auditId", int.class);
+		final Audit audit = this.repository.findAuditById(auditId);
 
 		Tuple tuple;
-		final SelectChoices choices;
-		final Collection<Course> courses = this.repository.findAllCourses();
-		choices = SelectChoices.from(courses, "title", object.getCourse());
 
-		tuple = super.unbind(object, "code", "conclusion", "strongPoints", "weakPoints", "draftMode");
+		tuple = super.unbind(object, "subject", "assesment", "auditingPeriodInitial", "auditingPeriodEnd", "furtherInformation", "mark", "draftMode");
 		tuple.put("readonly", false);
-		tuple.put("course", choices.getSelected().getKey());
-		tuple.put("courses", choices);
+		tuple.put("auditId", super.getRequest().getData("auditId", int.class));
 
 		super.getResponse().setData(tuple);
 	}
