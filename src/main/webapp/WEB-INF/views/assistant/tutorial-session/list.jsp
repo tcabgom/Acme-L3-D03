@@ -9,4 +9,4 @@
 	<acme:list-column code="assistant.tutorialSession.list.label.sessionType" path="sessionType" width="25%"/>
 </acme:list>
 
-<acme:button code="assistant.tutorialSession.list.button.create" action="/assistant/tutorial-session/create?masterId=${masterId}"/>
+<acme:button code="assistant.tutorialSession.list.button.create" action="/assistant/tutorial-session/create?tutorialId=${tutorialId}"/>

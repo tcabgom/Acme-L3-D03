@@ -21,7 +21,7 @@
         <jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish')}">
             <acme:submit code="assistant.tutorial.form.button.update"   action="/assistant/tutorial/update"/>
             <acme:submit code="assistant.tutorial.form.button.delete"   action="/assistant/tutorial/delete"/>
-            <acme:button code="assistant.tutorial.form.button.sessions" action="/assistant/tutorial-session/list?masterId=${id}"/>
+            <acme:button code="assistant.tutorial.form.button.sessions" action="/assistant/tutorial-session/list?tutorialId=${id}"/>
             <jstl:if test="${draftMode}">
                 <acme:submit code="assistant.tutorial.form.button.publish"  action="/assistant/tutorial/publish"/>
             </jstl:if>
