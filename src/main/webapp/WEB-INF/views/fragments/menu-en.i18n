@@ -74,6 +74,12 @@ master.menu.lecturer.course = My Courses
 master.menu.lecturer.lecture = My Lectures
 master.menu.lecturer.dashboard = Dashboard
 
+# master.menu.company ####################################################
+
+master.menu.company = Company
+master.menu.company.practicum = My practicums
+master.menu.company.dashboard = Dashboard
+
 
 # master.menu.user-account ####################################################
 
