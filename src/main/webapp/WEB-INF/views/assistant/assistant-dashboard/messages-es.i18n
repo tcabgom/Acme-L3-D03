@@ -1,0 +1,16 @@
+
+assistant.dashboard.form.title.tutorial = Estadísticas de Tutoriales
+assistant.dashboard.form.title.session = Estadísticas de Sesiones
+assistant.dashboard.form.title.session-type = Número de Sesiones por Tipo
+
+assistant.dashboard.form.label.tutorial.count = Número de Tutoriales
+assistant.dashboard.form.label.tutorial.maximum = Horas del Tutorial Más Largo
+assistant.dashboard.form.label.tutorial.minimum = Horas del Tutorial Más Corto
+assistant.dashboard.form.label.tutorial.average = Media de Horas de Tutoriales
+assistant.dashboard.form.label.tutorial.deviation = Desviación de Horas de Tutoriales
+
+assistant.dashboard.form.label.session.count = Número de Cursos
+assistant.dashboard.form.label.session.maximum = Horas del Curso Más Largo
+assistant.dashboard.form.label.session.minimum = Horas del Curso Más Corto
+assistant.dashboard.form.label.session.average = Media de Horas de Cursos
+assistant.dashboard.form.label.session.deviation = Desviación de Horas de Cursos

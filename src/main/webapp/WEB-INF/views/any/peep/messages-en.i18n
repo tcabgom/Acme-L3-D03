@@ -1,2 +1,13 @@
 any.peep.list.label.title = Title
-any.peep.list.label.moment = Moment
+any.peep.list.label.moment = Publication Moment
+any.peep.list.label.nick = Nick
+
+any.peep.form.label.moment = Publication Moment
+any.peep.form.label.title = Title
+any.peep.form.label.nick = Nick
+any.peep.form.label.message = Message
+any.peep.form.label.email = Email
+any.peep.form.label.link= More Info
+ 
+any.peep.list.button.create = Publish a peep
+any.peep.form.button.create = Publish peep

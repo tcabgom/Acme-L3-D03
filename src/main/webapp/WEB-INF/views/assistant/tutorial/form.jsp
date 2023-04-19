@@ -11,8 +11,8 @@
 	<acme:input-textarea code="assistant.tutorial.form.label.tutorialAbstract"   path="tutorialAbstract"/>
 	<acme:input-textarea code="assistant.tutorial.form.label.goals"              path="goals"/>
 	<acme:input-double   code="assistant.tutorial.form.label.estimatedTotalTime" path="estimatedTotalTime" readonly="true"/>
-	<acme:input-integer  code="assistant.tutorial.form.label.numberOfSessions"    path="numberOfSessions" readonly="true"/>
-	<acme:input-checkbox code="assistant.tutorial.form.label.draftMode"          path="draftMode" readonly="true"/>
+	<acme:input-integer  code="assistant.tutorial.form.label.numberOfSessions"   path="numberOfSessions"   readonly="true"/>
+	<acme:input-checkbox code="assistant.tutorial.form.label.draftMode"          path="draftMode"          readonly="true"/>
 
     <jstl:choose>
         <jstl:when test="${_command == 'create'}">

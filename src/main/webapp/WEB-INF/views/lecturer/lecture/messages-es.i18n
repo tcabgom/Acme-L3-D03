@@ -1,0 +1,31 @@
+####################List Labels###############
+
+lecturer.lecture.list.label.title= Título
+lecturer.lecture.list.label.lecAbstract = Resumen
+lecturer.lecture.list.label.learningTime = Tiempo de aprendizaje
+lecturer.lecture.list.label.knowledge = Tipo de Conocimiento
+
+
+
+################### Form Labels ################
+lecturer.lecture.form.label.title = Title
+lecturer.lecture.form.label.lecAbstract = Resumen
+lecturer.lecture.form.label.learningTime = Tiempo de aprendizaje
+lecturer.lecture.form.label.body = Cuerpo
+lecturer.lecture.form.label.knowledge = Tipo de Conocimiento
+lecturer.lecture.form.label.furtherInformation = Más Información
+lecturer.lecture.form.label.draftMode = Draft mode
+
+
+################### Buttons ####################
+lecturer.lecture.list.button.create = Crear lección
+lecturer.lecture.list.button.add = Añadir a un curso
+lecturer.lecture.list.button.deleteFromCourse = Eliminar del curso
+lecturer.lecture.form.button.update = Actualizar
+lecturer.lecture.form.button.delete = Borrar lección
+lecturer.lecture.form.button.publish = Publicar
+lecturer.lecture.form.button.create = Crear
+
+
+################### Errors #####################
+lecturer.lecture.form.error.learningTime = El tiempo de aprendizaje no puede ser inferior a 0.01 

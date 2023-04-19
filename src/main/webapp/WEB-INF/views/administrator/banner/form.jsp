@@ -4,12 +4,13 @@
 <%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
 
 <acme:form>
-	<acme:input-textbox code="administrator.banner.form.label.instantiation" path="instantiation"/>
+
+	<acme:input-moment code="administrator.banner.form.label.instantiation" path="instantiation" readonly="true"/>
 	<acme:input-textbox code="administrator.banner.form.label.slogan" path="slogan"/>
-	<acme:input-textbox code="administrator.banner.form.label.linkToPicture" path="linkToPicture"/>
-	<acme:input-textbox code="administrator.banner.form.label.linWebDocument" path="linWebDocument"/>
-	<acme:input-textbox code="administrator.banner.form.label.displayPeriodInitial" path="displayPeriodInitial"/>
-	<acme:input-textbox code="administrator.banner.form.label.displayPeriodEnding" path="displayPeriodEnding"/>
+	<acme:input-url code="administrator.banner.form.label.linkToPicture" path="linkToPicture"/>
+	<acme:input-url code="administrator.banner.form.label.linWebDocument" path="linWebDocument"/>
+	<acme:input-moment code="administrator.banner.form.label.displayPeriodInitial" path="displayPeriodInitial"/>
+	<acme:input-moment code="administrator.banner.form.label.displayPeriodEnding" path="displayPeriodEnding"/>
 	
 	<jstl:choose>
         <jstl:when test="${_command == 'create'}">
