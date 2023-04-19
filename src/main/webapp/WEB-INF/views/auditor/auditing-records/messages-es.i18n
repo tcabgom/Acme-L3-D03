@@ -1,8 +1,6 @@
-auditor.audit.list.label.code= Código
-auditor.audit.list.label.auditor= Auditor
-auditor.audit.list.label.auditorID= ID Profesional
-auditor.audit.list.label.mark= Calificaciones
-auditor.audit.list.label.draftMode= ¿No Publicado?
+auditor.records.list.label.subject= Asignatura
+auditor.records.list.label.mark= Calificación
+auditor.records.list.label.draftMode= ¿No Publicado?
 
 auditor.audit.form.label.code= Código
 auditor.audit.form.label.conclusion= Conclusión
@@ -19,4 +17,5 @@ auditor.audit.form.button.delete= Eliminar
 
 administrator.audit.form.error.code= Este código es repetido
 administrator.audit.form.error.draftMode= La auditoría no está publicada aún
-auditor.records.form.button.list= Informes de auditoría
+
+auditor.records.form.error.not-long-enough= Tiene que durar una hora como mínimo

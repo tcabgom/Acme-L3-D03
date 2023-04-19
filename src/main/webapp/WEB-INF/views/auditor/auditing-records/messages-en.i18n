@@ -1,8 +1,6 @@
-auditor.audit.list.label.code= Code
-auditor.audit.list.label.auditor= Auditor
-auditor.audit.list.label.auditorID= Professional ID
-auditor.audit.list.label.mark= Marks
-auditor.audit.list.label.draftMode=Not Published?
+auditor.records.list.label.subject= Subject
+auditor.records.list.label.mark= Mark
+auditor.records.list.label.draftMode= Not Published?
 
 auditor.audit.form.label.code= Code
 auditor.audit.form.label.conclusion= Conclusion
@@ -19,4 +17,5 @@ auditor.audit.form.button.delete= Delete
 
 administrator.audit.form.error.code=This code already exists
 administrator.audit.form.error.draftMode= The audit is not published yet
-auditor.records.form.button.list= Auditing Records
+
+auditor.records.form.error.not-long-enough= Must last at least one hour long
