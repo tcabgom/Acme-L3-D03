@@ -10,4 +10,4 @@
 	<acme:list-column code="any.banner.list.label.displayPeriodInitial" path="displayPeriodInitial" width="20%"/>
 	<acme:list-column code="any.banner.list.label.displayPeriodEnding" path="displayPeriodEnding" width="20%"/>
 </acme:list>
-<acme:button code="any.banner.form.button.create" action="/any/banner/create"/>
+<acme:button code="any.banner.form.button.create" action="/administrator/banner/create"/>
