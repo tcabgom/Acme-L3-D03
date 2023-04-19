@@ -1,0 +1,17 @@
+student.course.list.label.code = Code
+student.course.list.label.motivation = Motivation
+
+student.enrolment.form.label.code = Code
+student.enrolment.form.label.motivation = Motivation
+student.enrolment.form.label.goals = Goals
+student.enrolment.form.label.creditCardHolder = Credit card holder
+student.enrolment.form.label.creditCardNibble = Credit card number
+student.enrolment.form.label.expirationDate = Expiration date
+student.enrolment.form.label.securityCode = Security code
+
+student.enrolment.form.button.update = Update
+student.enrolment.form.button.finalise = Finalise
+student.enrolment.form.button.delete = Delete
+
+student.enrolment.form.error.invalidSecurityCode = Security code must have 3 digits
+student.enrolment.form.error.invalidExpirationDate = Invalid expiration date. Formats supported: yy/MM, MM/yy
