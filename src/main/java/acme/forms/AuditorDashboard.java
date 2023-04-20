@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class AuditDashboard extends AbstractForm {
+public class AuditorDashboard extends AbstractForm {
 
 	/**
 	 * 
