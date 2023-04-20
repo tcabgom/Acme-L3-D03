@@ -3,9 +3,14 @@ package acme.features.student.enrolment;
 
 import acme.entities.enrolment.Enrolment;
 import acme.entities.lecture.Course;
+import acme.entities.tutorial.Tutorial;
+import acme.entities.tutorialSession.TutorialSession;
+import acme.features.assistant.tutorial.AssistantTutorialRepository;
+import acme.framework.components.accounts.Principal;
 import acme.framework.components.jsp.SelectChoices;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
+import acme.roles.Assistant;
 import acme.roles.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,10 +18,14 @@ import org.springframework.stereotype.Service;
 import java.util.Collection;
 
 @Service
-public class StudentEnrolmentUpdateService extends AbstractService<Student, Enrolment> {
+public class StudentEnrolmentDeleteService extends AbstractService<Student, Enrolment> {
+
+	// Internal state ---------------------------------------------------------
 
 	@Autowired
 	protected StudentEnrolmentRepository repository;
+
+	// AbstractService interface ----------------------------------------------
 
 
 	@Override
@@ -30,16 +39,20 @@ public class StudentEnrolmentUpdateService extends AbstractService<Student, Enro
 
 	@Override
 	public void authorise() {
+
 		int id = super.getRequest().getData("id", int.class);
 		Enrolment object = this.repository.findById(id);
 
-		boolean status = !object.isFinished();
-		super.getResponse().setAuthorised(status);
+		final Principal principal = super.getRequest().getPrincipal();
+		final int userAccountId = principal.getAccountId();
+		final boolean enrolmentIsNotFinalised = !object.isFinished();
+		final boolean assistantOwnsTutorial = object.getStudent().getUserAccount().getId() == userAccountId;
+
+		super.getResponse().setAuthorised(enrolmentIsNotFinalised && assistantOwnsTutorial);
 	}
 
 	@Override
 	public void load() {
-
 		int id = super.getRequest().getData("id", int.class);
 		Enrolment object = this.repository.findById(id);
 
@@ -50,12 +63,7 @@ public class StudentEnrolmentUpdateService extends AbstractService<Student, Enro
 	public void bind(final Enrolment object) {
 		assert object != null;
 
-		final int courseId = super.getRequest().getData("course", int.class);
-		final Course course = this.repository.findCourseById(courseId);
-		object.setCourse(course);
-
 		super.bind(object, "code", "motivation", "goals");
-
 	}
 
 	@Override
@@ -67,21 +75,15 @@ public class StudentEnrolmentUpdateService extends AbstractService<Student, Enro
 	@Override
 	public void perform(final Enrolment object) {
 		assert object != null;
-		this.repository.save(object);
 
+		this.repository.delete(object);
 	}
 
 	@Override
 	public void unbind(final Enrolment object) {
 		assert object != null;
 
-		Collection<Course> courses = this.repository.findAllPublishedCourses();
-		SelectChoices choices = SelectChoices.from(courses, "title", object.getCourse());
-
 		Tuple tuple = super.unbind(object, "code", "motivation", "goals");
-		tuple.put("readonly", object.isFinished());
-		tuple.put("course", choices.getSelected().getKey());
-		tuple.put("courses", choices);
 
 		super.getResponse().setData(tuple);
 	}

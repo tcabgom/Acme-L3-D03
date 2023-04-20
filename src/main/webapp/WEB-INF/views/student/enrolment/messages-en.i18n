@@ -1,5 +1,7 @@
-student.course.list.label.code = Code
-student.course.list.label.motivation = Motivation
+student.enrolment.list.label.code = Code
+student.enrolment.list.label.motivation = Motivation
+student.enrolment.list.label.course = Course
+student.enrolment.list.button.create = Create enrolment
 
 student.enrolment.form.label.code = Code
 student.enrolment.form.label.motivation = Motivation
@@ -8,7 +10,9 @@ student.enrolment.form.label.creditCardHolder = Credit card holder
 student.enrolment.form.label.creditCardNibble = Credit card number
 student.enrolment.form.label.expirationDate = Expiration date
 student.enrolment.form.label.securityCode = Security code
+student.enrolment.form.label.course = Course
 
+student.enrolment.form.button.create = Create
 student.enrolment.form.button.update = Update
 student.enrolment.form.button.finalise = Finalise
 student.enrolment.form.button.delete = Delete

@@ -71,6 +71,7 @@ master.menu.lecturer.dashboard = Panel
 
 master.menu.student = Estudiante
 master.menu.student.list-course = Ver cursos
+master.menu.student.list-enrolment = Ver tus inscripciones
 
 # master.menu.user-account ####################################################
 

@@ -16,13 +16,14 @@
             <acme:input-textbox   code="student.enrolment.form.label.code" path="code"/>
             <acme:input-textbox   code="student.enrolment.form.label.motivation" path="motivation"/>
             <acme:input-textarea  code="student.enrolment.form.label.goals" path="goals"/>
+            <acme:input-select code="student.enrolment.form.label.course" path="course"  choices="${courses}"/>
         </jstl:otherwise>
     </jstl:choose>
 
 
     <jstl:choose>
         <jstl:when test="${_command == 'create'}">
-            <acme:button code="student.enrolment.form.button.create"        action="/student/enrolment/create"/>
+            <acme:submit code="student.enrolment.form.button.create"        action="/student/enrolment/create"/>
         </jstl:when>
         <jstl:when test="${acme:anyOf(_command, 'show|update|delete')}">
             <jstl:if test="${!readonly}">
