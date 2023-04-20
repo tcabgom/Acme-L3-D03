@@ -1,5 +1,5 @@
 
-package acme.features.auditor;
+package acme.features.auditor.audit;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -17,7 +17,7 @@ import acme.framework.services.AbstractService;
 import acme.roles.Auditor;
 
 @Service
-public class AuditorAuditShowService extends AbstractService<Auditor, Audit> {
+public class AuditorAuditDeleteService extends AbstractService<Auditor, Audit> {
 
 	@Autowired
 	protected AuditorAuditRepository repository;
@@ -26,11 +26,17 @@ public class AuditorAuditShowService extends AbstractService<Auditor, Audit> {
 	@Override
 	public void check() {
 		boolean status;
+		Audit object;
+		int id;
 
-		status = super.getRequest().hasData("id", int.class);
+		id = super.getRequest().getData("id", int.class);
+		object = this.repository.findAuditById(id);
+
+		status = object.getAuditor().getId() == super.getRequest().getPrincipal().getActiveRoleId() && object.isDraftMode();
 
 		super.getResponse().setChecked(status);
 	}
+
 	@Override
 	public void authorise() {
 		boolean status;
@@ -49,6 +55,30 @@ public class AuditorAuditShowService extends AbstractService<Auditor, Audit> {
 		object = this.repository.findAuditById(id);
 
 		super.getBuffer().setData(object);
+	}
+
+	@Override
+	public void bind(final Audit object) {
+		assert object != null;
+
+		super.bind(object, "instantiation", "displayPeriodInitial", "displayPeriodEnding", "linkToPicture", "slogan", "linWebDocument");
+
+	}
+
+	@Override
+	public void validate(final Audit object) {
+		assert object != null;
+
+	}
+
+	@Override
+	public void perform(final Audit object) {
+		assert object != null;
+
+		final Collection<AuditingRecords> records = this.repository.findAllAuditingRecordsFromAudit(object.getId());
+
+		this.repository.deleteAll(records);
+		this.repository.delete(object);
 	}
 
 	@Override
