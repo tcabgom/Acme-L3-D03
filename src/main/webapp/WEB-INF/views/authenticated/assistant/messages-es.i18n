@@ -1,0 +1,8 @@
+
+authenticated.assistant.form.label.supervisor = Supervisor
+authenticated.assistant.form.label.expertiseFieldsList = Campos de Experiencia
+authenticated.assistant.form.label.resume = Resumen
+authenticated.assistant.form.label.link = Enlace
+
+authenticated.assistant.form.button.create = Registrar
+authenticated.assistant.form.button.update = Actualizar

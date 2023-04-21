@@ -43,7 +43,6 @@ public class AuditingRecords extends AbstractEntity {
 	@PastOrPresent
 	protected Date				auditingPeriodInitial;
 
-	// TODO: Restriction: Must be at least 1 hour long
 	@Temporal(TemporalType.TIMESTAMP)
 	@PastOrPresent
 	protected Date				auditingPeriodEnd;
@@ -59,4 +58,6 @@ public class AuditingRecords extends AbstractEntity {
 	@Valid
 	@NotNull
 	protected Audit				audit;
+
+	protected boolean			draftMode;
 }

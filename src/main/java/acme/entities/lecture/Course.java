@@ -1,6 +1,8 @@
 
 package acme.entities.lecture;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -12,6 +14,7 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.enumerates.ActivityType;
 import acme.framework.components.datatypes.Money;
 import acme.framework.data.AbstractEntity;
 import acme.roles.Lecturer;
@@ -39,7 +42,7 @@ public class Course extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			courseAsbtract;
+	protected String			courseAbstract;
 
 	@NotNull
 	protected Money				retailPrice;
@@ -51,13 +54,37 @@ public class Course extends AbstractEntity {
 
 	// Derived attributes -----------------------------------------------------
 
-	// TODO: Atributo derivado tipo de actividad
+
+	public ActivityType courseActivityType(final List<Lecture> lectures) {
+		ActivityType knowledge = ActivityType.BALANCED;
+		if (!lectures.isEmpty()) {
+			int theory = 0;
+			int handsOn = 0;
+			for (final Lecture l : lectures)
+				switch (l.getKnowledge()) {
+				case THEORY:
+					theory++;
+					break;
+				case HANDS_ON:
+					handsOn++;
+					break;
+				default:
+					break;
+				}
+			if (theory > handsOn)
+				knowledge = ActivityType.THEORY;
+			else if (handsOn > theory)
+				knowledge = ActivityType.HANDS_ON;
+		}
+		return knowledge;
+	}
 
 	// Relationships ----------------------------------------------------------
+
 
 	@ManyToOne(optional = false)
 	@NotNull
 	@Valid
-	protected Lecturer			lecturer;
+	protected Lecturer lecturer;
 
 }

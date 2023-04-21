@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
                                                                                                                                                                                 
+=======
+                                                                                                                                                                                            
+    
+    
+    
+    
+>>>>>>> 50741ad7e0769f4c2be8f40459da9ea9df806a3f
     
     
     
@@ -41,9 +49,17 @@
     
     
     
+<<<<<<< HEAD
     
     <wb-module deploy-name="Acme-L3-D03-1.0">
                                                                                                                                                                                                                                                                                                                                                                 
+=======
+    <wb-module deploy-name="Acme-L3-D02-1.0">
+                                                                                                                                                                                                                                                                                                                                                                                        
+        
+        
+        
+>>>>>>> 50741ad7e0769f4c2be8f40459da9ea9df806a3f
         
         
         
@@ -87,7 +103,14 @@
         
         
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+<<<<<<< HEAD
                                                                                                                                                                                                                                                                                                                                                         
+=======
+                                                                                                                                                                                                                                                                                                                                                                                
+        
+        
+        
+>>>>>>> 50741ad7e0769f4c2be8f40459da9ea9df806a3f
         
         
         
@@ -130,7 +153,14 @@
         
         
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+<<<<<<< HEAD
                                                                                                                                                                                                                                                                                                                                                         
+=======
+                                                                                                                                                                                                                                                                                                                                                                                
+        
+        
+        
+>>>>>>> 50741ad7e0769f4c2be8f40459da9ea9df806a3f
         
         
         
@@ -173,7 +203,99 @@
         
         
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+<<<<<<< HEAD
                                                                                                                                                                                                                                                                                                                                                 
+=======
+                                                                                                                                                                                                                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/webapp"/>
+                                                                                                                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+                        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/acme-framework"/>
+                        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/list"/>
+                                                                                                                                                                                                                                                                                                                                                                                
+        
+        
+        
+        
+>>>>>>> 50741ad7e0769f4c2be8f40459da9ea9df806a3f
         
         
         
@@ -289,9 +411,21 @@
         
         
         <property name="java-output-path" value="/Hello-World-22.0/target/classes"/>
+<<<<<<< HEAD
                 
         <property name="context-root" value="Acme-L3-D03"/>
                                                                                                                                                                                                                                                                                                                                                             
+=======
+                                        
+        
+        
+        
+        <property name="context-root" value="Acme-L3-D03"/>
+                                                                                                                                                                                                                                                                                                                                                                                    
+    
+    
+    
+>>>>>>> 50741ad7e0769f4c2be8f40459da9ea9df806a3f
     
     
     
@@ -335,7 +469,15 @@
     
     
     </wb-module>
+<<<<<<< HEAD
                                                                                                                                                                             
+
+=======
+                                                                                                                                                                                       
+>>>>>>> 50741ad7e0769f4c2be8f40459da9ea9df806a3f
+
+
+
 
 
 

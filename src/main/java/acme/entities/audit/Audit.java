@@ -44,10 +44,6 @@ public class Audit extends AbstractEntity {
 	@NotBlank
 	protected String			weakPoints;
 
-	//	TODO: Derived atribute, after discussion with client must be a string with a list of marks of the records
-	//	@NotNull
-	//	protected Mark				mark;
-
 	@ManyToOne(optional = false)
 	@Valid
 	@NotNull
@@ -56,6 +52,8 @@ public class Audit extends AbstractEntity {
 	@ManyToOne(optional = false)
 	@Valid
 	@NotNull
-	protected Course			Course;
+	protected Course			course;
+
+	protected boolean			draftMode;
 
 }

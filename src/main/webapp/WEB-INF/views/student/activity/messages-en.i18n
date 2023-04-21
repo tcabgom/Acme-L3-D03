@@ -1,0 +1,12 @@
+student.activity.form.label.title = Title
+student.activity.form.label.activityAbstract = Abstract
+student.activity.form.label.type = Type
+student.activity.form.label.periodStart = Period start
+student.activity.form.label.periodEnd = Period end
+student.activity.form.label.furtherInformation = More information
+
+student.activity.form.button.create = Create activity
+
+student.activity.list.label.title = Title
+student.activity.list.label.type = Type
+student.activity.list.button.create = Create activity in this workbook

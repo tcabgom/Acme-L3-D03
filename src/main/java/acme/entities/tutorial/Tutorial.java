@@ -1,6 +1,8 @@
 
 package acme.entities.tutorial;
 
+import java.util.Collection;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -12,6 +14,7 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 
 import acme.entities.lecture.Course;
+import acme.entities.tutorialSession.TutorialSession;
 import acme.framework.data.AbstractEntity;
 import acme.roles.Assistant;
 import lombok.Getter;
@@ -45,18 +48,41 @@ public class Tutorial extends AbstractEntity {
 	@Length(max = 100)
 	protected String			goals;
 
+	protected boolean			draftMode;
+
 	// Derived attributes ------------------------------------------------------------
+
+
+	public double getEstimatedTotalTimeInHours(final Collection<TutorialSession> tutorialSessions) {
+
+		final int hoursInMilliseconds = 3600000;
+		final int minutesInMilliseconds = 60000;
+
+		double hoursEstimated = .0;
+
+		for (final TutorialSession ts : tutorialSessions) {
+			final double thisSessionStartTime = ts.getSessionStart().getTime();
+			final double thisSessionEndTime = ts.getSessionEnd().getTime();
+
+			final double thisSessionHours = Math.abs(thisSessionEndTime / hoursInMilliseconds - thisSessionStartTime / hoursInMilliseconds);
+			final double thisSessionMinutes = Math.abs(thisSessionEndTime / minutesInMilliseconds - thisSessionStartTime / minutesInMilliseconds) % 60 * 0.01;
+
+			hoursEstimated += thisSessionHours + thisSessionMinutes;
+		}
+		return hoursEstimated;
+	}
 
 	// Relationships -----------------------------------------------------------------
 
-	@ManyToOne(optional = false)
-	@NotNull
-	@Valid
-	protected Course			course;
 
 	@ManyToOne(optional = false)
 	@NotNull
 	@Valid
-	protected Assistant			assistant;
+	protected Course	course;
+
+	@ManyToOne(optional = false)
+	@NotNull
+	@Valid
+	protected Assistant	assistant;
 
 }
