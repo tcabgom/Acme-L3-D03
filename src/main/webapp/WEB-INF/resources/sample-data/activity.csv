@@ -1,4 +1,4 @@
-key,title,enrolmentAbstract,type,periodStart,periodEnd,furtherInformation,key:enrolment
+key,title,activityAbstract,type,periodStart,periodEnd,furtherInformation,key:enrolment
 activity-01,an activity,an abstact,HANDS_ON,1998/05/12 21:34,1999/05/12 21:34,,enrolment-01
 activity-02,an activity,an abstact,HANDS_ON,1998/05/12 21:34,1999/05/12 21:34,,enrolment-01
 activity-04,Title with 74 chars limitttttttttttttttttttttttttttttttttttttttttttttttttt,Abstract with 99 chars limitttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt,THEORY,2022/01/01 08:00,2022/01/01 10:00,https://example.com,enrolment-01
