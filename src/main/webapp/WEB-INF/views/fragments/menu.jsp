@@ -67,7 +67,10 @@
 			<acme:menu-suboption code="master.menu.lecturer.course" action="/lecturer/course/list"/>
 			<acme:menu-suboption code="master.menu.lecturer.lecture" action="/lecturer/lecture/list-all"/>
 			<acme:menu-suboption code="master.menu.lecturer.dashboard" action="/lecturer/dashboard/show"/>
-
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.company" access="hasRole('Company')">
+			<acme:menu-suboption code="master.menu.company.practicum" action="/company/practicum/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.student" access="hasRole('Student')">

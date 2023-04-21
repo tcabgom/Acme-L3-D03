@@ -73,6 +73,12 @@ master.menu.student = Estudiante
 master.menu.student.list-course = Ver cursos
 master.menu.student.list-enrolment = Ver tus inscripciones
 
+# master.menu.company ####################################################
+
+master.menu.company = Empresa
+master.menu.company.practicum = Mis practicas
+master.menu.company.dashboard = Panel
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
