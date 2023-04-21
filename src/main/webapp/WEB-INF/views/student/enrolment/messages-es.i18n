@@ -1,0 +1,22 @@
+student.enrolment.list.label.code = Código
+student.enrolment.list.label.motivation = Motivación
+student.enrolment.list.label.course = Curso
+student.enrolment.list.button.create = Crear inscripción
+
+student.enrolment.form.label.code = Código
+student.enrolment.form.label.motivation = Motivación
+student.enrolment.form.label.goals = Objetivos
+student.enrolment.form.label.creditCardHolder = Dueño de la tarjeta de crédito
+student.enrolment.form.label.creditCardNibble = Número de tarjeta de crédito
+student.enrolment.form.label.expirationDate = Fecha de caducidad
+student.enrolment.form.label.securityCode = Código de caducidad
+student.enrolment.form.label.course = Curso
+
+student.enrolment.form.button.create = Create
+student.enrolment.form.button.update = Actualizar
+student.enrolment.form.button.finalise = Finalizar
+student.enrolment.form.button.delete = Borrar
+
+student.enrolment.form.error.code = Este código ya existe en otro objeto
+student.enrolment.form.error.invalidSecurityCode = El código de seguridad debe tener 3 dígitos
+student.enrolment.form.error.invalidExpirationDate = Fecha de caducidad inválida. Formatos soportados: yy/MM, MM/yy

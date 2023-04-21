@@ -70,10 +70,10 @@
 
 		</acme:menu-option>
 
-
-
 		<acme:menu-option code="master.menu.student" access="hasRole('Student')">
 			<acme:menu-suboption code="master.menu.student.list-course" action="/student/course/list"/>
+			<acme:menu-suboption code="master.menu.student.list-enrolment" action="/student/enrolment/list"/>
+
 		</acme:menu-option>
 
 	</acme:menu-left>
