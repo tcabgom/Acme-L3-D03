@@ -21,7 +21,7 @@
 	<acme:input-textarea code="any.course.form.label.courseAbstract" path="courseAbstract" readonly="true"/>	
 	<acme:input-money code="any.course.form.label.retailPrice" path="retailPrice" readonly="true"/>	
 	<acme:input-url code="any.course.form.label.furtherInformation" path="furtherInformation" readonly="true"/>	
-	<acme:input-textbox code="any.course.form.label.activityType" path="activityType" readonly="true"/>
+	<acme:input-checkbox code="any.course.form.label.activityType" path="activityType" readonly="true"/>
 
 	<acme:button code="any.course.form.button.tutorial" action="/authenticated/tutorial/list?tutorialId=${id}"/>
 </acme:form>
