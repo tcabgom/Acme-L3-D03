@@ -5,12 +5,12 @@
 <%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
 
 <acme:form>
-	<acme:input-textbox code="lecturer.course.form.label.code" path="code" readonly="false"/>	
-	<acme:input-textbox code="lecturer.course.form.label.title" path="title" readonly="false"/>	
-	<acme:input-textbox code="lecturer.course.form.label.courseAbstract" path="courseAbstract" readonly="false"/>	
-	<acme:input-money code="lecturer.course.form.label.retailPrice" path="retailPrice" readonly="false"/>	
-	<acme:input-url code="lecturer.course.form.label.furtherInformation" path="furtherInformation" readonly="false"/>	
-	<acme:input-textbox code="lecturer.course.form.label.activityType" path="activityType" readonly="true"/>
+	<acme:input-textbox code="lecturer.course.form.label.code" 				path="code" readonly="false"/>	
+	<acme:input-textbox code="lecturer.course.form.label.title" 			path="title" readonly="false"/>	
+	<acme:input-textarea code="lecturer.course.form.label.courseAbstract" 	path="courseAbstract" readonly="false"/>	
+	<acme:input-money code="lecturer.course.form.label.retailPrice" 		path="retailPrice" readonly="false"/>	
+	<acme:input-url code="lecturer.course.form.label.furtherInformation" 	path="furtherInformation" readonly="false"/>	
+	<acme:input-textbox code="lecturer.course.form.label.activityType" 		path="activityType" readonly="true"/>
 	
 	<jstl:choose>	 
 		<jstl:when test="${_command == 'show' && draftMode == false}">
