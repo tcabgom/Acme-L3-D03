@@ -98,6 +98,7 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.user-account.bulletin" action="/authenticated/bulletin/list"/>
 			<acme:menu-suboption code="master.menu.user-account.offer" action="/authenticated/offer/list"/>
+			<acme:menu-suboption code="master.menu.user-account.note" action="/authenticated/note/list"/>
 			<acme:menu-suboption code="master.menu.user-account.tutorial" action="/authenticated/tutorial/list"/>
 		</acme:menu-option>
 
