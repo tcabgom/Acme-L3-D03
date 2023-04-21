@@ -4,4 +4,18 @@ company.practicum.list.label.abstractPracticum=Abstract
 company.practicum.list.label.goals=Goals
 company.practicum.list.label.draftMode=Not published?
 
-compnay.practicum.form.button.create=Create
+company.practicum.form.label.code=Code
+company.practicum.form.label.title=Title
+company.practicum.form.label.abstractPracticum=Abstract
+company.practicum.form.label.goals=Goals
+company.practicum.form.label.course=Course
+company.practicum.form.label.estimatedTime=Estimate time
+company.practicum.form.label.draftMode=Not published?
+
+company.practicum.form.button.create=Create
+company.practicum.form.button.update=Update
+company.practicum.form.button.delete=Delete
+compnay.practicum.form.button.sessions=Sessions
+
+company.practicum.form.error.code=This code already exists
+company.practicum.form.error.draftMode=The practicum is not published yet

@@ -19,6 +19,7 @@
         <jstl:when test="${acme:anyOf(_command, 'show|update|delete')}">
             <acme:submit code="auditor.audit.form.form.button.update" action="/auditor/audit/update"/>
             <acme:submit code="auditor.audit.form.button.delete" action="/auditor/audit/delete"/>
+            <acme:button code="auditor.records.form.button.list" action="/auditor/auditing-records/list?auditId=${id}"/>
         </jstl:when>
     </jstl:choose>
 </acme:form>

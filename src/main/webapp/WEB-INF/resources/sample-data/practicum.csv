@@ -1,9 +1,9 @@
-key,key:company,code,title,abstractPracticum,goals,estimatedTime,key:course,draftMode
-practicum-01,company-01,ABC000,Normal title,Normal summary,Normal goals,1.00,curso-01,true
-practicum-02,company-01,ABC901,a,a,a,3.0,curso-01,true
-practicum-03,company-02,ABC999,ab,ab,ab,1.20,curso-01,false
-practicum-04,company-02,ABC929,Normal title with 74 characterssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,Normal goals with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,1.30,curso-01,false
-practicum-05,company-02,ACC999,Normal title with 75 charactersssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,Normal goals with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2.34,curso-01,true
-practicum-06,company-01,AGH999,<b>normal title</b>,<b>Normal summary</b>,<b>Normal goals</b>,3.0,curso-01,true
-practicum-07,company-01,AGH455,"<script>alert(""hi"")</script>","<script>alert(""hi"")</script>","<script>alert(""hi"")</script>",3.0,curso-01,false
-practicum-08,company-01,IGG692,κανονικός τίτλος,κανονική περίληψη,κανονικούς στόχους,3.0,curso-01,true
+key,key:company,code,title,abstractPracticum,goals,key:course,draftMode
+practicum-01,company-01,ABC000,Normal title,Normal summary,Normal goals,curso-01,true
+practicum-02,company-01,ABC901,a,a,a,curso-01,true
+practicum-03,company-02,ABC999,ab,ab,ab,curso-01,false
+practicum-04,company-02,ABC929,Normal title with 74 characterssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,Normal goals with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,curso-01,false
+practicum-05,company-02,ACC999,Normal title with 75 charactersssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,Normal goals with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,curso-01,true
+practicum-06,company-01,AGH999,<b>normal title</b>,<b>Normal summary</b>,<b>Normal goals</b>,curso-01,true
+practicum-07,company-01,AGH455,"<script>alert(""hi"")</script>","<script>alert(""hi"")</script>","<script>alert(""hi"")</script>",curso-01,false
+practicum-08,company-01,IGG692,κανονικός τίτλος,κανονική περίληψη,κανονικούς στόχους,curso-01,true

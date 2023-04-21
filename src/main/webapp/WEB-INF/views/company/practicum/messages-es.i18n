@@ -4,4 +4,18 @@ company.practicum.list.label.abstractPracticum=Resumen
 company.practicum.list.label.goals=Metas
 company.practicum.list.label.draftMode=¿En borrador?
 
-compnay.practicum.form.button.create=Nueva
+company.practicum.form.label.code=Código
+company.practicum.form.label.title=Título
+company.practicum.form.label.abstractPracticum=Resumen
+company.practicum.form.label.goals=Metas
+company.practicum.form.label.course=Curso
+company.practicum.form.label.estimatedTime=Tiempo estimado
+company.practicum.form.label.draftMode=¿En borrador?
+
+company.practicum.form.button.create=Crear
+company.practicum.form.button.update=Actualizar
+company.practicum.form.button.delete=Borrar
+compnay.practicum.form.button.sessions=Sesiones
+
+company.practicum.form.error.code=El código introducido ya existe
+company.practicum.form.error.draftMode=La práctica no ha sido publicada todavia

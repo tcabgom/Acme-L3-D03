@@ -2,7 +2,6 @@
 package acme.features.company.practicum;
 
 import java.util.Collection;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -69,8 +68,8 @@ public class CompanyPracticumCreateService extends AbstractService<Company, Prac
 		assert object != null;
 
 		if (!super.getBuffer().getErrors().hasErrors("code")) {
-			final List<String> codes = this.repository.findAllPracticumsByCode(object.getCode());
-			super.state(codes != null, "code", "administrator.Practicum.form.error.code");
+			final Practicum code = this.repository.findPracticumByCode(object.getCode());
+			super.state(code == null, "code", "administrator.Practicum.form.error.code");
 		}
 	}
 

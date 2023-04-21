@@ -10,4 +10,4 @@
 	<acme:list-column code="company.practicum.list.label.goals" path="goals" width="20%"/>
 	<acme:list-column code="company.practicum.list.label.draftMode" path="draftMode"/>
 </acme:list>
-<acme:button code="compnay.practicum.form.button.create" action="/company/practicum/create"/>
+<acme:button code="company.practicum.form.button.create" action="/company/practicum/create"/>

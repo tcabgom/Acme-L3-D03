@@ -1,8 +1,30 @@
 key,key:practicum,title,abstractSession,startWeek,finishWeek,link
-practicumSession-01,practicum-01,normal title,normal summary,2023/11/03 09:00,2023/06/03 09:00,http://normalLink.com
-practicumSession-02,practicum-01,a,a,2023/10/03 08:01,2023/10/03 10:01,
-practicumSession-03,practicum-02,ab,ab,2023/10/02 09:59,2023/10/02 10:59,
-practicumSession-04,practicum-01,Normal title with 74 characterssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2023/10/12 09:59,2023/11/12 09:59,
-practicumSession-05,practicum-03,Normal title with 75 charactersssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2023/01/03 09:01,2023/10/02 09:01,
-practicumSession-06,practicum-01,<b>normal title</b>,"<script>alert(""hi"")</script>",2023/10/03 09:01,2023/10/03 10:01,http://normalLink.com
-practicumSession-07,practicum-01,κανονικός τίτλος,κανονική περίληψη,2023/11/03 8:01,2023/10/03 10:01,http://normalLink.com
+practicumSession-01,practicum-01,normal title,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-02,practicum-01,a,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-03,practicum-01,ab,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-04,practicum-01,Normal title with 74 characterssssssssssssssssssssssssssssssssssssssssssss,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-05,practicum-01,Normal title with 75 charactersssssssssssssssssssssssssssssssssssssssssssss,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-06,practicum-01,<b>normal title</b>,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-07,practicum-01,κανονικός τίτλος,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-08,practicum-01,normal title,a,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-09,practicum-01,normal title,ab,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-10,practicum-01,normal title,Normal summary with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-11,practicum-01,normal title,Normal summary with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-12,practicum-01,normal title,"<script>alert(""hi"")</script>",2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-13,practicum-01,normal title,κανονική περίληψη,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-14,practicum-01,normal title,normal summary,2022/01/13 12:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-15,practicum-01,normal title,normal summary,2022/01/01 00:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-16,practicum-01,normal title,normal summary,2021/12/31 23:59,2023/06/03 09:00,http://normalLink.com
+practicumSession-17,practicum-01,normal title,normal summary,2023/01/01 12:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-18,practicum-01,normal title,normal summary,2023/12/31 00:00,2023/06/03 09:00,http://normalLink.com
+practicumSession-19,practicum-01,normal title,normal summary,2023/11/03 09:00,2024/01/13 12:00,http://normalLink.com
+practicumSession-20,practicum-01,normal title,normal summary,2023/11/03 09:00,2024/01/01 00:00,http://normalLink.com
+practicumSession-21,practicum-01,normal title,normal summary,2023/11/03 09:00,2023/12/31 23:59,http://normalLink.com
+practicumSession-22,practicum-01,normal title,normal summary,2023/11/03 09:00,2024/01/01 12:00,http://normalLink.com
+practicumSession-23,practicum-01,normal title,normal summary,2023/11/03 09:00,2024/12/31 00:00,http://normalLink.com
+practicumSession-24,practicum-01,normal title,normal summary,2023/01/03 09:00,2023/06/03 09:00,null
+practicumSession-25,practicum-01,normal title,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://www.acme.com/a?b
+practicumSession-26,practicum-01,normal title,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://www.acme.com/a/b
+practicumSession-27,practicum-01,normal title,normal summary,2023/01/03 09:00,2023/06/03 09:00,
+practicumSession-28,practicum-01,normal title,normal summary,2023/01/03 09:00,2023/06/03 09:00,ftp://user:pass@acme.org
+practicumSession-29,practicum-02,normal title,normal summary,2023/01/03 09:00,2023/06/03 09:00,http://normalLink.com

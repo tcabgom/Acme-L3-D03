@@ -19,3 +19,4 @@ auditor.audit.form.button.delete= Eliminar
 
 administrator.audit.form.error.code= Este código es repetido
 administrator.audit.form.error.draftMode= La auditoría no está publicada aún
+auditor.records.form.button.list= Informes de auditoría

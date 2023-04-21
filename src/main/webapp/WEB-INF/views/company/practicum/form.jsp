@@ -21,4 +21,7 @@
             <acme:submit code="company.practicum.form.button.delete" action="/company/practicum/delete"/>
         </jstl:when>
     </jstl:choose>
+    <jstl:if test="${acme:anyOf(_command, 'show|update|delete')}">
+    	<acme:button code="compnay.practicum.form.button.sessions" action="/company/practicum-session/list?practicumId=${id}"/>
+	</jstl:if>
 </acme:form>

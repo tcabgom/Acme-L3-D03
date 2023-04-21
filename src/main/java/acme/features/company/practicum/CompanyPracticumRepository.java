@@ -2,7 +2,6 @@
 package acme.features.company.practicum;
 
 import java.util.Collection;
-import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -23,7 +22,7 @@ public interface CompanyPracticumRepository extends AbstractRepository {
 	Collection<Practicum> findAllPracticumByCompany(int id);
 
 	@Query("select p from Practicum p where p.code = :code")
-	List<String> findAllPracticumsByCode(String code);
+	Practicum findPracticumByCode(String code);
 
 	@Query("select c from Company c where c.id = :id")
 	Company findCompanyById(int id);

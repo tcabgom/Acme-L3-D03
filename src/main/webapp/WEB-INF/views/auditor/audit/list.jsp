@@ -10,5 +10,5 @@
 	<acme:list-column code="auditor.audit.list.label.mark" path="mark" width="20%"/>
 	<acme:list-column code="auditor.audit.list.label.draftMode" path="draftMode"/>
 </acme:list>
-<acme:button code="any.banner.form.button.create" action="/auditor/audit/create"/>
+<acme:button code="auditor.audit.form.button.create" action="/auditor/audit/create"/>
 
