@@ -80,9 +80,9 @@
 			datasets : [
 				{
 					data : [
-						<jstl:out value="${totalNumberOfHandsOnLectures}"/>, 
-						<jstl:out value="${totalNumberOfTheoryLectures}"/>, 
-						<jstl:out value="${totalNumberOfBalancedLectures}"/>
+						<jstl:out value="${totalNumberOfHandsOnSessions}"/>, 
+						<jstl:out value="${totalNumberOfTheorySessions}"/>, 
+						<jstl:out value="${totalNumberOfBalancedSessions}"/>
 					]
 				}
 			]
