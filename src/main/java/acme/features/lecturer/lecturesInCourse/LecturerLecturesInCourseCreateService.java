@@ -73,10 +73,10 @@ public class LecturerLecturesInCourseCreateService extends AbstractService<Lectu
 		if (!super.getBuffer().getErrors().hasErrors("lecture") && !super.getBuffer().getErrors().hasErrors("course")) {
 
 			final Collection<Lecture> lectures = this.repository.findLecturesByCourse(object.getCourse().getId());
-			super.state(lectures.isEmpty() || !lectures.contains(object.getLecture()), "course", "lecturer.courseLecture.form.error.lecture");
+			super.state(lectures.isEmpty() || !lectures.contains(object.getLecture()), "course", "lecturer.lecturesInCourse.form.error.lecture");
 		}
 		if (!super.getBuffer().getErrors().hasErrors("course"))
-			super.state(object.getCourse().isDraftMode(), "course", "lecturer.courseLecture.form.error.course");
+			super.state(object.getCourse().isDraftMode(), "course", "lecturer.lecturesInCourse.form.error.course");
 	}
 
 	@Override
@@ -97,6 +97,8 @@ public class LecturerLecturesInCourseCreateService extends AbstractService<Lectu
 		courses = this.repository.findCoursesByLecturer(lecturer);
 		final Lecture lecture = this.repository.findOneLectureById(lectureId);
 		tuple.put("draftMode", lecture.isDraftMode());
+		tuple.put("title", lecture.getTitle());
+		tuple.put("lecAbstract", lecture.getLecAbstract());
 
 		final SelectChoices choices;
 		choices = SelectChoices.from(courses, "code", object.getCourse());

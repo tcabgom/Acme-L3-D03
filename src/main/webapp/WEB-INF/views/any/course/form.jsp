@@ -18,7 +18,7 @@
 <acme:form>
 	<acme:input-textbox code="any.course.form.label.code" path="code" readonly="true"/>	
 	<acme:input-textbox code="any.course.form.label.title" path="title" readonly="true"/>	
-	<acme:input-textbox code="any.course.form.label.courseAbstract" path="courseAbstract" readonly="true"/>	
+	<acme:input-textarea code="any.course.form.label.courseAbstract" path="courseAbstract" readonly="true"/>	
 	<acme:input-money code="any.course.form.label.retailPrice" path="retailPrice" readonly="true"/>	
 	<acme:input-url code="any.course.form.label.furtherInformation" path="furtherInformation" readonly="true"/>	
 	<acme:input-textbox code="any.course.form.label.activityType" path="activityType" readonly="true"/>

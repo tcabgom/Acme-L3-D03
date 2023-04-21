@@ -16,9 +16,9 @@
 <%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
 
 <acme:form>
-	<acme:input-textbox code="lecturer.lecturesInCourse.form.label.title" 			path="title" readonly="true"/>	
-	<acme:input-textbox code="lecturer.lecturesInCourse.form.label.lecAbstract" 		path="lecAbstract" readonly="true"/>	
-	<acme:input-select code="lecturer.lecturesInCourse.form.label.course" 	path="course" choices="${courses}"/>	
+	<acme:input-textbox code="lecturer.lecturesInCourse.form.label.lecture.title" 			path="title" readonly="true"/>	
+	<acme:input-textbox code="lecturer.lecturesInCourse.form.label.lecture.lecAbstract" 	path="lecAbstract" readonly="true"/>	
+	<acme:input-select code="lecturer.lecturesInCourse.form.label.course" 			path="course" choices="${courses}"/>	
 	<jstl:choose>	 
 		<jstl:when test="${acme:anyOf(_command, 'delete') && !cursos.isEmpty()}">
 			<acme:submit code="lecturer.lecturesInCourse.form.button.delete" action="/lecturer/lectures-in-course/delete?lectureId=${lectureId}"/>
