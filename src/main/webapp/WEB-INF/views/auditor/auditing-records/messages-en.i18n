@@ -1,0 +1,17 @@
+auditor.records.list.label.subject= Subject
+auditor.records.list.label.mark= Mark
+auditor.records.list.label.draftMode= Not Published?
+
+auditor.records.form.label.subject= Subject
+auditor.records.form.label.mark= Mark
+auditor.records.form.label.assesment= Assesment
+auditor.records.form.label.auditingPeriodInitial= Beginning Auditing Period
+auditor.records.form.label.auditingPeriodEnd= Ending Auditing Period
+auditor.records.form.label.draftMode= Not Published?
+
+auditor.records.form.button.create= Create
+auditor.records.form.button.update= Update
+auditor.records.form.button.delete= Delete
+
+auditor.records.form.error.not-long-enough= Must last at least one hour long
+auditor.audit.form.error.draftMode= The record must not be published

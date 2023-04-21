@@ -6,5 +6,7 @@ student.course.form.label.furtherInformation = Más información
 student.course.form.label.showLectures = Ver lecciones en este curso
 student.course.form.label.lecturer = Profesor
 
+student.course.form.button.createEnrolment = Inscribirte en este curso
+
 student.course.list.label.title = Título
 student.course.list.label.retailPrice = Precio

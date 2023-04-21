@@ -6,5 +6,7 @@ student.course.form.label.furtherInformation  = Further Information
 student.course.form.label.showLectures = Show lectures in this course
 student.course.form.label.lecturer = Lecturer
 
+student.course.form.button.createEnrolment = Enrol in this course
+
 student.course.list.label.title = Title
 student.course.list.label.retailPrice = Retail Price

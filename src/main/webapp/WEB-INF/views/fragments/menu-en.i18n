@@ -55,6 +55,7 @@ master.menu.consumer.favourite-link = Favourite link
 
 master.menu.student = Student
 master.menu.student.list-course = See courses
+master.menu.student.list-enrolment = See your enrolments
 
 # master.menu.assistant ####################################################
 
@@ -74,6 +75,12 @@ master.menu.lecturer.course = My Courses
 master.menu.lecturer.lecture = My Lectures
 master.menu.lecturer.dashboard = Dashboard
 
+# master.menu.company ####################################################
+
+master.menu.company = Company
+master.menu.company.practicum = My practicums
+master.menu.company.dashboard = Dashboard
+
 
 # master.menu.user-account ####################################################
 
@@ -87,6 +94,7 @@ master.menu.user-account.assistant = Assistant data
 master.menu.user-account.become-assistant = Become an assistant
 master.menu.user-account.offer = See Active Offers
 master.menu.user-account.bulletin = See Bulletins
+master.menu.user-account.note = See Notes
 master.menu.user-account.tutorial = See Tutorial
 
 

@@ -59,7 +59,7 @@ public class AuthenticatedCompanyUpdateService extends AbstractService<Authentic
 
 		if (!super.getBuffer().getErrors().hasErrors("VATNumber")) {
 			final Collection<Company> potencialDuplicate = this.repository.findOneCompanyByVATNumberAndId(object.getVATNumber(), object.getId());
-			super.state(potencialDuplicate.size() == 1, "VATNumber", "authenticated.company.form.error.code");
+			super.state(potencialDuplicate.size() <= 1, "VATNumber", "authenticated.company.form.error.code");
 		}
 	}
 

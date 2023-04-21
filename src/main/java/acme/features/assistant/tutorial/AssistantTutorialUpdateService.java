@@ -80,7 +80,7 @@ public class AssistantTutorialUpdateService extends AbstractService<Assistant, T
 
 		if (!super.getBuffer().getErrors().hasErrors("code")) {
 			final Tutorial potentialDuplicate = this.repository.findOneTutorialByCode(object.getCode());
-			super.state(potentialDuplicate == null || potentialDuplicate == object, "code", "assistant.tutorial.form.error.code");
+			super.state(potentialDuplicate == null || potentialDuplicate.getId() == object.getId(), "code", "assistant.tutorial.form.error.code");
 		}
 	}
 
