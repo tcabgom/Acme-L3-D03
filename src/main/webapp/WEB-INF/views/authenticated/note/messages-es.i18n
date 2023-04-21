@@ -1,0 +1,15 @@
+authenticated.note.list.label.instantiationMoment = Momento de instanciación
+authenticated.note.list.label.title = Título
+authenticated.note.list.label.author = Autor
+
+authenticated.note.form.label.instantiationMoment = Momento de instanciación
+authenticated.note.form.label.title = Título
+authenticated.note.form.label.author = Autor
+authenticated.note.form.label.message = Mensaje
+authenticated.note.form.label.email = Correo electrónico
+authenticated.note.form.label.link = Enlace
+
+authenticated.note.form.label.confirmation = Confirmación
+authenticated.note.form.button.create = Nueva
+
+authenticated.note.form.error.code = Debes confirmar para poder continuar
