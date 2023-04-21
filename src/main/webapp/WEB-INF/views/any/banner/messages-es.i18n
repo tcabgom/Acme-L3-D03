@@ -1,0 +1,18 @@
+any.banner.form.label.instantiation= Instanción:
+any.banner.form.label.slogan= Slogan:
+any.banner.form.label.linkToPicture= Link a Cartel:
+any.banner.form.label.linWebDocument= Link a Documento Web:
+any.banner.form.label.displayPeriodInitial= Comienzo:
+any.banner.form.label.displayPeriodEnding= Final:
+any.banner.form.button.create= Crear
+any.banner.form.button.update= Actualizar
+any.banner.form.button.delete= Eliminar
+
+any.banner.list.label.slogan = Slogan
+any.banner.list.label.linkToPicture = Link a Cartel
+any.banner.list.label.linWebDocument = Link a Documento Web
+any.banner.list.label.displayPeriodInitial= BegiComienzonning
+any.banner.list.label.displayPeriodEnding= Final
+
+any.banner.form.error.beginning-close= El comienzo del periodo de visibilidad debe ser después de la creación de la entidad
+any.banner.form.error.ending-not-long-enough= El periodo de visibilidad debe durar como minimo 7 dias

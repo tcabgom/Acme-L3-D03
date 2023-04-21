@@ -2,6 +2,8 @@
 package acme.entities.lecture;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -12,6 +14,7 @@ import org.hibernate.validator.constraints.URL;
 
 import acme.entities.enumerates.ActivityType;
 import acme.framework.data.AbstractEntity;
+import acme.roles.Lecturer;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -32,7 +35,7 @@ public class Lecture extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			lecAsbtract;
+	protected String			lecAbstract;
 
 	@NotNull
 	@Positive
@@ -49,8 +52,15 @@ public class Lecture extends AbstractEntity {
 	@URL
 	protected String			furtherInformation;
 
+	protected boolean			draftMode;
+
 	// Derived attributes -----------------------------------------------------
 
 	// Relationships ----------------------------------------------------------
+
+	@ManyToOne(optional = false)
+	@NotNull
+	@Valid
+	protected Lecturer			lecturer;
 
 }

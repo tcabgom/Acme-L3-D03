@@ -1,0 +1,6 @@
+administrator.bulletin.form.label.title = Título
+administrator.bulletin.form.label.critical = Crítico
+administrator.bulletin.form.label.message = Mensaje
+administrator.bulletin.form.label.furtherInformation = Más información
+administrator.bulletin.form.label.confirmation = Verifique que la información es correcta, ya que no podrá editarla después
+administrator.bulletin.form.button.create = Publicar boletín
