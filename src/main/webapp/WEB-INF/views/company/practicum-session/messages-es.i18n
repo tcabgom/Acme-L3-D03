@@ -1,0 +1,12 @@
+company.PracticumSession.list.label.title=Título
+company.PracticumSession.list.label.abstractSession=Resumen
+
+company.practicumSession.form.label.title=Títilu
+company.practicumSession.form.label.abstractSession=Resumen
+company.practicumSession.form.label.startWeek=Fecha de inicio
+company.practicumSession.form.label.finishWeek=Fecha de finalización
+company.practicumSession.form.label.link=Enlace
+
+company.practicumSession.form.button.create=Nueva
+company.practicumSession.form.button.update=Actualizar
+company.practicumSession.form.button.delete=Borrar

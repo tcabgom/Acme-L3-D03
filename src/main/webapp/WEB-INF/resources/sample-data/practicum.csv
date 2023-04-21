@@ -1,9 +1,34 @@
 key,key:company,code,title,abstractPracticum,goals,key:course,draftMode
 practicum-01,company-01,ABC000,Normal title,Normal summary,Normal goals,curso-01,true
-practicum-02,company-01,ABC901,a,a,a,curso-01,true
-practicum-03,company-02,ABC999,ab,ab,ab,curso-01,false
-practicum-04,company-02,ABC929,Normal title with 74 characterssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,Normal goals with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,curso-01,false
-practicum-05,company-02,ACC999,Normal title with 75 charactersssssssssssssssssssssssssssssssssssssssssssss,Normal summary with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,Normal goals with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,curso-01,true
-practicum-06,company-01,AGH999,<b>normal title</b>,<b>Normal summary</b>,<b>Normal goals</b>,curso-01,true
-practicum-07,company-01,AGH455,"<script>alert(""hi"")</script>","<script>alert(""hi"")</script>","<script>alert(""hi"")</script>",curso-01,false
-practicum-08,company-01,IGG692,κανονικός τίτλος,κανονική περίληψη,κανονικούς στόχους,curso-01,true
+practicum-02,company-01,A000,Normal title,Normal summary,Normal goals,curso-01,true
+practicum-03,company-01,AB000,Normal title,Normal summary,Normal goals,curso-01,true
+practicum-04,company-01,ABC999,Normal title,Normal summary,Normal goals,curso-01,true
+practicum-05,company-01,ZZZ000,Normal title,Normal summary,Normal goals,curso-01,true
+practicum-06,company-01,ZZZ999,Normal title,Normal summary,Normal goals,curso-01,true
+practicum-07,company-01,ZZ999,Normal title,Normal summary,Normal goals,curso-01,true
+practicum-08,company-01,Z999,Normal title,Normal summary,Normal goals,curso-01,true
+practicum-09,company-01,ABC009,a,Normal summary,Normal goals,curso-01,true
+practicum-10,company-01,ABC010,ab,Normal summary,Normal goals,curso-01,true
+practicum-11,company-01,ABC011,Normal title with 74 characterssssssssssssssssssssssssssssssssssssssssssss,Normal summary,Normal goals,curso-01,true
+practicum-12,company-01,ABC012,Normal title with 75 charactersssssssssssssssssssssssssssssssssssssssssssss,Normal summary,Normal goals,curso-01,true
+practicum-13,company-01,ABC013,<b>normal title</b>,Normal summary,Normal goals,curso-01,true
+practicum-14,company-01,ABC014,"<script>alert(""hi"")</script>",Normal summary,Normal goals,curso-01,true
+practicum-15,company-01,ABC015,κανονικός τίτλος,Normal summary,Normal goals,curso-01,true
+practicum-16,company-01,ABC016,Normal title,a,Normal goals,curso-01,true
+practicum-17,company-01,ABC017,Normal title,ab,Normal goals,curso-01,true
+practicum-18,company-01,ABC018,Normal title,Normal summary with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,Normal goals,curso-01,true
+practicum-19,company-01,ABC019,Normal title,Normal summary with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,Normal goals,curso-01,true
+practicum-20,company-01,ABC020,Normal title,<b>Normal summary</b>,Normal goals,curso-01,true
+practicum-21,company-01,ABC021,Normal title,"<script>alert(""hi"")</script>",Normal goals,curso-01,true
+practicum-22,company-01,ABC022,Normal title,κανονική περίληψη,Normal goals,curso-01,true
+practicum-23,company-01,ABC023,Normal title,Normal summary,a,curso-01,true
+practicum-24,company-01,ABC024,Normal title,Normal summary,ab,curso-01,true
+practicum-25,company-01,ABC025,Normal title,Normal summary,Normal goals with 99 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,curso-01,true
+practicum-26,company-01,ABC026,Normal title,Normal summary,Normal goals with 100 charactersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,curso-01,true
+practicum-27,company-01,ABC027,Normal title,Normal summary,<b>Normal goals</b>,curso-01,true
+practicum-28,company-01,ABC028,Normal title,Normal summary,"<script>alert(""hi"")</script>",curso-01,true
+practicum-29,company-01,ABC029,Normal title,Normal summary,κανονικούς στόχους,curso-01,true
+practicum-30,company-01,ABC030,Normal title,Normal summary,Normal goals,curso-02,true
+practicum-31,company-01,ABC031,Normal title,Normal summary,Normal goals,curso-02,true
+practicum-32,company-01,ABC032,Normal title,Normal summary,Normal goals,curso-01,false
+practicum-33,company-02,ABC033,Normal title,Normal summary,Normal goals,curso-01,true
