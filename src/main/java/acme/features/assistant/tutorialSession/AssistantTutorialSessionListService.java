@@ -57,13 +57,13 @@ public class AssistantTutorialSessionListService extends AbstractService<Assista
 		super.getBuffer().setData(objects);
 
 		Tutorial tutorial;
-		final boolean showCreate;
+		final boolean draftMode;
 
 		tutorial = this.repository.findOneTutorialById(masterId);
-		showCreate = tutorial.isDraftMode() && super.getRequest().getPrincipal().hasRole(tutorial.getAssistant());
+		draftMode = tutorial.isDraftMode();
 
 		super.getResponse().setGlobal("tutorialId", masterId);
-		super.getResponse().setGlobal("showCreate", showCreate);
+		super.getResponse().setGlobal("draftMode", draftMode);
 	}
 
 	@Override
