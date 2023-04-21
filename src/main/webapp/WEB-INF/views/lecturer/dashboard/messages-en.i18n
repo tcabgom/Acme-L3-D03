@@ -1,0 +1,16 @@
+
+assistant.dashboard.form.title.tutorial = Tutorial Statistics
+assistant.dashboard.form.title.session = Session Statistics
+assistant.dashboard.form.title.session-type = Number of Sessions Per Type
+
+assistant.dashboard.form.label.tutorial.count = Number of Tutorials
+assistant.dashboard.form.label.tutorial.maximum = Hours of Longest Tutorial
+assistant.dashboard.form.label.tutorial.minimum = Hours of Shortest Tutorial
+assistant.dashboard.form.label.tutorial.average = Average number of Tutorial Hours
+assistant.dashboard.form.label.tutorial.deviation = Deviation of Tutorial Hours
+
+assistant.dashboard.form.label.session.count = Number of Sessions
+assistant.dashboard.form.label.session.maximum = Hours of Longest Session
+assistant.dashboard.form.label.session.minimum = Hours of Shortest Session
+assistant.dashboard.form.label.session.average = Average number of Session Hours
+assistant.dashboard.form.label.session.deviation = Deviation of Session Hours

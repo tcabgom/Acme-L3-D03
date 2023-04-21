@@ -73,6 +73,12 @@ master.menu.student = Estudiante
 master.menu.student.list-course = Ver cursos
 master.menu.student.list-enrolment = Ver tus inscripciones
 
+# master.menu.company ####################################################
+
+master.menu.company = Empresa
+master.menu.company.practicum = Mis practicas
+master.menu.company.dashboard = Panel
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -95,6 +101,15 @@ master.menu.user-account.tutorial = Ver Tutoriales
 master.menu.authenticated.lecturer.create = Hazte profesor
 master.menu.authenticated.lecturer.update = Actualizar mi perfil de profesor
 
-master.menu.authenticated.auditor #####################################
+
+# master.menu.authenticated.auditor #####################################
+
 master.menu.authenticated.auditor.create= Hazte auditor
 master.menu.authenticated.auditor.update= Tu perfil de auditor
+
+
+# master.menu.authenticated.company ##################################
+
+master.menu.authenticated.company.create = Hazte empresa
+master.menu.authenticated.company.update = Actualizar mi perfil de empresa
+

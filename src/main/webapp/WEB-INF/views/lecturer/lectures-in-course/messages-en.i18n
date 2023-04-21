@@ -6,4 +6,4 @@ lecturer.lecturesInCourse.form.label.lecture = Lecture
 lecturer.lecturesInCourse.form.button.delete = Remove from course
 lecturer.lecturesInCourse.form.button.create = Add to the course
 
-lecturer.courseLecture.form.error.lecture = Already in the course
+lecturer.lecturesInCourse.form.error.lecture = Already in the course
