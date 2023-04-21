@@ -33,7 +33,7 @@ public class Activity extends AbstractEntity {
     @NotNull
     @NotBlank
     @Length(max = 100)
-    protected String enrolmentAbstract;
+    protected String activityAbstract;
 
     @NotNull
     protected ActivityType type;

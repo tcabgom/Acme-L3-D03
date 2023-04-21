@@ -31,6 +31,9 @@
                 <acme:button code="student.enrolment.form.button.finalise" action="/student/enrolment/finalise?id=${id}"/>
                 <acme:submit code="student.enrolment.form.button.delete" action="/student/enrolment/delete"/>
             </jstl:if>
+            <jstl:if test="${readonly}">
+                <acme:button code="student.enrolment.form.button.showActivities" action="/student/activity/list?enrolmentId=${id}"/>
+            </jstl:if>
         </jstl:when>
         <jstl:otherwise>
             <acme:submit code="student.enrolment.form.button.finalise" action="/student/enrolment/finalise"/>
