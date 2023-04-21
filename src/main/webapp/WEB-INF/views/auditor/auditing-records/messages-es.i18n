@@ -1,0 +1,17 @@
+auditor.records.list.label.subject= Asignatura
+auditor.records.list.label.mark= Calificación
+auditor.records.list.label.draftMode= ¿No Publicado?
+
+auditor.records.form.label.subject= Asignatura
+auditor.records.form.label.mark= Calificación
+auditor.records.form.label.assesment= Evaluación
+auditor.records.form.label.auditingPeriodInitial= Comienzo periodo de auditoría
+auditor.records.form.label.auditingPeriodEnd= Fin periodo de auditoría
+auditor.records.form.label.draftMode= ¿No Publicado?
+
+auditor.records.form.button.create= Crear
+auditor.records.form.button.update= Actualizar
+auditor.records.form.button.delete= Eliminar
+
+auditor.records.form.error.not-long-enough= Tiene que durar una hora como mínimo
+auditor.audit.form.error.draftMode= El informe no puede estar publicado
