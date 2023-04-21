@@ -11,18 +11,18 @@
 	<acme:input-textarea code="assistant.tutorial.form.label.tutorialAbstract"   path="tutorialAbstract"/>
 	<acme:input-textarea code="assistant.tutorial.form.label.goals"              path="goals"/>
 	<acme:input-double   code="assistant.tutorial.form.label.estimatedTotalTime" path="estimatedTotalTime" readonly="true"/>
-	<acme:input-integer  code="assistant.tutorial.form.label.numberOfSessions"    path="numberOfSessions" readonly="true"/>
-	<acme:input-checkbox code="assistant.tutorial.form.label.draftMode"          path="draftMode" readonly="true"/>
+	<acme:input-integer  code="assistant.tutorial.form.label.numberOfSessions"   path="numberOfSessions"   readonly="true"/>
+	<acme:input-checkbox code="assistant.tutorial.form.label.draftMode"          path="draftMode"          readonly="true"/>
 
     <jstl:choose>
         <jstl:when test="${_command == 'create'}">
             <acme:submit code="assistant.tutorial.form.button.create" action="/assistant/tutorial/create"/>
         </jstl:when>
         <jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish')}">
-            <acme:submit code="assistant.tutorial.form.button.update"   action="/assistant/tutorial/update"/>
-            <acme:submit code="assistant.tutorial.form.button.delete"   action="/assistant/tutorial/delete"/>
-            <acme:button code="assistant.tutorial.form.button.sessions" action="/assistant/tutorial-session/list?masterId=${id}"/>
+            <acme:button code="assistant.tutorial.form.button.sessions" action="/assistant/tutorial-session/list?tutorialId=${id}"/>
             <jstl:if test="${draftMode}">
+                <acme:submit code="assistant.tutorial.form.button.update"   action="/assistant/tutorial/update"/>
+           		<acme:submit code="assistant.tutorial.form.button.delete"   action="/assistant/tutorial/delete"/>
                 <acme:submit code="assistant.tutorial.form.button.publish"  action="/assistant/tutorial/publish"/>
             </jstl:if>
         </jstl:when>

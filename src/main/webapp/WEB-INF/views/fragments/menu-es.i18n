@@ -55,6 +55,11 @@ master.menu.assistant = Asistente
 master.menu.assistant.tutorial = Mis Tutoriales
 master.menu.assistant.dashboard = Panel
 
+# master.menu.auditor ####################################################
+
+master.menu.auditor= Auditor
+master.menu.auditor.audit= Gestionar tus Auditorías
+
 # master.menu.lecturer ####################################################
 
 master.menu.lecturer = Profesor
@@ -62,6 +67,11 @@ master.menu.lecturer.course = Mis Cursos
 master.menu.lecturer.lecture = Mis Lecciones
 master.menu.lecturer.dashboard = Panel
 
+# master.menu.student ##########################################################
+
+master.menu.student = Estudiante
+master.menu.student.list-course = Ver cursos
+master.menu.student.list-enrolment = Ver tus inscripciones
 
 # master.menu.user-account ####################################################
 
@@ -75,9 +85,16 @@ master.menu.user-account.assistant = Datos de asistente
 master.menu.user-account.become-assistant = Hazte asistente
 master.menu.user-account.offer = Ver Ofertas Activas
 master.menu.user-account.bulletin = Ver Boletines
+master.menu.user-account.note = Ver Notas
 master.menu.user-account.tutorial = Ver Tutoriales
+
+
 
 # master.menu.authenticated.lecturer ##################################
 
 master.menu.authenticated.lecturer.create = Hazte profesor
 master.menu.authenticated.lecturer.update = Actualizar mi perfil de profesor
+
+master.menu.authenticated.auditor #####################################
+master.menu.authenticated.auditor.create= Hazte auditor
+master.menu.authenticated.auditor.update= Tu perfil de auditor
