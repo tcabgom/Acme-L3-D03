@@ -3,6 +3,7 @@ package acme.features.student.enrolment;
 
 import acme.entities.enrolment.Enrolment;
 import acme.entities.lecture.Course;
+import acme.entities.tutorial.Tutorial;
 import acme.framework.components.jsp.SelectChoices;
 import acme.framework.components.models.Tuple;
 import acme.framework.services.AbstractService;
@@ -62,6 +63,10 @@ public class StudentEnrolmentUpdateService extends AbstractService<Student, Enro
 	public void validate(final Enrolment object) {
 		assert object != null;
 
+		if (!super.getBuffer().getErrors().hasErrors("code")) {
+			final Enrolment potentialDuplicate = this.repository.findByCode(object.getCode());
+			super.state(potentialDuplicate == null || potentialDuplicate.getId() == object.getId(), "code", "student.enrolment.form.error.code");
+		}
 	}
 
 	@Override

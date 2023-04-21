@@ -35,7 +35,7 @@ public class StudentEnrolmentCreateService extends AbstractService<Student, Enro
 
 		if (!super.getBuffer().getErrors().hasErrors("code")) {
 			final Enrolment potentialDuplicate = this.repository.findByCode(object.getCode());
-			super.state(potentialDuplicate == null, "code", "assistant.tutorial.form.error.code");
+			super.state(potentialDuplicate == null, "code", "student.enrolment.form.error.code");
 		}
 	}
 

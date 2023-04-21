@@ -17,5 +17,6 @@ student.enrolment.form.button.update = Update
 student.enrolment.form.button.finalise = Finalise
 student.enrolment.form.button.delete = Delete
 
+student.enrolment.form.error.code = This code is already exists in another object
 student.enrolment.form.error.invalidSecurityCode = Security code must have 3 digits
 student.enrolment.form.error.invalidExpirationDate = Invalid expiration date. Formats supported: yy/MM, MM/yy
