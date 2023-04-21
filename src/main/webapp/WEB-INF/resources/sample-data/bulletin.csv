@@ -1,7 +1,28 @@
 key,instantiationMoment,title,critical,message,furtherInformation
 bulletin-01,2022/07/20 00:00,A title,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
-bulletin-02,2022/07/20 00:00,Hey there you yes you there; do you like having 74 characters in a title??,false,Hey hey; did you like the title? well now I will give you a message just as long enjoy it my friend,
-bulletin-03,2022/07/20 00:00,Hey there you yes you there; do you like having 75 characters in a title???,false,Hey hey; did you like the title? well now I will give you a message just as long enjoy it my friend!,
-bulletin-04,2022/07/20 00:00,Hey let's not discriminate other letters私の帽子は私の友達です,false,How about some emojis? ©️👻🙋🏿‍♂️,
-bulletin-05,2022/07/20 00:00,<h1>Lorem ipsum</h1>,false,<script>alert('Deleting Sytem32...')</script>,
-bulletin-06,2022/07/20 00:00,0,false,0,
+bulletin-02,2020/01/13 12:00,A title,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-03,2020/01/01 00:00,A title,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-04,2019/12/31 23:59,A title,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-05,2020/01/01 12:00,A title,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-06,2020/12/31 00:00,A title,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-07,2022/07/20 00:00,a,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-08,2022/07/20 00:00,ab,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-09,2022/07/20 00:00,Hey there you yes you there; do you like having 74 characters in a title??,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-10,2022/07/20 00:00,Hey there you yes you there; do you like having 75 characters in a title???,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-11,2022/07/20 00:00,Hey let's not discriminate other letters私の帽子は私の友達です,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-12,2022/07/20 00:00,<h1>Lorem ipsum</h1>,true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-13,2022/07/20 00:00,"<script>alert(""hi"")</script>",true,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-14,2022/07/20 00:00,A title,false,Un mensaje,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-15,2022/07/20 00:00,A title,true,a,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-16,2022/07/20 00:00,A title,true,ab,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-17,2022/07/20 00:00,A title,true,Hey hey; did you like the title? well now I will give you a message just as long enjoy it my friend,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-18,2022/07/20 00:00,A title,true,Hey hey; did you like the title? well now I will give you a message just as long enjoy it my friend!,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-19,2022/07/20 00:00,A title,true,How about some emojis? ©️👻🙋🏿‍♂️,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-20,2022/07/20 00:00,A title,true,<h1>Lorem ipsum</h1>,https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-21,2022/07/20 00:00,A title,true,"<script>alert(""hi"")</script>",https://www.youtube.com/watch?v=dQw4w9WgXcQ
+bulletin-22,2022/07/20 00:00,A title,true,Un mensaje,
+bulletin-23,2022/07/20 00:00,A title,true,Un mensaje,null
+bulletin-24,2022/07/20 00:00,A title,true,Un mensaje,http://www.acme.com/a?b
+bulletin-25,2022/07/20 00:00,A title,true,Un mensaje,http://www.acme.com/a/b
+bulletin-26,2022/07/20 00:00,A title,true,Un mensaje,
+bulletin-27,2022/07/20 00:00,A title,true,Un mensaje,ftp://user:pass@acme.org
