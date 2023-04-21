@@ -1,10 +1,10 @@
 key,instantiation,displayPeriodInitial,displayPeriodEnding,linkToPicture,slogan,linWebDocument
-banner-01,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,http://link.com,normal slogan,http://link.com
-banner-02,2020/02/01 23:59,2020/03/01 23:59,2020/04/30 09:00,http://link.com,Normal slogan with 75 scharactersssssssssssssssssssssssssssssssssssssssssss,http://link.com
-banner-03,2020/03/01 00:00,2020/04/01 00:00,2020/03/01 09:00,http://link.com,Normal slogan with 74 scharacterssssssssssssssssssssssssssssssssssssssssss,http://link.com
-banner-04,2020/04/01 09:00,2020/05/01 09:00,2020/02/01 09:00,http://link.com,a,http://link.com
-banner-05,2020/05/01 09:00,2020/06/01 09:00,2020/04/01 09:00,http://link.com,ab,http://link.com
-banner-06,2020/06/01 09:00,2020/07/01 09:00,2020/07/01 00:00,http://link.com,<b>normal slogan</b>,http://link.com
-banner-07,2020/07/01 09:00,2020/08/01 09:00,2020/12/31 23:59,http://link.com,<script>alert("hi")</script>,http://link.com
-banner-08,2020/07/01 09:00,2020/08/01 09:00,2020/12/31 23:59,http://link.com,κανονικός τίτλος,http://link.com
-banner-09,2020/07/01 09:00,2022/07/29 00:00,2022/08/29 00:00,http://link.com,Estoy activo,http://link.com
+banner-01,2020/01/31 09:00,2020/02/01 09:00,2020/02/01 09:00,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,normal slogan,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
+banner-02,2020/02/01 23:59,2020/03/01 23:59,2020/04/30 09:00,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,Normal slogan with 75 scharactersssssssssssssssssssssssssssssssssssssssssss,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
+banner-03,2020/03/01 00:00,2020/04/01 00:00,2020/03/01 09:00,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,Normal slogan with 74 scharacterssssssssssssssssssssssssssssssssssssssssss,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
+banner-04,2020/04/01 09:00,2020/05/01 09:00,2020/02/01 09:00,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,a,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
+banner-05,2020/05/01 09:00,2020/06/01 09:00,2020/04/01 09:00,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,ab,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
+banner-06,2020/06/01 09:00,2020/07/01 09:00,2020/07/01 00:00,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,<b>normal slogan</b>,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
+banner-07,2020/07/01 09:00,2020/08/01 09:00,2020/12/31 23:59,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,<script>alert("hi")</script>,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
+banner-08,2020/07/01 09:00,2020/08/01 09:00,2020/12/31 23:59,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,κανονικός τίτλος,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
+banner-09,2020/07/01 09:00,2022/07/29 00:00,2022/08/29 00:00,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg,Estoy activo,https://img.freepik.com/vector-gratis/banner-pruebas-software_80328-15.jpg
