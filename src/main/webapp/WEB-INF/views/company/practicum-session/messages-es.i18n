@@ -10,3 +10,6 @@ company.practicumSession.form.label.link=Enlace
 company.practicumSession.form.button.create=Nueva
 company.practicumSession.form.button.update=Actualizar
 company.practicumSession.form.button.delete=Borrar
+
+company.pacticumSession.form.error.not-long-enough=La sesión debe durar al menos una semana
+company.practicumSession.form.error.sessionStart=La sesión debe empedar al menos dentro de una semana
